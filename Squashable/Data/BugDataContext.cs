@@ -15,8 +15,15 @@ namespace Squashable
             modelBuilder.UseSerialColumns();
         }
 
-        public DbSet<BugInfo> BugProps { get; set; }
-        public DbSet<User> Users { get; set; }
+        public DbSet<BugInfo> BugInfo { get; set; }
+        public DbSet<Users> Users { get; set; }
+
+        public override int SaveChanges()
+        {
+            ChangeTracker.DetectChanges();
+            return base.SaveChanges();
+        }
+
     }
 }
 

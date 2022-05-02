@@ -12,7 +12,7 @@ using Squashable;
 namespace Squashable.Migrations
 {
     [DbContext(typeof(BugDataContext))]
-    [Migration("20220502164709_InitialSquashableMigration")]
+    [Migration("20220502213945_InitialSquashableMigration")]
     partial class InitialSquashableMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -74,10 +74,10 @@ namespace Squashable.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("BugProps");
+                    b.ToTable("BugInfo");
                 });
 
-            modelBuilder.Entity("Squashable.User", b =>
+            modelBuilder.Entity("Squashable.Users", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

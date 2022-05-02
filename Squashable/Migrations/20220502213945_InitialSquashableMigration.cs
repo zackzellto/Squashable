@@ -11,7 +11,7 @@ namespace Squashable.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "BugProps",
+                name: "BugInfo",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
@@ -32,7 +32,7 @@ namespace Squashable.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_BugProps", x => x.Id);
+                    table.PrimaryKey("PK_BugInfo", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -55,7 +55,7 @@ namespace Squashable.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "BugProps");
+                name: "BugInfo");
 
             migrationBuilder.DropTable(
                 name: "Users");

@@ -72,10 +72,10 @@ namespace Squashable.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("BugProps");
+                    b.ToTable("BugInfo");
                 });
 
-            modelBuilder.Entity("Squashable.User", b =>
+            modelBuilder.Entity("Squashable.Users", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
