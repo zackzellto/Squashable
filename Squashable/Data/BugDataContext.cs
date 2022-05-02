@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace Squashable
 {
     public class BugDataContext : DbContext
@@ -15,6 +16,7 @@ namespace Squashable
         }
 
         public DbSet<BugInfo> BugProps { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }
 

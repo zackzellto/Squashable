@@ -12,8 +12,8 @@ using Squashable;
 namespace Squashable.Migrations
 {
     [DbContext(typeof(BugDataContext))]
-    [Migration("20220502030833_SquashableDatabase")]
-    partial class SquashableDatabase
+    [Migration("20220502164709_InitialSquashableMigration")]
+    partial class InitialSquashableMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -56,6 +56,15 @@ namespace Squashable.Migrations
                     b.Property<string>("Severity")
                         .HasColumnType("text");
 
+                    b.Property<string>("SolutionDescription")
+                        .HasColumnType("text");
+
+                    b.Property<string>("SolvedBy")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("SolvedDate")
+                        .HasColumnType("timestamp with time zone");
+
                     b.Property<string>("Status")
                         .HasColumnType("text");
 
@@ -66,6 +75,34 @@ namespace Squashable.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("BugProps");
+                });
+
+            modelBuilder.Entity("Squashable.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseSerialColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
                 });
 #pragma warning restore 612, 618
         }

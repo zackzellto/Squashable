@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Squashable
 {
@@ -31,6 +27,12 @@ namespace Squashable
         public DateTime ModifiedDate { get; set; }
 
         public string? ModifiedBy { get; set; }
+
+        public string? SolvedBy { get; set; }
+
+        public DateTime SolvedDate { get; set; }
+
+        public string? SolutionDescription { get; set; }
 
     }
 }
