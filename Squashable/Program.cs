@@ -1,8 +1,16 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using Microsoft.EntityFrameworkCore;
+using Squashable;
+
+var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<BugDataContext>(options =>
+{
+    options.UseNpgsql(builder.Configuration.GetConnectionString("SquashableDatabase"));
+});
 
 var app = builder.Build();
 
@@ -22,7 +30,7 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller}/{action=Index}/{id?}");
 
-app.MapFallbackToFile("index.html");;
+app.MapFallbackToFile("index.html"); ;
 
 app.Run();
 

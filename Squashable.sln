@@ -5,8 +5,6 @@ VisualStudioVersion = 25.0.1700.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Squashable", "Squashable\Squashable.csproj", "{E4E54677-F9B3-4965-95BB-838FB740DFB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bug.Data", "Bug.Data\Bug.Data.csproj", "{8446E6A4-12A9-4106-B445-803D291347A8}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{E4E54677-F9B3-4965-95BB-838FB740DFB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4E54677-F9B3-4965-95BB-838FB740DFB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4E54677-F9B3-4965-95BB-838FB740DFB4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8446E6A4-12A9-4106-B445-803D291347A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8446E6A4-12A9-4106-B445-803D291347A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8446E6A4-12A9-4106-B445-803D291347A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8446E6A4-12A9-4106-B445-803D291347A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
