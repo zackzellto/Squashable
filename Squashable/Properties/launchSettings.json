@@ -8,9 +8,10 @@
     }
   },
   "profiles": {
-    "Squashable": {
+    "Squashable API": {
       "commandName": "Project",
       "launchBrowser": true,
+      "launchUrl": "",
       "applicationUrl": "https://localhost:7091;http://localhost:5025",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
@@ -20,6 +21,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
+      "launchUrl": "",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
         "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.SpaProxy"
