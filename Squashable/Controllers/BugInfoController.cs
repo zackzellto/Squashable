@@ -21,6 +21,8 @@ namespace Squashable.Controllers
             _context = context;
         }
 
+        
+
         // GET: api/BugInfo
         [HttpGet]
         public async Task<ActionResult<IEnumerable<BugInfo>>> GetBugInfo()

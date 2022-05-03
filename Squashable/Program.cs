@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Squashable;
 
@@ -8,10 +9,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddSwaggerGen(s =>
 {
-    s.SwaggerDoc("v1", new OpenApiInfo { Title = "Squashable API", Version = "v1", Description = "Squashable API" });
+    s.SwaggerDoc("v1", new OpenApiInfo { Title = "Squashable API", Version = "v1", Description = "Squashable API for Bug Tracking" });
 });
 
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllers();
 
 builder.Services.AddDbContext<BugDataContext>(options =>
 {
@@ -29,6 +30,10 @@ app.UseCors(options => options
     );
 
 
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
 app.UseSwagger(options =>
 {
     options.SerializeAsV2 = true;
@@ -37,26 +42,35 @@ app.UseSwagger(options =>
 app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Squashable API V1");
-    c.RoutePrefix = string.Empty;
+    c.RoutePrefix = "swagger";
 });
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
+    
 }
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 
+app.MapControllers();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller}/{action=Index}/{id?}");
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+        name: "default",
+        pattern: "{controller=Home}/{action=Index}/{id?}");
+});
 
-app.MapFallbackToFile("index.html"); ;
+app.MapFallbackToFile("index.html");
+
+app.UseSpa(spa =>
+{
+    spa.Options.SourcePath = "ClientApp";
+
+    {
+        spa.UseReactDevelopmentServer(npmScript: "start");
+    }
+});
 
 app.Run();
 
