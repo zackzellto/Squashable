@@ -21,7 +21,7 @@ namespace Squashable.Controllers
             _context = context;
         }
 
-        
+
 
         // GET: api/BugInfo
         [HttpGet]
