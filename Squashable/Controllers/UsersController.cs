@@ -1,4 +1,4 @@
-#nullable disable
+﻿#nullable disable
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,14 +25,14 @@ namespace Squashable.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Users>>> GetUsers()
         {
-            return await _context.Users.ToListAsync();
+            return await _context.squashableUsers.ToListAsync();
         }
 
         // GET: api/Users/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Users>> GetUsers(int id)
         {
-            var users = await _context.Users.FindAsync(id);
+            var users = await _context.squashableUsers.FindAsync(id);
 
             if (users == null)
             {
@@ -78,7 +78,7 @@ namespace Squashable.Controllers
         [HttpPost]
         public async Task<ActionResult<Users>> PostUsers(Users users)
         {
-            _context.Users.Add(users);
+            _context.squashableUsers.Add(users);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetUsers", new { id = users.Id }, users);
@@ -88,13 +88,13 @@ namespace Squashable.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUsers(int id)
         {
-            var users = await _context.Users.FindAsync(id);
+            var users = await _context.squashableUsers.FindAsync(id);
             if (users == null)
             {
                 return NotFound();
             }
 
-            _context.Users.Remove(users);
+            _context.squashableUsers.Remove(users);
             await _context.SaveChangesAsync();
 
             return NoContent();
@@ -102,7 +102,7 @@ namespace Squashable.Controllers
 
         private bool UsersExists(int id)
         {
-            return _context.Users.Any(e => e.Id == id);
+            return _context.squashableUsers.Any(e => e.Id == id);
         }
     }
 }

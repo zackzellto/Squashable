@@ -12,8 +12,8 @@ using Squashable;
 namespace Squashable.Migrations
 {
     [DbContext(typeof(BugDataContext))]
-    [Migration("20220502213945_InitialSquashableMigration")]
-    partial class InitialSquashableMigration
+    [Migration("20220506205519_InitSquashableDatabase")]
+    partial class InitSquashableDatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -74,7 +74,7 @@ namespace Squashable.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("BugInfo");
+                    b.ToTable("squashableBugInfo");
                 });
 
             modelBuilder.Entity("Squashable.Users", b =>
@@ -102,7 +102,7 @@ namespace Squashable.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.ToTable("squashableUsers");
                 });
 #pragma warning restore 612, 618
         }

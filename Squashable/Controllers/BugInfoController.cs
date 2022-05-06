@@ -1,4 +1,4 @@
-#nullable disable
+﻿#nullable disable
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,14 +27,14 @@ namespace Squashable.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<BugInfo>>> GetBugInfo()
         {
-            return await _context.BugInfo.ToListAsync();
+            return await _context.squashableBugInfo.ToListAsync();
         }
 
         // GET: api/BugInfo/5
         [HttpGet("{id}")]
         public async Task<ActionResult<BugInfo>> GetBugInfo(int id)
         {
-            var bugInfo = await _context.BugInfo.FindAsync(id);
+            var bugInfo = await _context.squashableBugInfo.FindAsync(id);
 
             if (bugInfo == null)
             {
@@ -80,7 +80,7 @@ namespace Squashable.Controllers
         [HttpPost]
         public async Task<ActionResult<BugInfo>> PostBugInfo(BugInfo bugInfo)
         {
-            _context.BugInfo.Add(bugInfo);
+            _context.squashableBugInfo.Add(bugInfo);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetBugInfo", new { id = bugInfo.Id }, bugInfo);
@@ -90,13 +90,13 @@ namespace Squashable.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteBugInfo(int id)
         {
-            var bugInfo = await _context.BugInfo.FindAsync(id);
+            var bugInfo = await _context.squashableBugInfo.FindAsync(id);
             if (bugInfo == null)
             {
                 return NotFound();
             }
 
-            _context.BugInfo.Remove(bugInfo);
+            _context.squashableBugInfo.Remove(bugInfo);
             await _context.SaveChangesAsync();
 
             return NoContent();
@@ -104,7 +104,7 @@ namespace Squashable.Controllers
 
         private bool BugInfoExists(int id)
         {
-            return _context.BugInfo.Any(e => e.Id == id);
+            return _context.squashableBugInfo.Any(e => e.Id == id);
         }
     }
 }

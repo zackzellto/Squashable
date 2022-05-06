@@ -72,7 +72,7 @@ namespace Squashable.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("BugInfo");
+                    b.ToTable("squashableBugInfo");
                 });
 
             modelBuilder.Entity("Squashable.Users", b =>
@@ -100,7 +100,7 @@ namespace Squashable.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.ToTable("squashableUsers");
                 });
 #pragma warning restore 612, 618
         }

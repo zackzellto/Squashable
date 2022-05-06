@@ -6,12 +6,12 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace Squashable.Migrations
 {
-    public partial class InitialSquashableMigration : Migration
+    public partial class InitSquashableDatabase : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "BugInfo",
+                name: "squashableBugInfo",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
@@ -32,11 +32,11 @@ namespace Squashable.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_BugInfo", x => x.Id);
+                    table.PrimaryKey("PK_squashableBugInfo", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
-                name: "Users",
+                name: "squashableUsers",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
@@ -48,17 +48,17 @@ namespace Squashable.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Users", x => x.Id);
+                    table.PrimaryKey("PK_squashableUsers", x => x.Id);
                 });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "BugInfo");
+                name: "squashableBugInfo");
 
             migrationBuilder.DropTable(
-                name: "Users");
+                name: "squashableUsers");
         }
     }
 }

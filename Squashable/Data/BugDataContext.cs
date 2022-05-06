@@ -15,8 +15,8 @@ namespace Squashable
             modelBuilder.UseSerialColumns();
         }
 
-        public DbSet<BugInfo> BugInfo { get; set; }
-        public DbSet<Users> Users { get; set; }
+        public DbSet<BugInfo> squashableBugInfo { get; set; }
+        public DbSet<Users> squashableUsers { get; set; }
 
         public override int SaveChanges()
         {
