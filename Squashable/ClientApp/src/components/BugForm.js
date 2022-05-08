@@ -77,6 +77,15 @@ export function BugForm() {
               <Form.Control id="bug-description-form" type="textarea" />
             </FloatingLabel>
           </div>
+          <div id="bug-comments-container">
+            <FloatingLabel
+              controlId="floatingInput"
+              label="Comments"
+              className="mb-3"
+            >
+              <Form.Control id="bug-comments-form" type="textarea" />
+            </FloatingLabel>
+          </div>
 
           <Row className="mb-3">
             <Col md>
@@ -91,7 +100,7 @@ export function BugForm() {
                   >
                     <option value=""></option>
                     <option value="1">High</option>
-                    <option value="2">Mid</option>
+                    <option value="2">Medium</option>
                     <option value="3">Low</option>
                   </Form.Select>
                 </FloatingLabel>
@@ -108,9 +117,9 @@ export function BugForm() {
                     aria-label="Bug Severity select menu"
                   >
                     <option value=""></option>
-                    <option value="1"></option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option value="1">High</option>
+                    <option value="2">Medium</option>
+                    <option value="3">Low</option>
                   </Form.Select>
                 </FloatingLabel>
               </div>
@@ -131,9 +140,6 @@ export function BugForm() {
                 </FloatingLabel>
               </div>
             </Col>
-            <Form.Group as={Col} controlId="formGridZip">
-              <Form.Control />
-            </Form.Group>
           </Row>
 
           <Button id="buginfo-submit-button" variant="primary" type="submit">
