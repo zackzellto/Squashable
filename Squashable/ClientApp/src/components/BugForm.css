@@ -1,0 +1,77 @@
+
+@media (min-width: 320px) {
+
+#bugform-container{
+    margin: auto;
+    margin-top: 8em;
+    background-color: rgba(255, 255, 255, 0.145);
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0) 25px 21px 21px 22px; 
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 95%;
+}
+    
+#bug-id{
+    width: 80px;
+}
+
+#bug-date{
+    max-width: fit-content;
+    text-align: center;
+    margin:auto;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+
+#bug-reporter-container{
+    height: 40px;
+}
+
+#bug-reporter-form{
+    height: 40px;
+}
+
+#bug-title-container{
+    height: 40px;
+    position: relative;
+    margin-bottom: 15px;
+} 
+
+#bug-title-form{
+    height: 40px;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+#bug-description-form{
+    height: 80px;
+    position: relative;
+}
+
+#bug-status-container{
+    height: 40px;
+    position: relative;
+    margin-bottom: 7px;
+}
+
+#bug-priority-container{
+    height: 40px;
+    position: relative;
+    margin-bottom: 7px;
+}
+
+#bug-severity-container{
+    height: 40px;
+    position: relative;
+    margin-bottom: 7px;
+}
+
+#bug-select-menu{
+    height: 30px;
+    
+}
+
+}
