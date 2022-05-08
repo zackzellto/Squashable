@@ -4,9 +4,9 @@
 #bugform-container{
     margin: auto;
     margin-top: 8em;
-    background-color: rgba(255, 255, 255, 0.145);
+    background-color: rgba(255, 255, 255, 0.389);
     border: 2px solid rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0) 25px 21px 21px 22px; 
+    box-shadow: rgba(0, 0, 0, 0.576) 8px 5px 5px 4px; 
     border-radius: 20px;
     padding: 20px;
     max-width: 95%;
@@ -14,9 +14,10 @@
     
 #bug-id{
     width: 80px;
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
 }
 
-#bug-date{
+#bug-date-container{
     max-width: fit-content;
     text-align: center;
     margin:auto;
@@ -24,6 +25,9 @@
     margin-bottom: 20px;
 }
 
+#bug-date-form{
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+}
 
 
 #bug-reporter-container{
@@ -32,6 +36,7 @@
 
 #bug-reporter-form{
     height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
 }
 
 #bug-title-container{
@@ -44,11 +49,13 @@
     height: 40px;
     position: relative;
     margin-bottom: 25px;
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
 }
 
 #bug-description-form{
     height: 80px;
     position: relative;
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
 }
 
 #bug-status-container{
@@ -67,6 +74,10 @@
     height: 40px;
     position: relative;
     margin-bottom: 7px;
+}
+
+#buginfo-submit-button{
+    width: 100%;
 }
 
 #bug-select-menu{

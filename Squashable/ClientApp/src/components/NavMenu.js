@@ -37,16 +37,17 @@ export class NavMenu extends Component {
           light
         >
           <Container>
-            <NavbarBrand tag={Link} to="/">
+            <NavbarBrand id="navbar-brand" tag={Link} to="/">
               Squashable
             </NavbarBrand>
             <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
             <Collapse
+              id="hamburger-menu"
               className="d-sm-inline-flex flex-sm-row-reverse"
               isOpen={!this.state.collapsed}
               navbar
             >
-              <ul className="navbar-nav flex-grow">
+              <ul id="navbar-links" className="navbar-nav flex-grow">
                 <NavItem>
                   <NavLink tag={Link} className="text-dark" to="/">
                     Home

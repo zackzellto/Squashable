@@ -4,6 +4,24 @@
   word-break: break-all;
 }
 
+Navbar{
+  color: white;
+}
+
+#navbar-brand{
+  color: white;
+  text-shadow:  0 2px 10px #000, 0 2px 20px 
+}
+
+.navbar-toggler{
+  background-color: rgba(255, 255, 255, 0.383);
+  color: white;
+}
+
+#navbar-links{
+  color: white;
+}
+
 html {
   font-size: 14px;
 }
@@ -13,7 +31,5 @@ html {
   }
 }
 
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
+
 

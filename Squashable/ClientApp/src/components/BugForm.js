@@ -32,8 +32,9 @@ export function BugForm() {
                 readOnly
               />
             </Col>
-            <Col md id="bug-date">
+            <Col md id="bug-date-container">
               <Form.Control
+                id="bug-date-form"
                 type="text"
                 value={BugDate}
                 aria-label="Bug Date"
@@ -76,19 +77,7 @@ export function BugForm() {
               <Form.Control id="bug-description-form" type="textarea" />
             </FloatingLabel>
           </div>
-          <div id="bug-status-container">
-            <FloatingLabel controlId="floatingSelectGrid" label="Bug Status">
-              <Form.Select
-                id="bug-select-menu"
-                aria-label="Bug Status select menu"
-              >
-                <option value=""></option>
-                <option value="1">New</option>
-                <option value="2">In Progress</option>
-                <option value="3">Squashed!</option>
-              </Form.Select>
-            </FloatingLabel>
-          </div>
+
           <Row className="mb-3">
             <Col md>
               <div id="bug-priority-container">
@@ -125,17 +114,29 @@ export function BugForm() {
                   </Form.Select>
                 </FloatingLabel>
               </div>
+              <div id="bug-status-container">
+                <FloatingLabel
+                  controlId="floatingSelectGrid"
+                  label="Bug Status"
+                >
+                  <Form.Select
+                    id="bug-select-menu"
+                    aria-label="Bug Status select menu"
+                  >
+                    <option value=""></option>
+                    <option value="1">New</option>
+                    <option value="2">In Progress</option>
+                    <option value="3">Squashed!</option>
+                  </Form.Select>
+                </FloatingLabel>
+              </div>
             </Col>
             <Form.Group as={Col} controlId="formGridZip">
               <Form.Control />
             </Form.Group>
           </Row>
 
-          <Form.Group className="mb-3" id="formGridCheckbox">
-            <Form.Check type="checkbox" label="Check me out" />
-          </Form.Group>
-
-          <Button variant="primary" type="submit">
+          <Button id="buginfo-submit-button" variant="primary" type="submit">
             Submit
           </Button>
         </Form>
