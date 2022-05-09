@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Form,
   Row,
@@ -10,41 +10,65 @@ import {
 import "./BugForm.css";
 import moment from "moment";
 import { ThemeProvider } from "react-bootstrap";
+import axios from "axios";
+
+const date = moment().format("LLL");
 
 export function BugForm() {
-  const BugDate = moment().format("LLL");
+  const [title, setTitle] = useState("");
+  const [createdBy, setCreatedBy] = useState("");
+  const [description, setDescription] = useState("");
+  const [comments, setComments] = useState("");
+  const [priority, setPriority] = useState("");
+  const [status, setStatus] = useState("");
+  const [severity, setSeverity] = useState("");
 
-  useEffect(() => {
-    const squashablePost = {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ 
-            id : "",
-            date: BugDate,
-            createdBy: "",
-            title: "",
-            description: "",
-            comments : "",
-            priority: "",
-            severity : "",
-            status: "",
-         })
-    }
-  }, [])
+  const handleSubmit = (e) => {
+    const apiURL = "https://localhost:7091";
 
-    const 
+    e.preventDefault();
+
+    const bugData = {
+      Title: title,
+      CreatedDate: date,
+      CreatedBy: createdBy,
+      Description: description,
+      Comments: comments,
+      Priority: priority,
+      Status: status,
+      Severity: severity,
+    };
+    console.log(bugData);
+    axios
+      .post(`${apiURL}/api/BugInfo`, bugData)
+      .then((res) => {
+        clearBugData();
+      })
+      .catch((err) => {
+        console.log(err.res.data);
+      });
+  };
+  const clearBugData = () => {
+    setTitle("");
+    setCreatedBy("");
+    setDescription("");
+    setComments("");
+    setPriority("");
+    setStatus("");
+    setSeverity("");
+  };
 
   return (
     <ThemeProvider
       breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}
     >
-      <Container id="bugform-container">
+      <Container className="bugform-container">
         <Form>
-          <Row md id="buginfo-row1">
-            <Col>
+          <Row md className="buginfo-row1">
+            <Col hidden>
               <Form.Control
                 type="text"
-                id="bug-id"
+                className="bug-id"
                 placeholder="Bug ID"
                 aria-label="Bud ID Tracker"
                 size="sm"
@@ -52,11 +76,11 @@ export function BugForm() {
                 readOnly
               />
             </Col>
-            <Col md id="bug-date-container">
+            <Col md className="bug-date-container">
               <Form.Control
-                id="bug-date-form"
+                className="bug-date-form"
                 type="text"
-                value={BugDate}
+                value={date}
                 aria-label="Bug Date"
                 size="sm"
                 disabled
@@ -66,44 +90,64 @@ export function BugForm() {
           </Row>
           <Row className="mb-3">
             <Col md>
-              <div id="bug-title-container">
+              <div className="bug-title-container">
                 <FloatingLabel
                   controlId="floatingInput"
                   label="Bug Title"
                   className="mb-3"
                 >
-                  <Form.Control id="bug-title-form" type="textarea" />
+                  <Form.Control
+                    value={title}
+                    onChange={(e) => setTitle(e.target.value)}
+                    className="bug-title-form"
+                    type="textarea"
+                  />
                 </FloatingLabel>
               </div>
             </Col>
             <Col md>
-              <div id="bug-reporter-container">
+              <div className="bug-reporter-container">
                 <FloatingLabel
                   controlId="floatingInput"
                   label="Reported By"
                   className="mb-3"
                 >
-                  <Form.Control id="bug-reporter-form" type="textarea" />
+                  <Form.Control
+                    value={createdBy}
+                    onChange={(e) => setCreatedBy(e.target.value)}
+                    className="bug-reporter-form"
+                    type="textarea"
+                  />
                 </FloatingLabel>
               </div>
             </Col>
           </Row>
-          <div id="bug-description-container">
+          <div className="bug-description-container">
             <FloatingLabel
               controlId="floatingInput"
               label="Bug Description"
               className="mb-3"
             >
-              <Form.Control id="bug-description-form" type="textarea" />
+              <Form.Control
+                value={description}
+                onChange={(e) => setDescription(e.target.value)}
+                className="bug-description-form"
+                type="textarea"
+              />
             </FloatingLabel>
           </div>
-          <div id="bug-comments-container">
+          <div className="bug-comments-container">
             <FloatingLabel
               controlId="floatingInput"
               label="Comments"
               className="mb-3"
             >
-              <Form.Control id="bug-comments-form" type="textarea" />
+              <Form.Control
+                value={comments}
+                onChange={(e) => setComments(e.target.value)}
+                className="bug-comments-form"
+                type="textarea"
+              />
             </FloatingLabel>
           </div>
 
@@ -115,54 +159,65 @@ export function BugForm() {
                   label="Bug Priority"
                 >
                   <Form.Select
-                    id="bug-select-menu"
+                    value={priority}
+                    className="bug-select-menu"
+                    onChange={(e) => setPriority(e.target.value)}
                     aria-label="Bug Priority select menu"
                   >
-                    <option value=""></option>
-                    <option value="1">High</option>
-                    <option value="2">Medium</option>
-                    <option value="3">Low</option>
+                    <option value="">Select Priority</option>
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
                   </Form.Select>
                 </FloatingLabel>
               </div>
             </Col>
             <Col md>
-              <div id="bug-severity-container">
+              <div className="bug-severity-container">
                 <FloatingLabel
                   controlId="floatingSelectGrid"
                   label="Bug Severity"
                 >
                   <Form.Select
-                    id="bug-select-menu"
+                    value={severity}
+                    className="bug-select-menu"
+                    onChange={(e) => setSeverity(e.target.value)}
                     aria-label="Bug Severity select menu"
                   >
-                    <option value=""></option>
-                    <option value="1">High</option>
-                    <option value="2">Medium</option>
-                    <option value="3">Low</option>
+                    <option value="">Select Severity</option>
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
                   </Form.Select>
                 </FloatingLabel>
               </div>
-              <div id="bug-status-container">
+              <div className="bug-status-container">
                 <FloatingLabel
                   controlId="floatingSelectGrid"
                   label="Bug Status"
                 >
                   <Form.Select
-                    id="bug-select-menu"
+                    value={status}
+                    className="bug-select-menu"
+                    onChange={(e) => setStatus(e.target.value)}
                     aria-label="Bug Status select menu"
                   >
-                    <option value=""></option>
-                    <option value="1">New</option>
-                    <option value="2">In Progress</option>
-                    <option value="3">Squashed!</option>
+                    <option value="">Select Status</option>
+                    <option>New Bug</option>
+                    <option>In Progress</option>
+                    <option>Squashed!</option>
                   </Form.Select>
                 </FloatingLabel>
               </div>
             </Col>
           </Row>
 
-          <Button id="buginfo-submit-button" variant="primary" type="submit">
+          <Button
+            onClick={handleSubmit}
+            className="buginfo-submit-button"
+            variant="primary"
+            type="submit"
+          >
             Track Bug!
           </Button>
         </Form>
