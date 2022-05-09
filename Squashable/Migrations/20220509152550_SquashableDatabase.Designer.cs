@@ -12,8 +12,8 @@ using Squashable;
 namespace Squashable.Migrations
 {
     [DbContext(typeof(BugDataContext))]
-    [Migration("20220506205519_InitSquashableDatabase")]
-    partial class InitSquashableDatabase
+    [Migration("20220509152550_SquashableDatabase")]
+    partial class SquashableDatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -32,23 +32,17 @@ namespace Squashable.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseSerialColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("AssignedTo")
+                    b.Property<string>("Comments")
                         .HasColumnType("text");
 
                     b.Property<string>("CreatedBy")
                         .HasColumnType("text");
 
-                    b.Property<DateTime>("CreatedDate")
+                    b.Property<DateTime>("Date")
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Description")
                         .HasColumnType("text");
-
-                    b.Property<string>("ModifiedBy")
-                        .HasColumnType("text");
-
-                    b.Property<DateTime>("ModifiedDate")
-                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Priority")
                         .HasColumnType("text");
@@ -56,20 +50,10 @@ namespace Squashable.Migrations
                     b.Property<string>("Severity")
                         .HasColumnType("text");
 
-                    b.Property<string>("SolutionDescription")
-                        .HasColumnType("text");
-
-                    b.Property<string>("SolvedBy")
-                        .HasColumnType("text");
-
-                    b.Property<DateTime>("SolvedDate")
-                        .HasColumnType("timestamp with time zone");
-
                     b.Property<string>("Status")
                         .HasColumnType("text");
 
                     b.Property<string>("Title")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");

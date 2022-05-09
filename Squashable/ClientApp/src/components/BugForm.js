@@ -14,6 +14,26 @@ import { ThemeProvider } from "react-bootstrap";
 export function BugForm() {
   const BugDate = moment().format("LLL");
 
+  useEffect(() => {
+    const squashablePost = {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ 
+            id : "",
+            date: BugDate,
+            createdBy: "",
+            title: "",
+            description: "",
+            comments : "",
+            priority: "",
+            severity : "",
+            status: "",
+         })
+    }
+  }, [])
+
+    const 
+
   return (
     <ThemeProvider
       breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}
@@ -143,7 +163,7 @@ export function BugForm() {
           </Row>
 
           <Button id="buginfo-submit-button" variant="primary" type="submit">
-            Submit
+            Track Bug!
           </Button>
         </Form>
       </Container>

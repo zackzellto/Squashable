@@ -8,9 +8,14 @@ namespace Squashable
         public int Id { get; set; }
         [Required]
 
+        [DataType(DataType.DateTime)]
+        public DateTime Date { get; set; }
+
         public string? Title { get; set; }
 
         public string? Description { get; set; }
+
+        public string? Comments { get; set; }
 
         public string? Status { get; set; }
 
@@ -18,21 +23,7 @@ namespace Squashable
 
         public string? Severity { get; set; }
 
-        public string? AssignedTo { get; set; }
-
         public string? CreatedBy { get; set; }
-
-        public DateTime CreatedDate { get; set; }
-
-        public DateTime ModifiedDate { get; set; }
-
-        public string? ModifiedBy { get; set; }
-
-        public string? SolvedBy { get; set; }
-
-        public DateTime SolvedDate { get; set; }
-
-        public string? SolutionDescription { get; set; }
 
     }
 }
