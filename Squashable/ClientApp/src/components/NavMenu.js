@@ -58,11 +58,6 @@ export class NavMenu extends Component {
                     New Bug
                   </NavLink>
                 </NavItem>
-                <NavItem>
-                  <NavLink tag={Link} className="text-dark" to="/fetch-data">
-                    Fetch data
-                  </NavLink>
-                </NavItem>
               </ul>
             </Collapse>
           </Container>
