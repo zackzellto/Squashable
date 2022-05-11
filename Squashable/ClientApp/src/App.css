@@ -1,0 +1,63 @@
+
+html{
+    font-size: 14px;
+    height: max-content;
+}
+
+.App{
+    display: flex;
+}
+
+body {
+    background: linear-gradient(-45deg, #97ef14, #dfb49c, #6addcd, #7863ea);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 15s ease infinite;
+    animation: gradient 15s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+code {
+    color: #E01A76;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.app-container{
+    max-width: 90%;
+    width: 125%
+    ;
+    max-height: 100%;
+    height: 100%;
+    display: block;
+}

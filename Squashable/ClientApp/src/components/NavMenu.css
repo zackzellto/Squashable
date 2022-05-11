@@ -1,35 +1,182 @@
-﻿a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
-}
+﻿/* BEGINNING OF SMALL MOBILE STYLING */
 
-Navbar{
-  color: white;
-}
+@media only screen and (max-width: 600px) {
 
-#navbar-brand{
-  color: white;
-  text-shadow:  0 2px 10px #000, 0 2px 20px 
-}
-
-.navbar-toggler{
-  background-color: rgba(255, 255, 255, 0.383);
-  color: white;
-}
-
-#navbar-links{
-  color: white;
-}
-
-html {
-  font-size: 14px;
-}
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
+  a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
   }
+  
+  #navbar-brand {
+    color: white;
+    text-shadow: 0 2px 10px #000, 0 2px 20px;
+    position: relative;
+    right: 60px;
+  }
+  
+  .navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.383);
+    color: white;
+  }
+  
+  .squashable-logo-nav {
+    width: 50px;
+  }
+  
+  html {
+    font-size: 20px;
+  }
+
 }
+
+/* END OF MOBILE STYLING */
+
+/* BEGINNING OF MODERN MOBILE STYLING */
+
+@media only screen and (min-width: 600px) {
+
+  a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+  }
+  
+  #navbar-brand {
+    color: white;
+    text-shadow: 0 2px 10px #000, 0 2px 20px;
+    position: relative;
+    right: 60px;
+  }
+  
+  .navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.383);
+    color: white;
+  }
+  
+  .squashable-logo-nav {
+    width: 50px;
+  }
+  
+  html {
+    font-size: 20px;
+  }
+
+}
+
+/* END OF MODERN MOBILE SYLING */
+
+/* BEGINNING OF TABLET STYLING */
+
+@media only screen and (min-width: 768px) {
+
+  a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+  }
+  
+  #navbar-brand {
+    color: white;
+    text-shadow: 0 2px 10px #000, 0 2px 20px;
+    position: relative;
+    right: 60px;
+  }
+  
+  .navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.383);
+    color: white;
+  }
+  
+  .squashable-logo-nav {
+    width: 50px;
+  }
+  
+  html {
+    font-size: 20px;
+  }
+
+}
+
+/* END OF TABLET STYLING */
+
+/* BEGINNING OF SMALL LAPTOP SCREENS STYLING */
+
+@media only screen and (min-width: 992px) {
+
+  a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+  }
+  
+  #navbar-brand {
+    color: white;
+    text-shadow: 0 2px 10px #000, 0 2px 20px;
+    position: relative;
+    right: 60px;
+  }
+  
+  .navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.383);
+    color: white;
+  }
+  
+  .squashable-logo-nav {
+    width: 50px;
+  }
+  
+  html {
+    font-size: 20px;
+  }
+
+}
+
+/* END OF SMALL LAPTOP SCREEN STYLING */
+
+/* BEGINNING OF DESKTOPS & LARGER SCREEN STYLING */
+
+@media only screen and (min-width: 1200px) {
+
+
+  #navbar{
+    max-width: 150%;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+  }
+  a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+  }
+  
+  #navbar-brand {
+    color: white;
+    text-shadow: 0 2px 10px #000, 0 2px 20px;
+    position: relative;
+    right: 60px;
+  }
+  
+  .navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.383);
+    color: white;
+  }
+  
+  .squashable-logo-nav {
+    width: 50px;
+  }
+  
+  html {
+    font-size: 20px;
+  }
+
+}
+
+/* END OF DESKTOP & LARGER SCREEN STYLING */
+
+
+
 
 
 

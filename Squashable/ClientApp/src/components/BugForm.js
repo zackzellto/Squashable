@@ -6,8 +6,10 @@ import {
   Button,
   Container,
   FloatingLabel,
+  Image,
 } from "react-bootstrap";
 import "./BugForm.css";
+import SquashableLogo from "../media/squashable-logo.png";
 import moment from "moment";
 import { ThemeProvider } from "react-bootstrap";
 import axios from "axios";
@@ -76,6 +78,13 @@ export function BugForm() {
                 readOnly
               />
             </Col>
+
+            <Image
+              id="squashable-logo"
+              src={SquashableLogo}
+              alt="squashable-logo"
+            ></Image>
+
             <Col md className="bug-date-container">
               <Form.Control
                 className="bug-date-form"

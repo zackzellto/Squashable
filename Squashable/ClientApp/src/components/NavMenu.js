@@ -8,10 +8,12 @@ import {
   NavItem,
   NavLink,
 } from "reactstrap";
+import { Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./NavMenu.css";
+import SquashableLogo from "../media/squashable-logo.png";
 
-export class NavMenu extends Component {
+export default class NavMenu extends Component {
   static displayName = NavMenu.name;
 
   constructor(props) {
@@ -33,10 +35,17 @@ export class NavMenu extends Component {
     return (
       <header>
         <Navbar
+          id="navbar"
           className="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow mb-3"
           light
         >
           <Container>
+            <div>
+              <Image
+                className="squashable-logo-nav"
+                src={SquashableLogo}
+              ></Image>
+            </div>
             <NavbarBrand id="navbar-brand" tag={Link} to="/">
               Squashable
             </NavbarBrand>
@@ -49,13 +58,23 @@ export class NavMenu extends Component {
             >
               <ul id="navbar-links" className="navbar-nav flex-grow">
                 <NavItem>
-                  <NavLink tag={Link} className="text-dark" to="/">
-                    Home
+                  <NavLink tag={Link} className="text-light" to="/login">
+                    Login
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink tag={Link} className="text-dark" to="/bug-form">
-                    New Bug
+                  <NavLink tag={Link} className="text-light" to="/bug-form">
+                    Register
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink tag={Link} className="text-light" to="/pricing">
+                    Pricing
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink tag={Link} className="text-light" to="/contact">
+                    Contact Us
                   </NavLink>
                 </NavItem>
               </ul>

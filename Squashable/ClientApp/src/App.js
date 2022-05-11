@@ -1,16 +1,18 @@
 import React from "react";
 import { Route } from "react-router";
-import { Layout } from "./components/Layout";
+import { Container } from "react-bootstrap";
 import { Home } from "./components/Home";
-
+import Navmenu from "./components/NavMenu";
 import { BugForm } from "./components/BugForm";
-import "./custom.css";
+import "./App.css";
+
 const App = () => {
   return (
-    <Layout>
+    <Container className="app-container">
+      <Navmenu />
       <Route exact path="/" component={Home} />
       <Route path="/bug-form" component={BugForm} />
-    </Layout>
+    </Container>
   );
 };
 

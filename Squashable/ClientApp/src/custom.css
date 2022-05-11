@@ -1,5 +1,5 @@
 ﻿body {
-  background: linear-gradient(-45deg, #ee7752, #e73c3c, #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg, #97ef14, #dfb49c, #6addcd, #7863ea);
   background-size: 400% 400%;
   -webkit-animation: gradient 15s ease infinite;
   animation: gradient 15s ease infinite;
@@ -46,4 +46,5 @@ code {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
+
 
