@@ -5,13 +5,16 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import reportWebVitals from "./reportWebVitals";
+import Auth0ProviderWithHistory from "./components/auth0-provider-with-history";
 
 const baseUrl = document.getElementsByTagName("base")[0].getAttribute("href");
 const rootElement = document.getElementById("root");
 
 ReactDOM.render(
   <BrowserRouter basename={baseUrl}>
-    <App />
+    <Auth0ProviderWithHistory>
+      <App />
+    </Auth0ProviderWithHistory>
   </BrowserRouter>,
   rootElement
 );

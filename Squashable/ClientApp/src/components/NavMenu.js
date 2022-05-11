@@ -12,6 +12,9 @@ import { Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./NavMenu.css";
 import SquashableLogo from "../media/squashable-logo.png";
+import { useAuth0 } from "@auth0/auth0-react";
+import LoginButton from "./login-button";
+import LogoutButton from "./logout-button";
 
 export default class NavMenu extends Component {
   static displayName = NavMenu.name;
@@ -24,6 +27,18 @@ export default class NavMenu extends Component {
       collapsed: true,
     };
   }
+
+function AuthNav() {
+
+  const { isAuthenticated } = useAuth0();
+
+  return (
+    <Navbar className="navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
+      {isAuthenticated ? <LogoutButton /> : <LoginButton />}
+    </Navbar>
+  );
+}
+  
 
   toggleNavbar() {
     this.setState({
@@ -77,6 +92,7 @@ export default class NavMenu extends Component {
                     Contact Us
                   </NavLink>
                 </NavItem>
+                
               </ul>
             </Collapse>
           </Container>
