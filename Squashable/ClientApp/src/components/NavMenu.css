@@ -1,32 +1,18 @@
 ﻿/* BEGINNING OF SMALL MOBILE STYLING */
 
 @media only screen and (max-width: 600px) {
+.navbar-container {
+  width: 100%;
+  max-width: 100%;
+}
 
-  a.navbar-brand {
-    white-space: normal;
-    text-align: center;
-    word-break: break-all;
-  }
-  
-  #navbar-brand {
-    color: white;
-    text-shadow: 0 2px 10px #000, 0 2px 20px;
-    position: relative;
-    right: 60px;
-  }
-  
-  .navbar-toggler {
-    background-color: rgba(255, 255, 255, 0.383);
-    color: white;
-  }
-  
-  .squashable-logo-nav {
-    width: 50px;
-  }
-  
-  html {
-    font-size: 20px;
-  }
+.navbar {
+  width: 150%;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
 
 }
 
@@ -35,32 +21,18 @@
 /* BEGINNING OF MODERN MOBILE STYLING */
 
 @media only screen and (min-width: 600px) {
+.navbar-container {
+  width: 100%;
+  max-width: 100%;
+}
 
-  a.navbar-brand {
-    white-space: normal;
-    text-align: center;
-    word-break: break-all;
-  }
-  
-  #navbar-brand {
-    color: white;
-    text-shadow: 0 2px 10px #000, 0 2px 20px;
-    position: relative;
-    right: 60px;
-  }
-  
-  .navbar-toggler {
-    background-color: rgba(255, 255, 255, 0.383);
-    color: white;
-  }
-  
-  .squashable-logo-nav {
-    width: 50px;
-  }
-  
-  html {
-    font-size: 20px;
-  }
+.navbar {
+  width: 150%;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
 
 }
 
@@ -69,33 +41,18 @@
 /* BEGINNING OF TABLET STYLING */
 
 @media only screen and (min-width: 768px) {
+.navbar-container {
+  width: 100%;
+  max-width: 100%;
+}
 
-  a.navbar-brand {
-    white-space: normal;
-    text-align: center;
-    word-break: break-all;
-  }
-  
-  #navbar-brand {
-    color: white;
-    text-shadow: 0 2px 10px #000, 0 2px 20px;
-    position: relative;
-    right: 60px;
-  }
-  
-  .navbar-toggler {
-    background-color: rgba(255, 255, 255, 0.383);
-    color: white;
-  }
-  
-  .squashable-logo-nav {
-    width: 50px;
-  }
-  
-  html {
-    font-size: 20px;
-  }
-
+.navbar {
+  width: 150%;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
 }
 
 /* END OF TABLET STYLING */
@@ -103,33 +60,18 @@
 /* BEGINNING OF SMALL LAPTOP SCREENS STYLING */
 
 @media only screen and (min-width: 992px) {
+.navbar-container {
+  width: 100%;
+  max-width: 100%;
+}
 
-  a.navbar-brand {
-    white-space: normal;
-    text-align: center;
-    word-break: break-all;
-  }
-  
-  #navbar-brand {
-    color: white;
-    text-shadow: 0 2px 10px #000, 0 2px 20px;
-    position: relative;
-    right: 60px;
-  }
-  
-  .navbar-toggler {
-    background-color: rgba(255, 255, 255, 0.383);
-    color: white;
-  }
-  
-  .squashable-logo-nav {
-    width: 50px;
-  }
-  
-  html {
-    font-size: 20px;
-  }
-
+.navbar {
+  width: 150%;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
 }
 
 /* END OF SMALL LAPTOP SCREEN STYLING */
@@ -137,40 +79,22 @@
 /* BEGINNING OF DESKTOPS & LARGER SCREEN STYLING */
 
 @media only screen and (min-width: 1200px) {
+ .navbar-container{
+    width: 100%;
+    max-width: 100%;
+  }
 
-
-  #navbar{
-    max-width: 150%;
+  .navbar{
+    width: 150%;
+    max-width: 100%;
     justify-content: center;
     align-items: center;
-    margin:auto;
-  }
-  a.navbar-brand {
-    white-space: normal;
-    text-align: center;
-    word-break: break-all;
-  }
-  
-  #navbar-brand {
     color: white;
-    text-shadow: 0 2px 10px #000, 0 2px 20px;
-    position: relative;
-    right: 60px;
-  }
-  
-  .navbar-toggler {
-    background-color: rgba(255, 255, 255, 0.383);
-    color: white;
-  }
-  
-  .squashable-logo-nav {
-    width: 50px;
-  }
-  
-  html {
-    font-size: 20px;
   }
 
+  html{
+    font-size: 18px;
+  }
 }
 
 /* END OF DESKTOP & LARGER SCREEN STYLING */

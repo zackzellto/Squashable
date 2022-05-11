@@ -188,7 +188,7 @@ h3 {
 }
 
 .home-container {
-    width: fit-content;
+    width: 200px;
     max-width: 100%;
     margin: auto;
 }
@@ -227,6 +227,11 @@ h3 {
 
 .landing-page-heading{
     margin-top: 5%;
+    margin-left: 5%;
+    width: fit-content;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 h1 {
     font-size: 90px !important;
@@ -245,23 +250,39 @@ h3 {
 }
 
 .home-container {
-    width: fit-content;
-    max-width: 100%;
+    width: 2000px;
     margin: auto;
+    max-width: 100%;
+    height: fit-content;
 }
 
 .developer-word {
     color: rgb(239, 239, 239);
 }
 
-.device-mockups {
-    position: relative;
-    width: 1300px;
+.iphone-mockup{
+    width: 220px;
     max-width: 100%;
-    margin: auto;
-    margin-top: -200px;
-    margin-left: 300px;
+    margin-left: 100px;
+    margin-top: 200px;
 }
+
+.ipad-mockup{
+    width: 700px;
+    max-width: 100%;
+    margin-left: -140px;
+    margin-top: 50px;
+    z-index: 0;
+}
+
+.device-mockups{
+    width: 1100px;
+    max-width: 100%;
+    margin-left: 250px;
+}
+
+
+
 
 .fade-in-image {
     animation: fadeIn 3s;
