@@ -112,6 +112,7 @@
     font-size: 16px;
     text-align: center;
     margin: auto;
+    color: black;
   }
 
   .login-button {
@@ -126,8 +127,8 @@
   .logout-button{
     font-size: 16px;
     color: white;
-    background-color: #5aff704a;
-    border: 1px solid #00ff1a;
+    background-color: #ff5a5a4a;
+    border: 1px solid #ff0000;
     border-radius: 10px;
     margin-left: 15px;
   }
