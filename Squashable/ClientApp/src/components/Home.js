@@ -1,5 +1,7 @@
 import React from "react";
 import { Image, Button, Container } from "react-bootstrap";
+
+import LoginButton from "../components/Login";
 import DeviceMockups from "../media/device-mockups.png";
 import "./Home.css";
 import "../App.css";
@@ -24,12 +26,8 @@ export function Home() {
           <Image className="squashable-logo" src={SquashableLogo}></Image>
         </div> */}
         </Container>
-        <Button variant="primary" href="/bug-form">
-          Login
-        </Button>
-        <Button className="" variant="secondary" href="/login">
-          Register
-        </Button>
+        <LoginButton />
+
         <div className="about-section">
           <h1>About</h1>
         </div>

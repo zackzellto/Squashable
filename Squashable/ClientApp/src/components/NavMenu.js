@@ -1,5 +1,7 @@
 import React from "react";
 import { Container, Navbar, Nav } from "react-bootstrap";
+import Profile from "../components/Profile";
+import LogoutButton from "../components/Logout";
 import { Link } from "react-router-dom";
 import "./NavMenu.css";
 
@@ -11,19 +13,26 @@ const NavMenu = () => {
   return (
     <Navbar sticky="top" className="navbar" expand="lg">
       <Container className="navbar-container">
-        <Navbar.Brand tag={Link} to="/">
+        <Navbar.Brand variant="light" tag={Link} to="/">
           Squashable
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto nav-links">
-            <Nav.Link variant="light" tag={Link} to="/about">
+            <Profile />
+            <LogoutButton />
+            <Nav.Link
+              className="nav-about-btn"
+              variant="light"
+              tag={Link}
+              to="/about"
+            >
               About
             </Nav.Link>
-            <Nav.Link tag={Link} to="/dashboard">
+            <Nav.Link className="nav-dashboard-btn" tag={Link} to="/dashboard">
               Dashboard
             </Nav.Link>
-            <Nav.Link tag={Link} to="/contact">
+            <Nav.Link className="nav-contact-btn" tag={Link} to="/contact">
               Contact
             </Nav.Link>
           </Nav>
