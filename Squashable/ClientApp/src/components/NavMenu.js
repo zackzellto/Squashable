@@ -1,13 +1,8 @@
 import React from "react";
 import { Container, Navbar, Nav } from "react-bootstrap";
 import Profile from "../components/Profile";
-import LogoutButton from "../components/Logout";
 import { Link } from "react-router-dom";
 import "./NavMenu.css";
-
-// import { useAuth0 } from "@auth0/auth0-react";
-// import LoginButton from "./login-button";
-// import LogoutButton from "./logout-button";
 
 const NavMenu = () => {
   return (

@@ -96,24 +96,38 @@
     font-size: 18px;
   }
 
+  .profile{
+    width: 300px;
+    display: flex;
+  }
+
   .profile-image{
     width: 40px;
     height: 40px;
     border-radius: 35px;
     margin:auto;
-    margin-left: 15px;
   }
 
   .profile-name{
-    font-size: 22px;
-    margin:auto;
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .login-button {
+    font-size: 16px;
+    color: white;
+    background-color: #5aff704a;
+    border: 1px solid #00ff1a;
+    border-radius: 10px;
+    margin-left: 15px;
   }
 
   .logout-button{
     font-size: 16px;
     color: white;
-    background-color: #ff5a6057;
-    border: 1px solid #ff0000;
+    background-color: #5aff704a;
+    border: 1px solid #00ff1a;
     border-radius: 10px;
     margin-left: 15px;
   }
@@ -121,7 +135,7 @@
   .nav-about-btn{
         font-size: 16px;
         color: rgb(255, 34, 34);
-        background-color: #ffffff54;
+        background-color: #ffffff27;
         border: 1px solid #ffffff;
         border-radius: 10px;
         margin-left: 15px;
@@ -130,7 +144,7 @@
   .nav-dashboard-btn{
         font-size: 16px;
         color: white;
-        background-color: #ffffff54;
+        background-color: #ffffff27;
         border: 1px solid #ffffff;
         border-radius: 10px;
         margin-left: 15px;
@@ -139,7 +153,7 @@
   .nav-contact-btn{
         font-size: 16px;
         color: white;
-        background-color: #ffffff54;
+        background-color: #ffffff27;
         border: 1px solid #ffffff;
         border-radius: 10px;
         margin-left: 15px;

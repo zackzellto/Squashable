@@ -9,7 +9,7 @@ html{
 }
 
 body {
-    background: linear-gradient(-45deg, #97ef14, #dfb49c, #6addcd, #7863ea);
+    background: linear-gradient(-45deg, #a542e2, #946de2, #6addcd, #7863ea);
     background-size: 400% 400%;
     -webkit-animation: gradient 15s ease infinite;
     animation: gradient 15s ease infinite;
@@ -55,7 +55,7 @@ code {
 
 .app-container{
     max-width: 90%;
-    width: 100%;
+    width: 125%;
     max-height: 100%;
     height: 100%;
     display: block;
