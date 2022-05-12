@@ -20,7 +20,7 @@ const NavMenu = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto nav-links">
             <Profile />
-            <LogoutButton />
+
             <Nav.Link
               className="nav-about-btn"
               variant="light"
