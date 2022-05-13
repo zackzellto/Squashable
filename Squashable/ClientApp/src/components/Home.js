@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { useAuth0 } from "@auth0/auth0-react";
+import { Link } from "react-router-dom";
 import DeviceMockups from "../media/device-mockups.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Lumburgh from "../media/Testimonials/Lumburgh-modified.png";
@@ -20,7 +21,7 @@ export const Home = () => {
     if (isAuthenticated) {
       return (
         <>
-          <div fluid className="home-container">
+          <div id="home" fluid className="home-container">
             <div className="home-section">
               <div className="landing-page-heading-before-auth">
                 <h2>Welcome to</h2>
@@ -38,7 +39,7 @@ export const Home = () => {
                 alt="device-mockups"
               ></img>
             </div>
-            <Container className="about-container">
+            <Container id="about" className="about-container">
               <div className="about-title">About</div>
               <div className="mission-statement">
                 <p>
@@ -66,7 +67,7 @@ export const Home = () => {
                 </p>
               </div>
             </Container>
-            <Container className="testimonials-container">
+            <Container id="testimonials" className="testimonials-container">
               <Carousel
                 showArrows={true}
                 infiniteLoop={true}
@@ -114,7 +115,7 @@ export const Home = () => {
                 </div>
               </Carousel>
             </Container>
-            <Container className="contact-container">
+            <Container id="contact" className="contact-container">
               <div className="contact-title">Contact</div>
               <div className="contact-form-background">
                 <div class="mb-4">
@@ -182,7 +183,7 @@ export const Home = () => {
     } else {
       return (
         <>
-          <div fluid className="home-container">
+          <div id="home" fluid className="home-container">
             <div className="home-section">
               <div className="landing-page-heading-before-auth">
                 <h2>Welcome to</h2>
@@ -200,7 +201,7 @@ export const Home = () => {
                 alt="device-mockups"
               ></img>
             </div>
-            <Container className="about-container">
+            <Container id="about" className="about-container">
               <div className="about-section">
                 <div className="about-title">About</div>
 
@@ -231,7 +232,7 @@ export const Home = () => {
                 </div>
               </div>
             </Container>
-            <Container className="testimonials-container">
+            <Container id="testimonials" className="testimonials-container">
               <Carousel
                 showArrows={true}
                 infiniteLoop={true}
@@ -279,7 +280,7 @@ export const Home = () => {
                 </div>
               </Carousel>
             </Container>
-            <Container className="contact-container">
+            <Container id="contact" className="contact-container">
               <div className="contact-title">Contact</div>
               <div className="contact-form-background">
                 <div class="mb-4">

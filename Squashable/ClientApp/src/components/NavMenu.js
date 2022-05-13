@@ -15,7 +15,7 @@ const NavMenu = () => {
     return (
       <Navbar sticky="top" className="navbar" expand="lg">
         <Container className="navbar-container">
-          <Navbar.Brand variant="light" tag={Link} to="/">
+          <Navbar.Brand variant="light" href="#home">
             <img
               className="img-fluid squashable-logo"
               src={SquashableLogo}
@@ -28,19 +28,14 @@ const NavMenu = () => {
             <Nav className="ms-auto nav-links">
               <Profile />
 
-              <button className="dashboard-button" to="/dashboard">
+              <button className="dashboard-button" tag={Link} to="#dashboard">
                 Dashboard
               </button>
               <LogoutButton />
-              <Nav.Link
-                className="nav-about-btn"
-                variant="light"
-                tag={Link}
-                to="/about"
-              >
+              <Nav.Link className="nav-about-btn" variant="light" href="#about">
                 About
               </Nav.Link>
-              <Nav.Link className="nav-contact-btn" tag={Link} to="/contact">
+              <Nav.Link className="nav-contact-btn" href="#contact">
                 Contact
               </Nav.Link>
             </Nav>
@@ -52,22 +47,17 @@ const NavMenu = () => {
     return (
       <Navbar sticky="top" className="navbar" expand="lg">
         <Container className="navbar-container">
-          <Navbar.Brand variant="light" tag={Link} to="/">
+          <Navbar.Brand variant="light" href="#home">
             Squashable
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto nav-links">
               <LoginButton />
-              <Nav.Link
-                className="nav-about-btn"
-                variant="light"
-                tag={Link}
-                to="/about"
-              >
+              <Nav.Link className="nav-about-btn" variant="light" href="#about">
                 About
               </Nav.Link>
-              <Nav.Link className="nav-contact-btn" tag={Link} to="/contact">
+              <Nav.Link className="nav-contact-btn" href="/contact">
                 Contact
               </Nav.Link>
             </Nav>

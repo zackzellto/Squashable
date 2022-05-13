@@ -1,6 +1,11 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 import "./Dashboard.css";
 
-export default function Dashboard() {
-  return <div>Dashboard</div>;
+export function Dashboard() {
+  return (
+    <Container id="dashboard">
+      <div>Squashable Dashboard</div>
+    </Container>
+  );
 }
