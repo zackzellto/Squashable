@@ -3,6 +3,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import DeviceMockups from "../media/device-mockups.png";
 import { About } from "./About";
 import { Contact } from "./Contact";
+import { Footer } from "./Footer";
 import "./Home.css";
 import "../App.css";
 
@@ -33,6 +34,7 @@ export const Home = () => {
 
           <About />
           <Contact />
+          <Footer />
         </>
       );
     } else {
@@ -59,6 +61,7 @@ export const Home = () => {
             </div>
             <About />
             <Contact />
+            <Footer />
           </div>
         </>
       );

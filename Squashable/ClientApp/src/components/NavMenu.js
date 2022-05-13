@@ -6,6 +6,7 @@ import "./NavMenu.css";
 import LogoutButton from "./Logout";
 import LoginButton from "./Login";
 import Profile from "./Profile";
+import SquashableLogo from "../media/squashable-logo.png";
 
 const NavMenu = () => {
   const { isAuthenticated } = useAuth0();
@@ -15,7 +16,12 @@ const NavMenu = () => {
       <Navbar sticky="top" className="navbar" expand="lg">
         <Container className="navbar-container">
           <Navbar.Brand variant="light" tag={Link} to="/">
-            Squashable.
+            <img
+              className="img-fluid squashable-logo"
+              src={SquashableLogo}
+              alt="squashable logo
+            "
+            ></img>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
