@@ -80,9 +80,11 @@
 
 @media only screen and (min-width: 1200px) {
  .navbar-container{
+   z-index: 1000;
     width: 100%;
     max-width: 100%;
   }
+
 
   .navbar{
     width: 150%;
@@ -96,24 +98,40 @@
     font-size: 18px;
   }
 
-  .profile{
-    width: 300px;
-    display: flex;
-  }
+.profile-container {
+  width: min-content;
+  max-width: 100%;
+  height: fit-content;
+}
 
-  .profile-image{
-    width: 40px;
-    height: 40px;
-    border-radius: 35px;
-    margin:auto;
-  }
 
-  .profile-name{
-    font-size: 16px;
-    text-align: center;
-    margin: auto;
-    color: black;
-  }
+.profile-image {
+  width: 40px;
+  height: 40px;
+  margin-left: -50px;
+  margin: auto;
+  border-radius: 105px;
+}
+
+.profile-name {
+  font-size: 18px;
+  text-align: center;
+  margin: auto;
+  margin-left: 10px;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.dashboard-button {
+  font-size: 16px;
+  background-color: rgba(109, 247, 151, 0.618);
+  border: rgb(102, 110, 102) solid 1px;
+  border-radius: 10px;
+  margin-left: 30px;
+  width: fit-content;
+  max-width: 100%;
+}
 
   .login-button {
     font-size: 16px;
