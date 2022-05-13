@@ -1,7 +1,8 @@
 import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
-import Profile from "./Profile";
 import DeviceMockups from "../media/device-mockups.png";
+import { About } from "./About";
+import { Contact } from "./Contact";
 import "./Home.css";
 import "../App.css";
 
@@ -30,12 +31,8 @@ export const Home = () => {
             ></img>
           </div>
 
-          <div className="about-section">
-            <h1>About</h1>
-          </div>
-          <div className="contact-section">
-            <h1>Contact</h1>
-          </div>
+          <About />
+          <Contact />
         </>
       );
     } else {
@@ -60,12 +57,8 @@ export const Home = () => {
                 alt="device-mockups"
               ></img>
             </div>
-            <div className="about-section">
-              <h1>About</h1>
-            </div>
-            <div className="contact-section">
-              <h1>Contact</h1>
-            </div>
+            <About />
+            <Contact />
           </div>
         </>
       );

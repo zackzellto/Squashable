@@ -144,7 +144,7 @@
 
   .logout-button{
     font-size: 16px;
-    color: white;
+    color: rgb(0, 0, 0);
     background-color: #ff5a5a4a;
     border: 1px solid #ff0000;
     border-radius: 10px;
@@ -154,16 +154,7 @@
   .nav-about-btn{
         font-size: 16px;
         color: rgb(255, 34, 34);
-        background-color: #ffffff27;
-        border: 1px solid #ffffff;
-        border-radius: 10px;
-        margin-left: 15px;
-  }
-
-  .nav-dashboard-btn{
-        font-size: 16px;
-        color: white;
-        background-color: #ffffff27;
+        background-color: #ffffffa4;
         border: 1px solid #ffffff;
         border-radius: 10px;
         margin-left: 15px;
@@ -172,7 +163,7 @@
   .nav-contact-btn{
         font-size: 16px;
         color: white;
-        background-color: #ffffff27;
+        background-color: #ffffffa4;
         border: 1px solid #ffffff;
         border-radius: 10px;
         margin-left: 15px;
