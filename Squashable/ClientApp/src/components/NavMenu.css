@@ -1,19 +1,18 @@
 ﻿/* BEGINNING OF SMALL MOBILE STYLING */
 
 @media only screen and (max-width: 600px) {
-.navbar-container {
-  width: 100%;
-  max-width: 100%;
-}
+  .navbar-container {
+    width: 100%;
+    max-width: 100%;
+  }
 
-.navbar {
-  width: 150%;
-  max-width: 100%;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-
+  .navbar {
+    width: 150%;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
 }
 
 /* END OF MOBILE STYLING */
@@ -21,19 +20,18 @@
 /* BEGINNING OF MODERN MOBILE STYLING */
 
 @media only screen and (min-width: 600px) {
-.navbar-container {
-  width: 100%;
-  max-width: 100%;
-}
+  .navbar-container {
+    width: 100%;
+    max-width: 100%;
+  }
 
-.navbar {
-  width: 150%;
-  max-width: 100%;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-
+  .navbar {
+    width: 150%;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
 }
 
 /* END OF MODERN MOBILE SYLING */
@@ -41,18 +39,18 @@
 /* BEGINNING OF TABLET STYLING */
 
 @media only screen and (min-width: 768px) {
-.navbar-container {
-  width: 100%;
-  max-width: 100%;
-}
+  .navbar-container {
+    width: 100%;
+    max-width: 100%;
+  }
 
-.navbar {
-  width: 150%;
-  max-width: 100%;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
+  .navbar {
+    width: 150%;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
 }
 
 /* END OF TABLET STYLING */
@@ -60,18 +58,18 @@
 /* BEGINNING OF SMALL LAPTOP SCREENS STYLING */
 
 @media only screen and (min-width: 992px) {
-.navbar-container {
-  width: 100%;
-  max-width: 100%;
-}
+  .navbar-container {
+    width: 100%;
+    max-width: 100%;
+  }
 
-.navbar {
-  width: 150%;
-  max-width: 100%;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
+  .navbar {
+    width: 150%;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
 }
 
 /* END OF SMALL LAPTOP SCREEN STYLING */
@@ -79,17 +77,17 @@
 /* BEGINNING OF DESKTOPS & LARGER SCREEN STYLING */
 
 @media only screen and (min-width: 1200px) {
- .navbar-container{
-   z-index: 1000;
+  .navbar-container {
+    z-index: 1000;
     width: 100%;
     max-width: 100%;
   }
 
-  .squashable-logo{
+  .squashable-logo {
     width: 45px;
   }
 
-  .navbar{
+  .navbar {
     width: 150%;
     max-width: 100%;
     justify-content: center;
@@ -97,55 +95,67 @@
     z-index: 111;
   }
 
-  html{
+  html {
     font-size: 18px;
   }
 
-.profile-container {
-  width: min-content;
-  max-width: 100%;
-  height: fit-content;
-}
+  .profile-container {
+    width: min-content;
+    max-width: 100%;
+    height: fit-content;
+  }
 
+  .profile-image {
+    width: 40px;
+    height: 40px;
+    margin-left: -50px;
+    margin: auto;
+    border-radius: 105px;
+  }
 
-.profile-image {
-  width: 40px;
-  height: 40px;
-  margin-left: -50px;
-  margin: auto;
-  border-radius: 105px;
-}
+  .profile-name {
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
 
-.profile-name {
-  font-size: 18px;
-  text-align: center;
-  margin: auto;
-  margin-left: 10px;
-  justify-content: center;
-  align-items: center;
-  color: black;
-}
+  .dashboard-button {
+    font-size: 16px;
+    text-decoration: black;
+    background-color: rgba(255, 0, 251, 0.659);
+    border: rgb(255, 255, 255) solid 1px;
+    border-radius: 10px;
+    margin-left: 30px;
+    width: fit-content;
+    max-width: 100%;
+  }
 
-.dashboard-button {
-  font-size: 16px;
-  background-color: rgba(54, 225, 105, 0.867);
-  border: rgb(255, 255, 255) solid 1px;
-  border-radius: 10px;
-  margin-left: 30px;
-  width: fit-content;
-  max-width: 100%;
-}
+  a {
+    color: rgb(255, 255, 255);
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  .dashboard-link {
+    text-decoration: none;
+  }
 
   .login-button {
     font-size: 16px;
-    color: rgb(0, 0, 0);
-    background-color: #1eff3c;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 0, 251, 0.659);
     border: 1px solid #ffffff;
     border-radius: 10px;
     margin-left: 15px;
   }
 
-  .logout-button{
+  .logout-button {
     font-size: 16px;
     color: rgb(255, 255, 255);
     background-color: #ff5a5aed;
@@ -154,29 +164,23 @@
     margin-left: 15px;
   }
 
-  .nav-about-btn{
-        font-size: 16px;
-        color: rgb(255, 34, 34);
-        background-color: #ffffffde;
-        border: 1px solid #ffffff;
-        border-radius: 10px;
-        margin-left: 15px;
+  .nav-about-btn {
+    font-size: 16px;
+    color: rgb(255, 34, 34);
+    background-color: #15de22de;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    margin-left: 15px;
   }
 
-  .nav-contact-btn{
-        font-size: 16px;
-        color: white;
-        background-color: #ffffffde;
-        border: 1px solid #ffffff;
-        border-radius: 10px;
-        margin-left: 15px;
+  .nav-contact-btn {
+    font-size: 16px;
+    color: white;
+    background-color: #15de22de;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    margin-left: 15px;
   }
 }
 
 /* END OF DESKTOP & LARGER SCREEN STYLING */
-
-
-
-
-
-

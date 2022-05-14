@@ -4,8 +4,20 @@ import "./Dashboard.css";
 
 export function Dashboard() {
   return (
-    <Container id="dashboard">
-      <div>Squashable Dashboard</div>
+    <Container id="#dashboard" className="dashboard-container">
+      <div className="dashboard-background">
+        {" "}
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div className="dashboard-content-background">
+        <div className="dashboard-sidebar"></div>
+      </div>
     </Container>
   );
 }

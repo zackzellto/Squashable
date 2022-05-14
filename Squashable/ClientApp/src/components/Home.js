@@ -1,7 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { useAuth0 } from "@auth0/auth0-react";
-import { Link } from "react-router-dom";
 import DeviceMockups from "../media/device-mockups.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Lumburgh from "../media/Testimonials/Lumburgh-modified.png";

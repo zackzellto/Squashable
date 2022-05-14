@@ -28,8 +28,10 @@ const NavMenu = () => {
             <Nav className="ms-auto nav-links">
               <Profile />
 
-              <button className="dashboard-button" tag={Link} to="#dashboard">
-                Dashboard
+              <button className="dashboard-button">
+                <Link className="dashboard-link" to="/dashboard">
+                  Dashboard
+                </Link>
               </button>
               <LogoutButton />
               <Nav.Link className="nav-about-btn" variant="light" href="#about">
