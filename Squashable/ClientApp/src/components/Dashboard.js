@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Dashboard.css";
 import "./BugForm.css";
+import "../App.css";
 import { BugForm } from "./BugForm";
 
 export function Dashboard() {
@@ -16,12 +17,12 @@ export function Dashboard() {
       <div className="dashboard-content-background">
         <div className="dashboard-content">
           <Row>
-            <Col>
+            <Col s={12} md={4}>
               <div className="dashboard-card"></div>
             </Col>
           </Row>
           <Row>
-            <Col>
+            <Col s={12} md={8}>
               <BugForm />
             </Col>
           </Row>
