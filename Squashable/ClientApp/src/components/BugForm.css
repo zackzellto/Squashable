@@ -1,120 +1,223 @@
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-    
- 
-
-.bugform-container{
+@media screen and (min-width: 320px) {
+  .bugform-container {
     margin: auto;
     margin-top: 8em;
     background-color: rgba(255, 255, 255, 0.389);
     border: 2px solid rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0.576) 8px 5px 5px 4px; 
+    box-shadow: rgba(0, 0, 0, 0.576) 8px 5px 5px 4px;
     border-radius: 20px;
     padding: 20px;
     max-width: 95%;
-}
+  }
 
-#squashable-logo{
+  #squashable-logo {
     width: 75px;
     margin: auto;
     display: block;
     margin-bottom: 1em;
     position: relative;
     right: 10px;
-}
-    
-.bug-id{
+  }
+
+  .bug-id {
     width: 80px;
     box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
-}
+  }
 
-.bug-date-container{
+  .bug-date-container {
     max-width: fit-content;
     text-align: center;
     margin: auto;
     position: relative;
     left: 10px;
     margin-bottom: 20px;
-}
+  }
 
-.bug-date-form{
+  .bug-date-form {
     box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
     margin: auto;
     text-align: center;
-    
-}
+  }
 
-
-.bug-reporter-container{
+  .bug-reporter-container {
     height: 40px;
-    margin-bottom: 11px
-}
+    margin-bottom: 11px;
+  }
 
-.bug-reporter-form{
+  .bug-reporter-form {
     height: 40px;
     box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
-    
-}
+  }
 
-.bug-title-container{
+  .bug-title-container {
     height: 40px;
     position: relative;
     margin-bottom: 25px;
-} 
+  }
 
-.bug-title-form{
+  .bug-title-form {
     height: 40px;
     position: relative;
     margin-bottom: 25px;
     box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
-}
+  }
 
-.bug-description-form{
+  .bug-description-form {
     height: 80px;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
-}
+  }
 
-.bug-status-container{
+  .bug-status-container {
     margin-top: 25px;
     height: 40px;
     position: relative;
     margin-bottom: 11px;
-}
+  }
 
-.bug-priority-container{
+  .bug-priority-container {
     margin-top: 15px;
     height: 40px;
     position: relative;
     margin-bottom: 11px;
-}
+  }
 
-.bug-severity-container{
+  .bug-severity-container {
     margin-top: 15px;
     height: 40px;
     position: relative;
     margin-bottom: 11px;
-}
+  }
 
-.buginfo-submit-button{
+  .buginfo-submit-button {
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
-}
+  }
 
-.bug-select-menu{
+  .bug-select-menu {
     height: 30px;
     box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
-}
+  }
 
-.bug-comments-container{
+  .bug-comments-container {
     margin-bottom: 15px;
-}
+  }
 
-.bug-comments-form{
+  .bug-comments-form {
     height: 60px;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+  }
 }
 
+@media screen and (min-width: 1200px) {
+  .bugform-container {
+    margin: auto;
+    margin-top: 8em;
+    background-color: rgba(255, 255, 255, 0.389);
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.576) 8px 5px 5px 4px;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 40%;
+  }
 
+  #squashable-logo {
+    width: 75px;
+    margin: auto;
+    display: block;
+    margin-bottom: 1em;
+    position: relative;
+    right: 10px;
+  }
+
+  .bug-id {
+    width: 80px;
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+  }
+
+  .bug-date-container {
+    max-width: fit-content;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    left: 10px;
+    margin-bottom: 20px;
+  }
+
+  .bug-date-form {
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .bug-reporter-container {
+    height: 40px;
+    margin-bottom: 11px;
+  }
+
+  .bug-reporter-form {
+    height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+  }
+
+  .bug-title-container {
+    height: 40px;
+    position: relative;
+    margin-bottom: 25px;
+  }
+
+  .bug-title-form {
+    height: 40px;
+    position: relative;
+    margin-bottom: 25px;
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+  }
+
+  .bug-description-form {
+    height: 80px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+  }
+
+  .bug-status-container {
+    margin-top: 25px;
+    height: 40px;
+    position: relative;
+    margin-bottom: 11px;
+  }
+
+  .bug-priority-container {
+    margin-top: 15px;
+    height: 40px;
+    position: relative;
+    margin-bottom: 11px;
+  }
+
+  .bug-severity-container {
+    margin-top: 15px;
+    height: 40px;
+    position: relative;
+    margin-bottom: 11px;
+  }
+
+  .buginfo-submit-button {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+  }
+
+  .bug-select-menu {
+    height: 30px;
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+  }
+
+  .bug-comments-container {
+    margin-bottom: 15px;
+  }
+
+  .bug-comments-form {
+    height: 60px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+  }
 }

@@ -1,6 +1,8 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import "./Dashboard.css";
+import "./BugForm.css";
+import { BugForm } from "./BugForm";
 
 export function Dashboard() {
   return (
@@ -8,15 +10,22 @@ export function Dashboard() {
       <div className="dashboard-background">
         {" "}
         <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <button></button>
         </ul>
       </div>
       <div className="dashboard-content-background">
-        <div className="dashboard-sidebar"></div>
+        <div className="dashboard-content">
+          <Row>
+            <Col>
+              <div className="dashboard-card"></div>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <BugForm />
+            </Col>
+          </Row>
+        </div>
       </div>
     </Container>
   );

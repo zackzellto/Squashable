@@ -54,7 +54,7 @@ code {
 
 @media screen and (min-width: 1200px) {
   .dashboard-background {
-    background-color: rgba(255, 255, 255, 0.575);
+    background-color: rgba(0, 0, 0, 0);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -67,7 +67,7 @@ code {
   }
 
   .dashboard-content-background {
-    background-color: rgba(238, 0, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.375);
     border-top-left-radius: 120px;
     margin-left: 220px;
     margin-top: 80px;
@@ -76,6 +76,18 @@ code {
     position: absolute;
     top: 0;
     left: 0;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
+    z-index: 1;
+  }
+
+  .dashboard-card {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
     z-index: 1;
   }
 }
