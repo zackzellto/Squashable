@@ -113,14 +113,16 @@
 @media screen and (min-width: 1200px) {
   .bugform-container {
     margin: auto;
-    margin-top: 8em;
+    margin-top: 12em;
+    margin-left: 50px;
+    position: absolute;
     background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
     background-size: 300% 300%;
-    border: 1px solid rgb(255, 255, 255);
-    box-shadow: rgba(255, 255, 255, 0.576) 0px 0px 25px 5px;
+    border: 1px solid rgb(118, 10, 128);
+    box-shadow: rgb(179, 15, 194) 0px 0px 15px 2px;
     border-radius: 20px;
     padding: 20px;
-    max-width: 40%;
+    max-width: 50%;
   }
 
   .bug-id {
@@ -177,10 +179,11 @@
   }
 
   .bug-status-container {
-    margin-top: 25px;
+    margin-top: 15px;
     height: 40px;
     position: relative;
     margin-bottom: 11px;
+    width: 33.3%;
   }
 
   .bug-priority-container {
@@ -188,21 +191,37 @@
     height: 40px;
     position: relative;
     margin-bottom: 11px;
+    width: 33.3%;
   }
 
   .bug-severity-container {
     margin-top: 15px;
     height: 40px;
+    width: 33.3%;
     position: relative;
     margin-bottom: 11px;
   }
 
   .buginfo-submit-button {
-    width: 100%;
+    width: 50%;
+    margin: auto;
+    margin-top: 15px;
     border-radius: 10px;
-    font-size: 16px;
-    background: linear-gradient(-80deg, #faf3f35c, #ffffff, #110b39);
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.687);
+    background: rgb(118, 10, 128);
     box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+  }
+
+  .buginfo-submit-button:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(118, 10, 128);
   }
 
   .bug-select-menu {
@@ -219,6 +238,16 @@
     height: 60px;
     border-radius: 10px;
     position: relative;
+    border: 1px solid rgb(118, 10, 128);
     box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+  }
+
+  .floating-label {
+    color: rgb(118, 10, 128);
+    font-weight: bolder;
+  }
+
+  .dropdown-hide-me {
+    display: hidden;
   }
 }

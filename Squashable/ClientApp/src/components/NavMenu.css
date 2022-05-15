@@ -80,14 +80,17 @@
   .navbar-container {
     z-index: 1000;
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
     max-width: 100%;
-  }
-
-  .squashable-logo {
-    width: 45px;
+    padding: 10px;
+    margin-right: -50px;
   }
 
   .navbar {
+    margin: auto;
     width: 150%;
     max-width: 100%;
     justify-content: center;
@@ -120,18 +123,31 @@
     margin-left: 10px;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: rgb(255, 255, 255);
   }
 
   .dashboard-button {
-    font-size: 16px;
-    text-decoration: black;
-    background-color: rgba(255, 0, 251, 0.659);
-    border: rgb(255, 255, 255) solid 1px;
+    background-image: linear-gradient(
+      to right,
+      #8c26b8 0%,
+      #f700ff 51%,
+      #a112df 100%
+    );
+    border: 1px solid #ffffff;
+    padding: 5px;
+    margin: auto 10px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 5px #eee;
     border-radius: 10px;
-    margin-left: 30px;
-    width: fit-content;
-    max-width: 100%;
+    display: block;
+  }
+  .dashboard-button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
   }
 
   a {
@@ -147,39 +163,110 @@
   }
 
   .login-button {
-    font-size: 16px;
-    color: rgb(255, 255, 255);
-    background-color: rgba(255, 0, 251, 0.659);
+    background-image: linear-gradient(
+      to right,
+      #8c26b8 0%,
+      #f700ff 51%,
+      #a112df 100%
+    );
     border: 1px solid #ffffff;
-    border-radius: 10px;
     margin-left: 15px;
+    padding: 5px;
+    margin: auto 10px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 5px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+  .login-button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
   }
 
   .logout-button {
-    font-size: 16px;
-    color: rgb(255, 255, 255);
-    background-color: #ff5a5aed;
+    background-image: linear-gradient(
+      to right,
+      #8c26b8 0%,
+      #f700ff 51%,
+      #a112df 100%
+    );
     border: 1px solid #ffffff;
+    padding: 5px;
+    margin: auto 10px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 5px #eee;
     border-radius: 10px;
-    margin-left: 15px;
+    display: block;
+  }
+  .logout-button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
   }
 
   .nav-about-btn {
-    font-size: 16px;
-    color: rgb(255, 34, 34);
-    background-color: #15de22de;
+    background-image: linear-gradient(
+      to right,
+      #8c26b8 0%,
+      #f700ff 51%,
+      #a112df 100%
+    );
     border: 1px solid #ffffff;
+    padding: 5px;
+    margin: auto 10px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 5px #eee;
     border-radius: 10px;
-    margin-left: 15px;
+    display: block;
+  }
+  .nav-about-btn:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
   }
 
   .nav-contact-btn {
-    font-size: 16px;
-    color: white;
-    background-color: #15de22de;
+    background-image: linear-gradient(
+      to right,
+      #8c26b8 0%,
+      #f700ff 51%,
+      #a112df 100%
+    );
     border: 1px solid #ffffff;
+    padding: 5px;
+    margin: auto 10px;
+    justify-content: center;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 5px #eee;
     border-radius: 10px;
-    margin-left: 15px;
+    display: block;
+  }
+  .nav-contact-btn:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .linkText {
+    color: white;
+  }
+
+  .nav-brand {
+    font-size: 24px;
+    color: rgb(179, 15, 194);
   }
 }
 

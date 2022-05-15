@@ -79,11 +79,11 @@ export function BugForm() {
               />
             </Col>
 
-            <Image
+            {/* <Image
               id="squashable-logo"
               src={SquashableLogo}
               alt="squashable-logo"
-            ></Image>
+            ></Image> */}
 
             <Col md className="bug-date-container">
               <Form.Control
@@ -103,7 +103,7 @@ export function BugForm() {
                 <FloatingLabel
                   controlId="floatingInput"
                   label="Bug Title"
-                  className="mb-3"
+                  className="mb-3 floating-label"
                 >
                   <Form.Control
                     value={title}
@@ -119,7 +119,7 @@ export function BugForm() {
                 <FloatingLabel
                   controlId="floatingInput"
                   label="Reported By"
-                  className="mb-3"
+                  className="mb-3 floating-label"
                 >
                   <Form.Control
                     value={createdBy}
@@ -135,7 +135,7 @@ export function BugForm() {
             <FloatingLabel
               controlId="floatingInput"
               label="Bug Description"
-              className="mb-3"
+              className="mb-3 floating-label"
             >
               <Form.Control
                 value={description}
@@ -149,7 +149,7 @@ export function BugForm() {
             <FloatingLabel
               controlId="floatingInput"
               label="Comments"
-              className="mb-3"
+              className="mb-3 floating-label"
             >
               <Form.Control
                 value={comments}
@@ -160,65 +160,71 @@ export function BugForm() {
             </FloatingLabel>
           </div>
 
-          <Row className="mb-3">
-            <Col md>
-              <div id="bug-priority-container">
-                <FloatingLabel
-                  controlId="floatingSelectGrid"
-                  label="Bug Priority"
+          <Row className="mb-2">
+            <div className="bug-priority-container">
+              <FloatingLabel
+                controlId="floatingSelectGrid"
+                label="Bug Priority"
+                className="mb-3 floating-label"
+              >
+                <Form.Select
+                  value={priority}
+                  className="bug-select-menu"
+                  onChange={(e) => setPriority(e.target.value)}
+                  aria-label="Bug Priority select menu"
                 >
-                  <Form.Select
-                    value={priority}
-                    className="bug-select-menu"
-                    onChange={(e) => setPriority(e.target.value)}
-                    aria-label="Bug Priority select menu"
-                  >
-                    <option value="">Select Priority</option>
-                    <option value="High">High</option>
-                    <option value="Medium">Medium</option>
-                    <option value="Low">Low</option>
-                  </Form.Select>
-                </FloatingLabel>
-              </div>
-            </Col>
-            <Col md>
-              <div className="bug-severity-container">
-                <FloatingLabel
-                  controlId="floatingSelectGrid"
-                  label="Bug Severity"
+                  <option className="dropdown-hide-me" value="">
+                    Select Priority
+                  </option>
+                  <option value="High">High</option>
+                  <option value="Medium">Medium</option>
+                  <option value="Low">Low</option>
+                </Form.Select>
+              </FloatingLabel>
+            </div>
+
+            <div className="bug-severity-container">
+              <FloatingLabel
+                controlId="floatingSelectGrid"
+                label="Bug Severity"
+                className="mb-3 floating-label"
+              >
+                <Form.Select
+                  value={severity}
+                  className="bug-select-menu"
+                  onChange={(e) => setSeverity(e.target.value)}
+                  aria-label="Bug Severity select menu"
                 >
-                  <Form.Select
-                    value={severity}
-                    className="bug-select-menu"
-                    onChange={(e) => setSeverity(e.target.value)}
-                    aria-label="Bug Severity select menu"
-                  >
-                    <option value="">Select Severity</option>
-                    <option value="High">High</option>
-                    <option value="Medium">Medium</option>
-                    <option value="Low">Low</option>
-                  </Form.Select>
-                </FloatingLabel>
-              </div>
-              <div className="bug-status-container">
-                <FloatingLabel
-                  controlId="floatingSelectGrid"
-                  label="Bug Status"
+                  <option className="dropdown-hide-me" value="">
+                    Select Severity
+                  </option>
+                  <option value="High">High</option>
+                  <option value="Medium">Medium</option>
+                  <option value="Low">Low</option>
+                </Form.Select>
+              </FloatingLabel>
+            </div>
+            <div className="bug-status-container">
+              <FloatingLabel
+                controlId="floatingSelectGrid"
+                label="Bug Status"
+                className="mb-3  floating-label"
+              >
+                <Form.Select
+                  value={status}
+                  className="bug-select-menu"
+                  onChange={(e) => setStatus(e.target.value)}
+                  aria-label="Bug Status select menu"
                 >
-                  <Form.Select
-                    value={status}
-                    className="bug-select-menu"
-                    onChange={(e) => setStatus(e.target.value)}
-                    aria-label="Bug Status select menu"
-                  >
-                    <option value="">Select Status</option>
-                    <option>New Bug</option>
-                    <option>In Progress</option>
-                    <option>Squashed!</option>
-                  </Form.Select>
-                </FloatingLabel>
-              </div>
-            </Col>
+                  <option className="dropdown-hide-me" value="">
+                    Select Status
+                  </option>
+                  <option>New Bug</option>
+                  <option>In Progress</option>
+                  <option>Squashed!</option>
+                </Form.Select>
+              </FloatingLabel>
+            </div>
           </Row>
 
           <Button

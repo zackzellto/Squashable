@@ -10,7 +10,7 @@ html {
 body {
   height: 100vh;
   margin: 0;
-  background: radial-gradient(#5550505c, #645d9c, #3010bc, #20146e, #141718);
+  background: radial-gradient(#5550505c, #645d9c, #7410bc, #20146e, #141718);
   background-repeat: no-repeat;
   background-size: 400% 400%;
 }

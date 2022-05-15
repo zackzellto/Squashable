@@ -10,9 +10,9 @@ html {
 body {
   height: 100vh;
   margin: 0;
-  background: radial-gradient(#5550505c, #645d9c, #3010bc, #20146e, #141718);
+  background: radial-gradient(#5550505c, #af77c9, #250130, #4c0554, #141718);
   background-repeat: no-repeat;
-  background-size: 400% 400%;
+  background-size: 500% 500%;
 }
 
 code {
@@ -62,7 +62,7 @@ code {
     margin: auto;
     margin-top: 50px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
     z-index: 1;
   }

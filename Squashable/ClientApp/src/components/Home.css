@@ -230,8 +230,8 @@
   }
   h1 {
     font-size: 90px !important;
-    color: rgb(126, 234, 124);
-    text-shadow: 0 2px 10px #000, 0 2px 10px;
+    color: rgb(179, 15, 194);
+    text-shadow: 0 1px 5px rgb(255, 255, 255), 0 1px 5px;
   }
 
   h2 {
@@ -254,7 +254,7 @@
   }
 
   .developer-word {
-    color: rgb(0, 0, 0);
+    color: rgb(179, 15, 194);
   }
 
   #device-mockups-before-auth {
@@ -332,19 +332,6 @@
     100% {
       opacity: 1;
     }
-  }
-
-  .squashable-logo {
-    width: 300px;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
   }
 
   .about-container {
