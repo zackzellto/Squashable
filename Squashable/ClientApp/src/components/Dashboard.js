@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./Dashboard.css";
 import "./BugForm.css";
 import { BugForm } from "./BugForm";
+import BugTable from "./BugTable";
 
 export function Dashboard() {
   return (
@@ -20,6 +21,9 @@ export function Dashboard() {
               <BugForm />
             </Col>
           </Row>
+          <Col>
+            <BugTable />
+          </Col>
         </div>
       </div>
     </Container>

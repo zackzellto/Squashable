@@ -6,10 +6,8 @@ import {
   Button,
   Container,
   FloatingLabel,
-  Image,
 } from "react-bootstrap";
 import "./BugForm.css";
-import SquashableLogo from "../media/squashable-logo.png";
 import moment from "moment";
 import { ThemeProvider } from "react-bootstrap";
 import axios from "axios";
