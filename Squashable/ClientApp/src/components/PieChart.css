@@ -6,7 +6,7 @@
   box-shadow: rgb(255, 255, 255) 0px 0px 10px 2px;
   position: relative;
   width: 50%;
-  margin-bottom: -90px;
+  margin-bottom: -115px;
   border-color: rgb(179, 15, 194);
   color: rgb(139, 10, 186);
 }
@@ -17,7 +17,7 @@
   max-width: 100%;
   text-align: center;
   font-weight: bold;
-  margin: auto;
+
   color: #fff;
   margin-left: 250px;
 }
@@ -25,6 +25,7 @@
 .severity-color-high {
   background-color: rgb(89, 0, 121);
   width: 20px;
+  max-width: 100%;
   border: 0.5px solid #ffffff;
   height: 10px;
   float: right;
@@ -34,6 +35,7 @@
 .severity-color-medium {
   background-color: rgb(139, 10, 186);
   width: 20px;
+  max-width: 100%;
   border: 0.5px solid #ffffff;
   height: 10px;
   float: right;
@@ -43,6 +45,7 @@
 .severity-color-low {
   background-color: rgba(199, 73, 245, 0.737);
   width: 20px;
+  max-width: 100%;
   border: 0.5px solid #ffffff;
   height: 10px;
   float: right;
