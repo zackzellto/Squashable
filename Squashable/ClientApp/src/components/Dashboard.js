@@ -4,6 +4,7 @@ import "./Dashboard.css";
 import "./BugForm.css";
 import { BugForm } from "./BugForm";
 import BugTable from "./BugTable";
+import PieChartGraph from "./PieChart";
 
 export function Dashboard() {
   return (
@@ -13,7 +14,9 @@ export function Dashboard() {
         <div className="dashboard-content">
           <Row>
             <Col s={12} md={4}>
-              <div className="dashboard-card"></div>
+              <div className="dashboard-card">
+                <PieChartGraph />
+              </div>
             </Col>
           </Row>
           <Row>
