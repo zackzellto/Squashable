@@ -12,25 +12,38 @@ import "./PieChart.css";
 ChartJS.register(ArcElement, CategoryScale, LinearScale, Title);
 
 let options = {
+  plugins: {
+    datalabels: {
+      formatter: (value, ctx) => {
+        let sum = 0;
+        let dataArr = ctx.chart.data.datasets[0].data;
+        dataArr.map((data) => {
+          sum += data;
+        });
+        let percentage = ((value * 100) / sum).toFixed(2) + "%";
+        return percentage;
+      },
+    },
+    title: {
+      display: true,
+      text: "Severity of Bugs",
+      fontSize: 24,
+      fontColor: "#fff",
+      position: "top",
+    },
+  },
   maintainAspectRatio: true,
-  scales: {
-    y: {
-      beginAtZero: true,
-    },
-  },
+
   responsive: true,
-  legend: {
-    labels: {
-      fontSize: 18,
-    },
-  },
 };
 
 const API_URL = "https://localhost:7091/api/BugInfo";
 
 const PieChart = () => {
   const [data, setData] = useState({
-    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+    type: "pie",
+    labels: ["Red", "Green", "Yellow"],
+
     datasets: [
       {
         label: "Severity of Bugs",
@@ -52,6 +65,7 @@ const PieChart = () => {
           "rgba(255, 159, 64, 1)",
         ],
         borderWidth: 1,
+        hoverOffset: 6,
       },
     ],
   });
@@ -72,7 +86,8 @@ const PieChart = () => {
             severityDataset.push(value.severity);
           }
           setData({
-            labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+            type: "pie",
+            labels: ["Red", "Green", "Yellow"],
             datasets: [
               {
                 label: "Severity of Bugs",
@@ -106,7 +121,7 @@ const PieChart = () => {
 
   return (
     <div>
-      <Pie data={data} height={400} options={options} />
+      <Pie id="myChart" data={data} height={400} options={options} />
     </div>
   );
 };
