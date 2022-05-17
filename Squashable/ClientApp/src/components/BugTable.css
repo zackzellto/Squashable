@@ -16,3 +16,15 @@
   background-size: 300% 300%;
   border-color: rgba(141, 84, 147, 0.579);
 }
+
+.delete-bg {
+  background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
+  border-color: rgba(141, 84, 147, 0.579);
+  box-shadow: rgb(247, 5, 5) 0px 0px 5px 1px;
+}
+
+.update-bg {
+  background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
+  border-color: rgba(141, 84, 147, 0.579);
+  box-shadow: rgb(179, 15, 194) 0px 0px 5px 1px;
+}
