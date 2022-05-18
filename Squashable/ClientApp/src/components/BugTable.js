@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./BugTable.css";
-import { Button } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 import axios from "axios";
 
 const API_URL = "https://localhost:7091/api/BugInfo";
@@ -39,13 +39,6 @@ function BugTable() {
   };
   return (
     <>
-      <input
-        type="text"
-        placeholder="Search Bug"
-        onChange={(e) => {
-          setSearchBug(e.target.value);
-        }}
-      ></input>
       <table className="table bug-table">
         <thead>
           <tr>
