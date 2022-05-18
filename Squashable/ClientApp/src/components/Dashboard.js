@@ -19,11 +19,11 @@ export function Dashboard() {
               </div>
             </Col>
           </Row>
-          {/* <Row>
+          <Row>
             <Col s={12} md={8}>
               <BugForm />
             </Col>
-          </Row> */}
+          </Row>
           <Col>
             <BugTable />
           </Col>

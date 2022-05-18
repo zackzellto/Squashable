@@ -23,6 +23,20 @@ function BugTable() {
     getBugData();
   }, []);
 
+  const deleteBugData = (id, e) => {
+    e.preventDefault();
+    axios
+      .delete(`${API_URL}/${id}`)
+      .then((res) => {
+        const del = bugData.filter((bug) => id !== bug.id);
+        setBugData(del);
+        console.log("DELETE RESPONSE:", res);
+        console.log(res.data);
+      })
+      .catch((err) => {
+        console.log("DELETE ERROR:", err);
+      });
+  };
   return (
     <>
       <input
@@ -32,7 +46,7 @@ function BugTable() {
           setSearchBug(e.target.value);
         }}
       ></input>
-      <table className="table table-hover bug-table">
+      <table className="table bug-table">
         <thead>
           <tr>
             <th>Bug ID</th>
@@ -45,7 +59,7 @@ function BugTable() {
         <tbody>
           {bugData
             .filter((bug) => {
-              if (searchBug == "") {
+              if (searchBug === "") {
                 return bug;
               } else if (
                 bug.title.toLowerCase().includes(searchBug.toLowerCase())
@@ -58,12 +72,15 @@ function BugTable() {
                 <tr>
                   <td>{bug.id}</td>
                   <td>{bug.title}</td>
-                  <td>{bug.createdDate}</td>
+                  <td>{bug.date}</td>
                   <td>
                     <Button className="fa fa-pencil update-bg"></Button>
                   </td>
                   <td>
-                    <Button className="fa fa-trash delete-bg"></Button>
+                    <Button
+                      onClick={(e) => deleteBugData(bug.id, e)}
+                      className="fa fa-trash delete-bg"
+                    ></Button>
                   </td>
                 </tr>
               );

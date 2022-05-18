@@ -1,9 +1,10 @@
 .bug-table {
   border: 1px solid #d6d6d6;
   padding: 10px;
-  width: 30%;
+  width: 40%;
   max-width: 100%;
-  height: 400px;
+  height: 200px;
+  max-height: 100%;
   border-radius: 20px;
   text-align: left;
   color: white;
@@ -23,8 +24,22 @@
   box-shadow: rgb(247, 5, 5) 0px 0px 5px 1px;
 }
 
+.delete-bg:hover {
+  background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
+  border-color: rgba(141, 84, 147, 0.579);
+  box-shadow: rgb(255, 255, 255) 0px 0px 5px 1px;
+  cursor: pointer;
+}
+
 .update-bg {
   background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
   border-color: rgba(141, 84, 147, 0.579);
   box-shadow: rgb(179, 15, 194) 0px 0px 5px 1px;
+}
+
+.update-bg:hover {
+  background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
+  border-color: rgba(141, 84, 147, 0.579);
+  box-shadow: rgb(255, 255, 255) 0px 0px 5px 1px;
+  cursor: pointer;
 }

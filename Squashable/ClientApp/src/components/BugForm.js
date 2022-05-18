@@ -23,9 +23,9 @@ export function BugForm() {
   const [status, setStatus] = useState("");
   const [severity, setSeverity] = useState("");
 
-  const handleSubmit = (e) => {
-    const apiURL = "https://localhost:7091";
+  const apiURL = "https://localhost:7091";
 
+  const handleSubmit = () => {
     const bugData = {
       Title: title,
       CreatedDate: date,
@@ -36,24 +36,15 @@ export function BugForm() {
       Status: status,
       Severity: severity,
     };
-    console.log(bugData);
+
     axios
       .post(`${apiURL}/api/BugInfo`, bugData)
       .then((res) => {
-        clearBugData();
+        console.log("POST RESPONSE:", res);
       })
       .catch((err) => {
-        console.log(err.res.data);
+        console.log("POST ERROR:", err.res.data);
       });
-  };
-  const clearBugData = () => {
-    setTitle("");
-    setCreatedBy("");
-    setDescription("");
-    setComments("");
-    setPriority("");
-    setStatus("");
-    setSeverity("");
   };
 
   return (
