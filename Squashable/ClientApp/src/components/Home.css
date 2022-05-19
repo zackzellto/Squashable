@@ -60,6 +60,64 @@
     display: none;
   }
 
+  .fade-in-image {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-o-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
   hr {
     color: white;
   }
@@ -102,28 +160,54 @@
 /* BEGINNING OF MODERN MOBILE STYLING */
 
 @media only screen and (min-width: 600px) {
+  .landing-page-heading-after-auth {
+    margin-top: 3%;
+    margin-left: 5%;
+    width: fit-content;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .landing-page-heading-before-auth {
+    margin-top: 9%;
+    margin-left: 5%;
+    width: fit-content;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
   h1 {
+    margin-bottom: -20px;
     font-size: 55px !important;
     color: rgb(179, 15, 194);
-    text-shadow: 0 1px 5px rgb(255, 255, 255), 0 1px 5px;
+    text-shadow: 0 1px 2px rgb(255, 255, 255), 0 1px 2px;
+    margin-top: 15px;
   }
 
   h2 {
+    margin-top: 35px;
     font-size: 30px;
+    color: white;
+    margin-bottom: -10px;
   }
 
   h3 {
+    margin-top: 25px;
     font-size: 20px;
+    color: white;
   }
 
   .home-container {
+    margin-top: 15px;
     width: fit-content;
     max-width: 100%;
     margin: auto;
   }
 
   .developer-word {
-    color: rgb(239, 239, 239);
+    color: rgb(226, 92, 239);
   }
 
   .device-mockups {
@@ -132,18 +216,100 @@
     max-width: 100%;
     margin: auto;
     margin-left: 200px;
+    display: none;
   }
 
-  .squashable-logo {
-    width: 300px;
-    height: auto;
+  .fade-in-image {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-o-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  hr {
+    color: white;
+  }
+
+  .about-container {
+    width: fit-content;
     max-width: 100%;
-    max-height: 100%;
-    position: relative;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    float: left;
+    margin-top: 50px;
+  }
+
+  .testimonials-container {
+    width: fit-content;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    margin-top: 150px;
+  }
+
+  .contact-container {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: -200px;
+    margin-top: 100px;
+  }
+
+  .footer-container {
+    width: 100%;
+    max-width: 100%;
     margin: auto;
   }
 }
@@ -153,28 +319,54 @@
 /* BEGINNING OF TABLET STYLING */
 
 @media only screen and (min-width: 768px) {
+  .landing-page-heading-after-auth {
+    margin-top: 3%;
+    margin-left: 5%;
+    width: fit-content;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .landing-page-heading-before-auth {
+    margin-top: 9%;
+    margin-left: 5%;
+    width: fit-content;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
   h1 {
+    margin-bottom: -20px;
     font-size: 55px !important;
     color: rgb(179, 15, 194);
-    text-shadow: 0 1px 5px rgb(255, 255, 255), 0 1px 5px;
+    text-shadow: 0 1px 2px rgb(255, 255, 255), 0 1px 2px;
+    margin-top: 15px;
   }
 
   h2 {
+    margin-top: 35px;
     font-size: 30px;
+    color: white;
+    margin-bottom: -10px;
   }
 
   h3 {
+    margin-top: 25px;
     font-size: 20px;
+    color: white;
   }
 
   .home-container {
+    margin-top: 15px;
     width: fit-content;
     max-width: 100%;
     margin: auto;
   }
 
   .developer-word {
-    color: rgb(239, 239, 239);
+    color: rgb(226, 92, 239);
   }
 
   .device-mockups {
@@ -183,18 +375,100 @@
     max-width: 100%;
     margin: auto;
     margin-left: 200px;
+    display: none;
   }
 
-  .squashable-logo {
-    width: 300px;
-    height: auto;
+  .fade-in-image {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-o-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  hr {
+    color: white;
+  }
+
+  .about-container {
+    width: fit-content;
     max-width: 100%;
-    max-height: 100%;
-    position: relative;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    float: left;
+    margin-top: 50px;
+  }
+
+  .testimonials-container {
+    width: fit-content;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    margin-top: 150px;
+  }
+
+  .contact-container {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: -200px;
+    margin-top: 100px;
+  }
+
+  .footer-container {
+    width: 100%;
+    max-width: 100%;
     margin: auto;
   }
 }
@@ -204,28 +478,54 @@
 /* BEGINNING OF SMALL LAPTOP SCREENS STYLING */
 
 @media only screen and (min-width: 992px) {
+  .landing-page-heading-after-auth {
+    margin-top: 3%;
+    margin-left: 5%;
+    width: fit-content;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .landing-page-heading-before-auth {
+    margin-top: 9%;
+    margin-left: 5%;
+    width: fit-content;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
   h1 {
+    margin-bottom: -20px;
     font-size: 55px !important;
     color: rgb(179, 15, 194);
-    text-shadow: 0 1px 5px rgb(255, 255, 255), 0 1px 5px;
+    text-shadow: 0 1px 2px rgb(255, 255, 255), 0 1px 2px;
+    margin-top: 15px;
   }
 
   h2 {
+    margin-top: 35px;
     font-size: 30px;
+    color: white;
+    margin-bottom: -10px;
   }
 
   h3 {
+    margin-top: 25px;
     font-size: 20px;
+    color: white;
   }
 
   .home-container {
-    width: 200px;
+    margin-top: 15px;
+    width: fit-content;
     max-width: 100%;
     margin: auto;
   }
 
   .developer-word {
-    color: rgb(239, 239, 239);
+    color: rgb(226, 92, 239);
   }
 
   .device-mockups {
@@ -234,18 +534,95 @@
     max-width: 100%;
     margin: auto;
     margin-left: 200px;
+    display: none;
   }
 
-  .squashable-logo {
-    width: 300px;
-    height: auto;
+  .fade-in-image {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-o-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  hr {
     max-width: 100%;
-    max-height: 100%;
-    position: relative;
+    color: white;
+  }
+
+  .about-container {
+    width: fit-content;
+    max-width: 70%;
+    margin: auto;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  }
+
+  #testimonials {
+    margin-top: 50px;
+    margin: auto;
+  }
+
+  .contact-container {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: -200px;
+    margin-top: 100px;
+  }
+
+  .footer-container {
+    width: 100%;
+    max-width: 100%;
     margin: auto;
   }
 }
@@ -379,7 +756,7 @@
   }
 
   .about-container {
-    width: fit-content;
+    width: 50%;
     max-width: 100%;
     margin: auto;
     display: flex;
@@ -389,15 +766,13 @@
   }
 
   .testimonials-container {
-    width: fit-content;
+    width: 50%;
     max-width: 100%;
     margin: auto;
-    display: flex;
-    margin-top: 150px;
   }
 
   .contact-container {
-    width: 100%;
+    width: 50%;
     max-width: 100%;
     margin: auto;
     margin-bottom: -200px;
@@ -412,3 +787,158 @@
 }
 
 /* END OF DESKTOP & LARGER SCREEN STYLING */
+
+@media only screen and (min-width: 1400px) {
+  .landing-page-heading-after-auth {
+    margin-top: 3%;
+    margin-left: 5%;
+    width: fit-content;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .landing-page-heading-before-auth {
+    margin-top: 9%;
+    margin-left: 5%;
+    width: fit-content;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 90px !important;
+    color: rgb(179, 15, 194);
+    text-shadow: 0 1px 5px rgb(255, 255, 255), 0 1px 5px;
+  }
+
+  h2 {
+    font-size: 40px;
+    color: white;
+  }
+
+  h3 {
+    font-size: 30px;
+    color: white;
+  }
+
+  .home-container {
+    width: 2000px;
+    margin: auto;
+    max-width: 100%;
+    margin-top: -84px;
+    height: fit-content;
+    min-height: 100vh;
+  }
+
+  .developer-word {
+    color: rgb(179, 15, 194);
+  }
+
+  #device-mockups-before-auth {
+    width: 60%;
+    max-width: 100%;
+    display: flex;
+    margin-left: 650px;
+    margin-top: -30px;
+    -webkit-filter: drop-shadow(2px 5px 21px #222);
+    filter: drop-shadow(2px 5px 21px #222);
+  }
+
+  #device-mockups-after-auth {
+    width: 60%;
+    max-width: 100%;
+    display: flex;
+    margin-left: 650px;
+    -webkit-filter: drop-shadow(2px 5px 21px #222);
+    filter: drop-shadow(2px 5px 21px #222);
+  }
+
+  .fade-in-image {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-o-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .about-container {
+    width: 50%;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-top: 50px;
+  }
+
+  .testimonials-container {
+    width: 50%;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .contact-container {
+    width: 50%;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: -200px;
+    margin-top: 100px;
+  }
+
+  .footer-container {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+  }
+}

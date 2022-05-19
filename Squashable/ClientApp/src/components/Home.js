@@ -67,7 +67,7 @@ export const Home = () => {
                 </p>
               </div>
             </Container>
-            <hr />
+
             <Container id="testimonials" className="testimonials-container">
               <Carousel
                 showArrows={true}
@@ -235,6 +235,7 @@ export const Home = () => {
                 </div>
               </div>
             </Container>
+
             <Container id="#testimonials" className="testimonials-container">
               <Carousel
                 showArrows={true}
