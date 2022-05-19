@@ -8,13 +8,13 @@ function StatusIndicators() {
   const [bugData, setBugData] = useState({});
 
   useEffect(() => {
-    const newStatus = "New";
-    const inProgressStatus = "In Progress";
-    const squashedStatus = "Squashed";
-
     axios
       .get(API_URL)
       .then((res) => {
+        const newStatus = "New Bug";
+        const inProgressStatus = "In Progress";
+        const squashedStatus = "Squashed!";
+
         const data = res.data;
         const newBugs = data.filter((bug) => bug.status === newStatus);
         const inProgressBugs = data.filter(
