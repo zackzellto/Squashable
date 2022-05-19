@@ -2,16 +2,197 @@
 
 @media only screen and (max-width: 600px) {
   .navbar-container {
+    z-index: 1000;
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
     max-width: 100%;
   }
 
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
   .navbar {
+    margin: auto;
     width: 150%;
     max-width: 100%;
     justify-content: center;
     align-items: center;
+    z-index: 111;
+  }
+
+  html {
+    font-size: 18px;
+  }
+
+  .profile-container {
+    width: max-content;
+    max-width: 50%;
+    height: fit-content;
+  }
+
+  .profile-image {
+    width: 30px;
+    height: 30px;
+    margin-left: -50px;
+    margin: auto;
+    border-radius: 105px;
+  }
+
+  .profile-name {
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+  }
+
+  .dashboard-button {
+    background-image: linear-gradient(
+      to right,
+      #8c26b8 0%,
+      #f700ff 51%,
+      #a112df 100%
+    );
+    border: 1px solid #ffffff;
+    padding: 5px;
+    margin: auto 10px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
     color: white;
+    box-shadow: 0 0 5px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+  .dashboard-button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+
+  a {
+    color: rgb(255, 255, 255);
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  .dashboard-link {
+    text-decoration: none;
+  }
+
+  .login-button {
+    background-image: linear-gradient(
+      to right,
+      #8c26b8 0%,
+      #f700ff 51%,
+      #a112df 100%
+    );
+    border: 1px solid #ffffff;
+    margin-left: 15px;
+    padding: 5px;
+    margin: auto 10px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 5px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+  .login-button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .logout-button {
+    background-image: linear-gradient(
+      to right,
+      #8c26b8 0%,
+      #f700ff 51%,
+      #a112df 100%
+    );
+    border: 1px solid #ffffff;
+    padding: 5px;
+    margin: auto 10px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 5px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+  .logout-button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .nav-about-btn {
+    background-image: linear-gradient(
+      to right,
+      #8c26b8 0%,
+      #f700ff 51%,
+      #a112df 100%
+    );
+    border: 1px solid #ffffff;
+    padding: 5px;
+    margin: auto 10px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 5px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+  .nav-about-btn:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .nav-contact-btn {
+    background-image: linear-gradient(
+      to right,
+      #8c26b8 0%,
+      #f700ff 41%,
+      #a112df 80%
+    );
+    border: 1px solid #ffffff;
+    padding: 5px;
+    margin: auto 10px;
+    justify-content: center;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 5px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+  .nav-contact-btn:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .linkText {
+    color: white;
+  }
+
+  .nav-brand {
+    font-size: 24px;
+    color: rgb(179, 15, 194);
   }
 }
 

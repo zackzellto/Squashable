@@ -9,10 +9,9 @@ html {
 
 body {
   height: 100vh;
-  margin: 0;
-  background: radial-gradient(#5550505c, #645d9c, #7410bc, #20146e, #141718);
+  background: white;
   background-repeat: no-repeat;
-  background-size: 400% 400%;
+  background-size: 540% 540%;
 }
 
 code {
@@ -26,9 +25,5 @@ code {
 }
 
 .app-container {
-  max-width: 90%;
-  width: 125%;
-  max-height: 100%;
-  height: 100%;
-  display: block;
+  margin: 0;
 }

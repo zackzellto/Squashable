@@ -38,9 +38,10 @@ export const Home = () => {
                 alt="device-mockups"
               ></img>
             </div>
-            <Container id="about" className="about-container">
-              <div className="about-title">About</div>
-              <div className="mission-statement">
+            <Container id="#about" className="about-container">
+              <div className="about-title">About Squashable</div>
+              <hr />
+              <div className="mission-statement shadow-lg p-3 mb-5 rounded">
                 <p>
                   Squashable is based on an industry standard practice of
                   tracking issues that arise in software engineering. It was
@@ -66,6 +67,7 @@ export const Home = () => {
                 </p>
               </div>
             </Container>
+            <hr />
             <Container id="testimonials" className="testimonials-container">
               <Carousel
                 showArrows={true}
@@ -80,7 +82,7 @@ export const Home = () => {
                   <div className="myCarousel">
                     <h3>Sophia</h3>
                     <h4>Android</h4>
-                    <p>
+                    <p className="testimonial-text">
                       This app is incredible, it helped my creators keep track
                       of so many issues when I was in development. Thanks
                       Squashable!
@@ -93,7 +95,7 @@ export const Home = () => {
                   <div className="myCarousel">
                     <h3>Mr. Al Ien</h3>
                     <h4>Sovereign Citizen/Tech Enthusiast</h4>
-                    <p>
+                    <p className="testimonial-text">
                       I wish we had this technology on my pla...I mean in my
                       area, it would make debugging interdimensional travel so
                       much easier! I mean...what?
@@ -106,7 +108,7 @@ export const Home = () => {
                   <div className="myCarousel">
                     <h3>Bill</h3>
                     <h4>Tech Boss</h4>
-                    <p>
+                    <p className="testimonial-text">
                       Yeah....I'm gonna need to find the engineer who made this
                       app and have him come work for me ASAP....mmmkay?
                     </p>
@@ -114,8 +116,9 @@ export const Home = () => {
                 </div>
               </Carousel>
             </Container>
-            <Container id="contact" className="contact-container">
+            <Container id="#contact" className="contact-container">
               <div className="contact-title">Contact</div>
+              <hr />
               <div className="contact-form-background">
                 <div class="mb-4">
                   <input
@@ -182,7 +185,7 @@ export const Home = () => {
     } else {
       return (
         <>
-          <div id="home" fluid className="home-container">
+          <div id="#home" fluid className="home-container">
             <div className="home-section">
               <div className="landing-page-heading-before-auth">
                 <h2>Welcome to</h2>
@@ -200,9 +203,10 @@ export const Home = () => {
                 alt="device-mockups"
               ></img>
             </div>
-            <Container id="about" className="about-container">
+            <Container id="#about" className="about-container">
               <div className="about-section">
-                <div className="about-title">About</div>
+                <p className="about-title">About Squashable.</p>
+                <hr />
 
                 <div className="mission-statement">
                   <p>
@@ -231,7 +235,7 @@ export const Home = () => {
                 </div>
               </div>
             </Container>
-            <Container id="testimonials" className="testimonials-container">
+            <Container id="#testimonials" className="testimonials-container">
               <Carousel
                 showArrows={true}
                 infiniteLoop={true}
@@ -245,7 +249,7 @@ export const Home = () => {
                   <div className="myCarousel">
                     <h3>Sophia</h3>
                     <h4>Android</h4>
-                    <p>
+                    <p className="testimonial-text">
                       This app is incredible, it helped my creators keep track
                       of so many issues when I was in development. Thanks
                       Squashable!
@@ -258,7 +262,7 @@ export const Home = () => {
                   <div className="myCarousel">
                     <h3>Mr. Al Ien</h3>
                     <h4>Sovereign Citizen/Tech Enthusiast</h4>
-                    <p>
+                    <p className="testimonial-text">
                       I wish we had this technology on my pla...I mean in my
                       area, it would make debugging interdimensional travel so
                       much easier! I mean...what?
@@ -271,7 +275,7 @@ export const Home = () => {
                   <div className="myCarousel">
                     <h3>Bill</h3>
                     <h4>Tech Boss</h4>
-                    <p>
+                    <p className="testimonial-text">
                       Yeah....I'm gonna need to find the engineer who made this
                       app and have him come work for me ASAP....mmmkay?
                     </p>
@@ -279,7 +283,7 @@ export const Home = () => {
                 </div>
               </Carousel>
             </Container>
-            <Container id="contact" className="contact-container">
+            <Container id="#contact" className="contact-container">
               <div className="contact-title">Contact</div>
               <div className="contact-form-background">
                 <div class="mb-4">

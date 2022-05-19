@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import {
   Chart as ChartJS,
-  ArcElement,
+  BarElement,
   CategoryScale,
   LinearScale,
   Title,
 } from "chart.js";
-import { Pie } from "react-chartjs-2";
+import { Bar } from "react-chartjs-2";
 import "./PieChart.css";
 
-ChartJS.register(ArcElement, CategoryScale, LinearScale, Title);
+ChartJS.register(BarElement, CategoryScale, LinearScale, Title);
 
 let options = {
   plugins: {
@@ -41,8 +41,8 @@ const API_URL = "https://localhost:7091/api/BugInfo";
 
 const PieChart = () => {
   const [data, setData] = useState({
-    type: "pie",
-    labels: ["Red", "Green", "Yellow"],
+    type: "bar",
+    labels: ["Low", "Medium", "High"],
 
     datasets: [
       {
@@ -86,25 +86,25 @@ const PieChart = () => {
             severityDataset.push(value.severity);
           }
           setData({
-            type: "pie",
-            labels: ["Red", "Green", "Yellow"],
+            type: "bar",
+            labels: ["Low", "Medium", "High"],
             datasets: [
               {
                 label: "Severity of Bugs",
                 data: [
-                  severityDataset.filter((item) => item === "High").length,
-                  severityDataset.filter((item) => item === "Medium").length,
                   severityDataset.filter((item) => item === "Low").length,
-                ], // Red
+                  severityDataset.filter((item) => item === "Medium").length,
+                  severityDataset.filter((item) => item === "High").length,
+                ],
                 backgroundColor: [
-                  "rgba(255, 99, 132, 0.2)",
                   "rgba(17, 216, 10, 0.2)",
                   "rgba(255, 206, 86, 0.2)",
+                  "rgba(255, 99, 132, 0.2)",
                 ],
                 borderColor: [
-                  "rgba(255, 99, 132, 1)",
                   "rgba(17, 216, 10, 1)",
                   "rgba(255, 206, 86, 1)",
+                  "rgba(255, 99, 132, 1)",
                 ],
                 borderWidth: 1,
               },
@@ -121,7 +121,7 @@ const PieChart = () => {
 
   return (
     <div>
-      <Pie id="myChart" data={data} height={400} options={options} />
+      <Bar id="myChart" data={data} height={300} options={options} />
     </div>
   );
 };

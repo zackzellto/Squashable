@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./BugTable.css";
-import { Button } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 import axios from "axios";
 
 const API_URL = "https://localhost:7091/api/BugInfo";
@@ -24,6 +24,8 @@ function BugTable() {
   }, []);
 
   const deleteBugData = (id, e) => {
+    window && window.confirm("Are you sure you want to delete this bug?");
+    window.location.reload();
     axios
       .delete(`${API_URL}/${id}`)
       .then((res) => {
@@ -37,55 +39,58 @@ function BugTable() {
       });
   };
   return (
-    <>
-      <table className="table bug-table">
-        <thead>
-          <input
-            className="bug-search-bar"
-            type="text"
-            placeholder="Search Bug"
-            onChange={(e) => {
-              setSearchBug(e.target.value);
-            }}
-          ></input>
-          <tr>
-            <th>Bug ID</th>
-            <th>Title</th>
-            <th>Priority</th>
-            <th>Status</th>
-            <th>Delete</th>
-          </tr>
-        </thead>
-        <tbody>
-          {bugData
-            .filter((bug) => {
-              if (searchBug === "") {
-                return bug;
-              } else if (
-                bug.title.toLowerCase().includes(searchBug.toLowerCase())
-              ) {
-                return bug;
-              }
-            })
-            .map((bug) => {
-              return (
-                <tr>
-                  <td>{bug.id}</td>
-                  <td>{bug.title}</td>
-                  <td>{bug.priority}</td>
-                  <td>{bug.status}</td>
-                  <td>
-                    <Button
-                      onClick={(e) => deleteBugData(bug.id, e)}
-                      className="fa fa-trash delete-bg"
-                    ></Button>
-                  </td>
-                </tr>
-              );
-            })}
-        </tbody>
+    <Container className="container">
+      <table className="table-striped table-hover bug-table">
+        <input
+          className="bug-search-bar"
+          type="text"
+          placeholder="Search Bug"
+          onChange={(e) => {
+            setSearchBug(e.target.value);
+          }}
+        ></input>
+
+        <div className="scrollit">
+          <thead>
+            <tr>
+              <th scope="col">Bug ID</th>
+              <th scope="col">Title</th>
+              <th scope="col">Priority</th>
+              <th scope="col">Status</th>
+              <th scope="col">Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            {bugData
+              .filter((bug) => {
+                if (searchBug === "") {
+                  return bug;
+                } else if (
+                  bug.title.toLowerCase().includes(searchBug.toLowerCase())
+                ) {
+                  return bug;
+                }
+              })
+              .map((bug) => {
+                return (
+                  <tr>
+                    <td>{bug.id}</td>
+                    <td>{bug.title}</td>
+                    <td>{bug.priority}</td>
+                    <td>{bug.status}</td>
+                    <td>
+                      <Button
+                        onClick={(e) => deleteBugData(bug.id, e)}
+                        className="fa fa-trash delete-bg"
+                      ></Button>
+                    </td>
+                  </tr>
+                );
+              })}
+          </tbody>
+        </div>
       </table>
-    </>
+    </Container>
   );
 }
 

@@ -1,25 +1,20 @@
 .about-title {
-  font-size: 40px;
-  text-align: start;
-  margin-bottom: 50px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+hr {
+  color: white;
 }
 
 .mission-statement {
-  background-color: rgba(227, 215, 229, 0.653);
-  width: 650px;
-  font-size: 20px;
-  max-width: 100%;
-  border: rgb(255, 255, 255) solid 1px;
-  height: fit-content;
-  border-radius: 15px;
-  margin: auto;
-  padding: 30px;
-  text-align: left;
-  margin-bottom: 20px;
-  box-shadow: 0px 0px 10px rgba(206, 6, 224, 0.837);
+  background-color: rgba(249, 248, 248, 0.808);
 }
 
 p {
   text-indent: 25px;
   margin: auto;
+  font-size: 14px;
 }

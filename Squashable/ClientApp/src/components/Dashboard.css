@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  height: 100vh;
+  height: 50vh;
   margin: 0;
   background: radial-gradient(#5550505c, #af77c9, #250130, #4c0554, #141718);
   background-repeat: no-repeat;
