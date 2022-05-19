@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Dashboard.css";
 import "./BugForm.css";
 import { BugForm } from "./BugForm";
 import BugTable from "./BugTable";
 import PieChart from "./PieChart";
+import StatusIndicators from "./StatusIndicators";
 
 export function Dashboard() {
   return (
@@ -18,6 +19,7 @@ export function Dashboard() {
                 <PieChart />
               </div>
             </Col>
+            <StatusIndicators />
           </Row>
           <Row>
             <Col s={12} md={8}>

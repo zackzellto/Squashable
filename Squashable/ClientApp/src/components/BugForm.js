@@ -25,7 +25,7 @@ export function BugForm() {
 
   const apiURL = "https://localhost:7091";
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
     const bugData = {
       Title: title,
       CreatedDate: date,

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./BugTable.css";
-import { Button, Container } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import axios from "axios";
 
 const API_URL = "https://localhost:7091/api/BugInfo";
@@ -24,7 +24,6 @@ function BugTable() {
   }, []);
 
   const deleteBugData = (id, e) => {
-    e.preventDefault();
     axios
       .delete(`${API_URL}/${id}`)
       .then((res) => {
@@ -41,11 +40,19 @@ function BugTable() {
     <>
       <table className="table bug-table">
         <thead>
+          <input
+            className="bug-search-bar"
+            type="text"
+            placeholder="Search Bug"
+            onChange={(e) => {
+              setSearchBug(e.target.value);
+            }}
+          ></input>
           <tr>
             <th>Bug ID</th>
             <th>Title</th>
-            <th>Date</th>
-            <th>Update</th>
+            <th>Priority</th>
+            <th>Status</th>
             <th>Delete</th>
           </tr>
         </thead>
@@ -65,10 +72,8 @@ function BugTable() {
                 <tr>
                   <td>{bug.id}</td>
                   <td>{bug.title}</td>
-                  <td>{bug.date}</td>
-                  <td>
-                    <Button className="fa fa-pencil update-bg"></Button>
-                  </td>
+                  <td>{bug.priority}</td>
+                  <td>{bug.status}</td>
                   <td>
                     <Button
                       onClick={(e) => deleteBugData(bug.id, e)}
