@@ -39,7 +39,7 @@ function BugTable() {
       });
   };
   return (
-    <Container className="container">
+    <Container className="container bug-table-container">
       <table className="table-striped table-hover bug-table">
         <input
           className="bug-search-bar"

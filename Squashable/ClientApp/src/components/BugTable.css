@@ -1,33 +1,97 @@
-.bug-table {
-  border-radius: 20px;
-  text-align: center;
-  color: white;
+/* All devices (landscape phones, up to 576px) */
+@media only screen and (max-width: 576px) {
+  .bug-table {
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    font-size: 10px;
+    top: 700px;
+    right: 20px;
+    padding: 20px;
+    width: max-content;
+    box-shadow: rgb(179, 15, 194) 0px 0px 15px 2px;
+    background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
+    background-size: 300% 300%;
+  }
 
-  box-shadow: rgb(179, 15, 194) 0px 0px 15px 2px;
-  background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
-  background-size: 300% 300%;
+  .bug-table-container {
+    width: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .scrollit {
+    overflow-y: scroll;
+    height: 320px;
+    justify-content: center;
+  }
+
+  .delete-bg {
+    background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
+    border-color: rgba(141, 84, 147, 0.579);
+
+    box-shadow: rgb(247, 5, 5) 0px 0px 5px 1px;
+  }
+
+  .delete-bg:hover {
+    background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
+    border-color: rgba(141, 84, 147, 0.579);
+    box-shadow: rgb(255, 255, 255) 0px 0px 5px 1px;
+    cursor: pointer;
+  }
+
+  .bug-search-bar {
+    height: 30px;
+    padding: 5px;
+    color: white;
+    width: 200px;
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: rgb(255, 255, 255) 0px 0px 5px 1px;
+  }
+
+  .bug-search-bar::placeholder {
+    color: rgb(86, 74, 74);
+  }
 }
 
-.scrollit {
-  overflow-y: scroll;
-  height: 320px;
-  justify-content: center;
-}
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+  .bug-table {
+    border-radius: 20px;
+    text-align: center;
+    color: white;
 
-.delete-bg {
-  background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
-  border-color: rgba(141, 84, 147, 0.579);
-  box-shadow: rgb(247, 5, 5) 0px 0px 5px 1px;
-}
+    box-shadow: rgb(179, 15, 194) 0px 0px 15px 2px;
+    background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
+    background-size: 300% 300%;
+  }
 
-.delete-bg:hover {
-  background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
-  border-color: rgba(141, 84, 147, 0.579);
-  box-shadow: rgb(255, 255, 255) 0px 0px 5px 1px;
-  cursor: pointer;
-}
+  .scrollit {
+    overflow-y: scroll;
+    height: 320px;
+    justify-content: center;
+  }
 
-/* .bug-search-bar {
+  .delete-bg {
+    background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
+    border-color: rgba(141, 84, 147, 0.579);
+    box-shadow: rgb(247, 5, 5) 0px 0px 5px 1px;
+  }
+
+  .delete-bg:hover {
+    background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
+    border-color: rgba(141, 84, 147, 0.579);
+    box-shadow: rgb(255, 255, 255) 0px 0px 5px 1px;
+    cursor: pointer;
+  }
+
+  /* .bug-search-bar {
   height: 30px;
   padding: 5px;
   color: white;
@@ -45,3 +109,208 @@
 .bug-search-bar::placeholder {
   color: rgb(86, 74, 74);
 } */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .bug-table {
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+
+    box-shadow: rgb(179, 15, 194) 0px 0px 15px 2px;
+    background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
+    background-size: 300% 300%;
+  }
+
+  .scrollit {
+    overflow-y: scroll;
+    height: 320px;
+    justify-content: center;
+  }
+
+  .delete-bg {
+    background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
+    border-color: rgba(141, 84, 147, 0.579);
+    box-shadow: rgb(247, 5, 5) 0px 0px 5px 1px;
+  }
+
+  .delete-bg:hover {
+    background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
+    border-color: rgba(141, 84, 147, 0.579);
+    box-shadow: rgb(255, 255, 255) 0px 0px 5px 1px;
+    cursor: pointer;
+  }
+
+  /* .bug-search-bar {
+  height: 30px;
+  padding: 5px;
+  color: white;
+  width: 100px;
+  max-width: 100%;
+  margin-left: 500px;
+
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: rgb(255, 255, 255) 0px 0px 5px 1px;
+}
+
+.bug-search-bar::placeholder {
+  color: rgb(86, 74, 74);
+} */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .bug-table {
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+
+    box-shadow: rgb(179, 15, 194) 0px 0px 15px 2px;
+    background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
+    background-size: 300% 300%;
+  }
+
+  .scrollit {
+    overflow-y: scroll;
+    height: 320px;
+    justify-content: center;
+  }
+
+  .delete-bg {
+    background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
+    border-color: rgba(141, 84, 147, 0.579);
+    box-shadow: rgb(247, 5, 5) 0px 0px 5px 1px;
+  }
+
+  .delete-bg:hover {
+    background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
+    border-color: rgba(141, 84, 147, 0.579);
+    box-shadow: rgb(255, 255, 255) 0px 0px 5px 1px;
+    cursor: pointer;
+  }
+
+  /* .bug-search-bar {
+  height: 30px;
+  padding: 5px;
+  color: white;
+  width: 100px;
+  max-width: 100%;
+  margin-left: 500px;
+
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: rgb(255, 255, 255) 0px 0px 5px 1px;
+}
+
+.bug-search-bar::placeholder {
+  color: rgb(86, 74, 74);
+} */
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .bug-table {
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+
+    box-shadow: rgb(179, 15, 194) 0px 0px 15px 2px;
+    background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
+    background-size: 300% 300%;
+  }
+
+  .scrollit {
+    overflow-y: scroll;
+    height: 320px;
+    justify-content: center;
+  }
+
+  .delete-bg {
+    background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
+    border-color: rgba(141, 84, 147, 0.579);
+    box-shadow: rgb(247, 5, 5) 0px 0px 5px 1px;
+  }
+
+  .delete-bg:hover {
+    background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
+    border-color: rgba(141, 84, 147, 0.579);
+    box-shadow: rgb(255, 255, 255) 0px 0px 5px 1px;
+    cursor: pointer;
+  }
+
+  /* .bug-search-bar {
+  height: 30px;
+  padding: 5px;
+  color: white;
+  width: 100px;
+  max-width: 100%;
+  margin-left: 500px;
+
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: rgb(255, 255, 255) 0px 0px 5px 1px;
+}
+
+.bug-search-bar::placeholder {
+  color: rgb(86, 74, 74);
+} */
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media only screen and (min-width: 1400px) {
+  .bug-table {
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+
+    box-shadow: rgb(179, 15, 194) 0px 0px 15px 2px;
+    background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
+    background-size: 300% 300%;
+  }
+
+  .scrollit {
+    overflow-y: scroll;
+    height: 320px;
+    justify-content: center;
+  }
+
+  .delete-bg {
+    background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
+    border-color: rgba(141, 84, 147, 0.579);
+    box-shadow: rgb(247, 5, 5) 0px 0px 5px 1px;
+  }
+
+  .delete-bg:hover {
+    background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
+    border-color: rgba(141, 84, 147, 0.579);
+    box-shadow: rgb(255, 255, 255) 0px 0px 5px 1px;
+    cursor: pointer;
+  }
+
+  /* .bug-search-bar {
+  height: 30px;
+  padding: 5px;
+  color: white;
+  width: 100px;
+  max-width: 100%;
+  margin-left: 500px;
+
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: rgb(255, 255, 255) 0px 0px 5px 1px;
+}
+
+.bug-search-bar::placeholder {
+  color: rgb(86, 74, 74);
+} */
+}

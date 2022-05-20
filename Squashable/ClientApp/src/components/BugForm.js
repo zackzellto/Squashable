@@ -58,6 +58,7 @@ export function BugForm() {
             <Col hidden>
               <Form.Control
                 type="text"
+                style={{ height: "30px" }}
                 className="bug-id"
                 placeholder="Bug ID"
                 aria-label="Bud ID Tracker"
@@ -71,6 +72,7 @@ export function BugForm() {
               <Form.Control
                 className="bug-date-form"
                 type="text"
+                style={{ height: "30px" }}
                 value={date}
                 aria-label="Bug Date"
                 size="sm"
@@ -89,9 +91,11 @@ export function BugForm() {
                 >
                   <Form.Control
                     value={title}
+                    style={{ height: "30px" }}
                     onChange={(e) => setTitle(e.target.value)}
                     className="bug-title-form"
                     type="textarea"
+                    size="sm"
                   />
                 </FloatingLabel>
               </div>
@@ -105,6 +109,7 @@ export function BugForm() {
                 >
                   <Form.Control
                     value={createdBy}
+                    style={{ height: "30px" }}
                     onChange={(e) => setCreatedBy(e.target.value)}
                     className="bug-reporter-form"
                     type="textarea"
@@ -121,6 +126,7 @@ export function BugForm() {
             >
               <Form.Control
                 value={description}
+                style={{ height: "100px" }}
                 onChange={(e) => setDescription(e.target.value)}
                 className="bug-description-form"
                 type="textarea"
@@ -135,6 +141,7 @@ export function BugForm() {
             >
               <Form.Control
                 value={comments}
+                style={{ height: "30px" }}
                 onChange={(e) => setComments(e.target.value)}
                 className="bug-comments-form"
                 type="textarea"
@@ -151,9 +158,9 @@ export function BugForm() {
               >
                 <Form.Select
                   value={priority}
+                  style={{ height: "30px" }}
                   className="bug-select-menu"
                   onChange={(e) => setPriority(e.target.value)}
-                  aria-label="Bug Priority select menu"
                 >
                   <option className="dropdown-hide-me" value="">
                     Select Priority
@@ -173,6 +180,7 @@ export function BugForm() {
               >
                 <Form.Select
                   value={severity}
+                  style={{ height: "30px" }}
                   className="bug-select-menu"
                   onChange={(e) => setSeverity(e.target.value)}
                   aria-label="Bug Severity select menu"
@@ -194,6 +202,7 @@ export function BugForm() {
               >
                 <Form.Select
                   value={status}
+                  style={{ height: "30px" }}
                   className="bug-select-menu"
                   onChange={(e) => setStatus(e.target.value)}
                   aria-label="Bug Status select menu"

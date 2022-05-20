@@ -1,3 +1,26 @@
+@media only screen and (max-width: 576px) {
+  .about-title {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  hr {
+    color: white;
+  }
+
+  .mission-statement {
+    background-color: rgba(249, 248, 248, 0.808);
+  }
+
+  p {
+    text-indent: 25px;
+    margin: auto;
+    font-size: 14px;
+  }
+}
+
 @media only screen and (min-width: 576px) {
   .about-title {
     font-size: 20px;
@@ -103,6 +126,8 @@
   }
 
   .mission-statement {
+    padding: 20px;
+    border-radius: 20px;
     background-color: rgba(249, 248, 248, 0.808);
   }
 

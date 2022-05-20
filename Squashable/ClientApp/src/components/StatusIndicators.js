@@ -36,18 +36,24 @@ function StatusIndicators() {
 
   return (
     <div className="container">
-      <div className="row">
-        <div className="status-card col">
-          New <br /> <div className="newbug-value col">{bugData.newBugs}</div>
-        </div>
-        <div className="status-card col">
-          In Progress <br />{" "}
-          <div className="inprogress-value col">{bugData.inProgressBugs}</div>
-        </div>
+      <div className="row bug-status-information">
+        <div className="col-md-4">
+          <div className="status-card col">
+            <div className="bug-status-title col">Bug Status Information</div>
+            <div className="newbug-value col">
+              {" "}
+              <div className="status-text">New</div> {bugData.newBugs}
+            </div>
 
-        <div className="status-card col">
-          Squashed <br />{" "}
-          <div className="squashed-value col">{bugData.squashedBugs}</div>
+            <div className="inprogress-value col">
+              <div className="status-text">In Progress</div>
+              {bugData.inProgressBugs}
+            </div>
+            <div className="squashed-value col">
+              <div className="status-text">Squashed</div>
+              {bugData.squashedBugs}
+            </div>
+          </div>
         </div>
       </div>
     </div>

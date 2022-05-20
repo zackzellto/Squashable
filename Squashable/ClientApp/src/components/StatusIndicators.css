@@ -1,24 +1,199 @@
-.status-card {
-  color: white;
+/* All devices (landscape phones, up to 576px) */
+@media only screen and (max-width: 576px) {
+  .status-card {
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    position: relative;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top: 800px;
+    box-shadow: rgb(179, 15, 194) 0px 0px 15px 2px;
+    background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
+    background-size: 300% 300%;
+  }
+
+  .bug-status-title {
+    font-size: 12px;
+    margin: auto;
+  }
+
+  .status-text {
+    color: white;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .bug-status-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inprogress-value {
+    margin: auto;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(223, 252, 0);
+  }
+
+  .newbug-value {
+    margin: auto;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(6, 178, 63);
+  }
+
+  .squashed-value {
+    margin: auto;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(255, 0, 0);
+  }
 }
 
-.inprogress-value {
-  margin: auto;
-  text-align: center;
-  font-size: 60px;
-  color: rgb(223, 252, 0);
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+  .status-card {
+    color: white;
+  }
+
+  .inprogress-value {
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+    color: rgb(223, 252, 0);
+  }
+
+  .newbug-value {
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+    color: rgb(6, 178, 63);
+  }
+
+  .squashed-value {
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+    color: rgb(255, 0, 0);
+  }
 }
 
-.newbug-value {
-  margin: auto;
-  text-align: center;
-  font-size: 60px;
-  color: rgb(6, 178, 63);
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .status-card {
+    color: white;
+  }
+
+  .inprogress-value {
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+    color: rgb(223, 252, 0);
+  }
+
+  .newbug-value {
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+    color: rgb(6, 178, 63);
+  }
+
+  .squashed-value {
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+    color: rgb(255, 0, 0);
+  }
 }
 
-.squashed-value {
-  margin: auto;
-  text-align: center;
-  font-size: 60px;
-  color: rgb(255, 0, 0);
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .status-card {
+    color: white;
+  }
+
+  .inprogress-value {
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+    color: rgb(223, 252, 0);
+  }
+
+  .newbug-value {
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+    color: rgb(6, 178, 63);
+  }
+
+  .squashed-value {
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+    color: rgb(255, 0, 0);
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .status-card {
+    color: white;
+  }
+
+  .inprogress-value {
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+    color: rgb(223, 252, 0);
+  }
+
+  .newbug-value {
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+    color: rgb(6, 178, 63);
+  }
+
+  .squashed-value {
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+    color: rgb(255, 0, 0);
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media only screen and (min-width: 1400px) {
+  .status-card {
+    color: white;
+  }
+
+  .inprogress-value {
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+    color: rgb(223, 252, 0);
+  }
+
+  .newbug-value {
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+    color: rgb(6, 178, 63);
+  }
+
+  .squashed-value {
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+    color: rgb(255, 0, 0);
+  }
 }

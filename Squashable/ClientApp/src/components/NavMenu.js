@@ -12,7 +12,7 @@ const NavMenu = () => {
 
   if (isAuthenticated) {
     return (
-      <Navbar sticky="top" className="navbar" expand="lg">
+      <Navbar sticky="top" className="navbar text-white" expand="lg">
         <Container className="navbar-container">
           <Navbar.Brand
             className="text-white nav-brand"

@@ -121,7 +121,13 @@ const PieChart = () => {
 
   return (
     <div>
-      <Bar id="myChart" data={data} height={300} options={options} />
+      <Bar
+        className="bar-graph"
+        id="myChart"
+        data={data}
+        height={400}
+        options={options}
+      />
     </div>
   );
 };
