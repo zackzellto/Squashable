@@ -14,21 +14,21 @@ export function Dashboard() {
       <div className="dashboard-content-background">
         <div className="dashboard-content">
           <Row>
-            <Col s={12} md={4}>
-              <div className="dashboard-card">
-                <PieChart />
-              </div>
-            </Col>
+            <div className="dashboard-card">
+              <PieChart />
+            </div>
+
             <StatusIndicators />
           </Row>
           <Row>
-            <Col s={12} md={8}>
+            <Col s={12} md={12}>
               <BugForm />
             </Col>
+
+            <Col>
+              <BugTable />
+            </Col>
           </Row>
-          <Col>
-            <BugTable />
-          </Col>
         </div>
       </div>
     </Container>

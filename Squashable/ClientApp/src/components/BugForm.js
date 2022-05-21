@@ -154,12 +154,12 @@ export function BugForm() {
               <FloatingLabel
                 controlId="floatingSelectGrid"
                 label="Bug Priority"
-                className="mb-3 floating-label"
+                className="mb-3 floating-label-priority"
               >
                 <Form.Select
                   value={priority}
                   style={{ height: "30px" }}
-                  className="bug-select-menu"
+                  className="bug-select-menu-priority col"
                   onChange={(e) => setPriority(e.target.value)}
                 >
                   <option className="dropdown-hide-me" value="">
@@ -176,12 +176,12 @@ export function BugForm() {
               <FloatingLabel
                 controlId="floatingSelectGrid"
                 label="Bug Severity"
-                className="mb-3 floating-label"
+                className="mb-3 floating-label-severity"
               >
                 <Form.Select
                   value={severity}
                   style={{ height: "30px" }}
-                  className="bug-select-menu"
+                  className="bug-select-menu-severity col"
                   onChange={(e) => setSeverity(e.target.value)}
                   aria-label="Bug Severity select menu"
                 >
@@ -198,12 +198,12 @@ export function BugForm() {
               <FloatingLabel
                 controlId="floatingSelectGrid"
                 label="Bug Status"
-                className="mb-3  floating-label"
+                className="mb-3  floating-label-status"
               >
                 <Form.Select
                   value={status}
                   style={{ height: "30px" }}
-                  className="bug-select-menu"
+                  className="bug-select-menu-status col"
                   onChange={(e) => setStatus(e.target.value)}
                   aria-label="Bug Status select menu"
                 >

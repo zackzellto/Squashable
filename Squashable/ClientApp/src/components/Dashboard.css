@@ -25,7 +25,7 @@ code {
   border-color: #1861ac;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
   .dashboard-background {
     background-color: rgba(0, 0, 0, 0);
     background-size: cover;
@@ -47,16 +47,22 @@ code {
     text-align: left;
     color: white;
     position: relative;
-    top: 750px;
+    top: 850px;
+    margin: auto;
     box-shadow: rgb(179, 15, 194) 0px 0px 15px 2px;
     border-collapse: separate !important;
     background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
     background-size: 300% 300%;
     border-color: rgb(179, 15, 194);
   }
+
+  .footer-filler {
+    height: 20px;
+    margin-top: 20px;
+  }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 576px) {
   .dashboard-background {
     background-color: rgba(0, 0, 0, 0);
     background-size: cover;
@@ -70,34 +76,15 @@ code {
     z-index: -1;
   }
 
-  .dashboard-content-background {
-    background-color: rgba(0, 0, 0, 0.705);
-    border-top-left-radius: 120px;
-    margin-left: 80px;
-    margin-top: 80px;
-    max-height: 100%;
-    height: calc(100vh - 80px);
-    width: calc(100vw - 80px);
-    max-width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.75);
-    z-index: 1;
-  }
-
   .dashboard-card {
     border: 1px solid #d6d6d6;
     padding: 10px;
-    width: 50%;
     max-width: 100%;
     border-radius: 20px;
     text-align: left;
     color: white;
-    float: left;
-    margin-left: 50px;
-    margin-top: 70px;
-    margin-bottom: -50px;
+    position: relative;
+    top: 850px;
     box-shadow: rgb(179, 15, 194) 0px 0px 15px 2px;
     border-collapse: separate !important;
     background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
@@ -114,40 +101,21 @@ code {
     background-position: center;
     max-width: 100%;
     max-height: 100%;
-    width: calc(100% - 20px);
-    top: 0;
-    left: 0;
     z-index: -1;
-  }
-
-  .dashboard-content-background {
-    background-color: rgba(0, 0, 0, 0.705);
-    border-top-left-radius: 120px;
-    margin-left: 80px;
-    margin-top: 80px;
-    max-height: 100%;
-    height: calc(100vh - 80px);
-    width: calc(100vw - 80px);
-    max-width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.75);
-    z-index: 1;
   }
 
   .dashboard-card {
     border: 1px solid #d6d6d6;
     padding: 10px;
-    width: 50%;
     max-width: 100%;
     border-radius: 20px;
     text-align: left;
     color: white;
-    float: left;
-    margin-left: 50px;
-    margin-top: 70px;
-    margin-bottom: -50px;
+    height: 500px;
+    width: 400px;
+    margin: auto;
+    position: relative;
+    top: 700px;
     box-shadow: rgb(179, 15, 194) 0px 0px 15px 2px;
     border-collapse: separate !important;
     background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
@@ -164,10 +132,25 @@ code {
     background-position: center;
     max-width: 100%;
     max-height: 100%;
-    width: calc(100% - 20px);
-    top: 0;
-    left: 0;
     z-index: -1;
+  }
+
+  .dashboard-card {
+    border: 1px solid #d6d6d6;
+    padding: 10px;
+    max-width: 100%;
+    border-radius: 20px;
+    text-align: left;
+    margin-top: -500px;
+    margin-left: 590px;
+    color: white;
+    height: 300px;
+    width: 300px;
+    box-shadow: rgb(179, 15, 194) 0px 0px 15px 2px;
+    border-collapse: separate !important;
+    background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
+    background-size: 300% 300%;
+    border-color: rgb(179, 15, 194);
   }
 
   .dashboard-content-background {
@@ -184,25 +167,6 @@ code {
     left: 0;
     box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.75);
     z-index: 1;
-  }
-
-  .dashboard-card {
-    border: 1px solid #d6d6d6;
-    padding: 10px;
-    width: 50%;
-    max-width: 100%;
-    border-radius: 20px;
-    text-align: left;
-    color: white;
-    float: left;
-    margin-left: 50px;
-    margin-top: 70px;
-    margin-bottom: -50px;
-    box-shadow: rgb(179, 15, 194) 0px 0px 15px 2px;
-    border-collapse: separate !important;
-    background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
-    background-size: 300% 300%;
-    border-color: rgb(179, 15, 194);
   }
 }
 
@@ -214,40 +178,23 @@ code {
     background-position: center;
     max-width: 100%;
     max-height: 100%;
-    width: calc(100% - 20px);
-    top: 0;
-    left: 0;
     z-index: -1;
-  }
-
-  .dashboard-content-background {
-    background-color: rgba(0, 0, 0, 0.705);
-    border-top-left-radius: 120px;
-    margin-left: 80px;
-    margin-top: 80px;
-    max-height: 100%;
-    height: calc(100vh - 80px);
-    width: calc(100vw - 80px);
-    max-width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.75);
-    z-index: 1;
   }
 
   .dashboard-card {
     border: 1px solid #d6d6d6;
     padding: 10px;
-    width: 50%;
     max-width: 100%;
     border-radius: 20px;
     text-align: left;
     color: white;
-    float: left;
-    margin-left: 50px;
-    margin-top: 70px;
-    margin-bottom: -50px;
+    height: 350px;
+    width: 350px;
+    margin: auto;
+    position: relative;
+    top: 50px;
+
+    right: 400px;
     box-shadow: rgb(179, 15, 194) 0px 0px 15px 2px;
     border-collapse: separate !important;
     background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
@@ -264,40 +211,22 @@ code {
     background-position: center;
     max-width: 100%;
     max-height: 100%;
-    width: calc(100% - 20px);
-    top: 0;
-    left: 0;
     z-index: -1;
-  }
-
-  .dashboard-content-background {
-    background-color: rgba(0, 0, 0, 0.705);
-    border-top-left-radius: 120px;
-    margin-left: 80px;
-    margin-top: 80px;
-    max-height: 100%;
-    height: calc(100vh - 80px);
-    width: calc(100vw - 80px);
-    max-width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.75);
-    z-index: 1;
   }
 
   .dashboard-card {
     border: 1px solid #d6d6d6;
     padding: 10px;
-    width: 50%;
     max-width: 100%;
     border-radius: 20px;
     text-align: left;
     color: white;
-    float: left;
-    margin-left: 50px;
-    margin-top: 70px;
-    margin-bottom: -50px;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    position: relative;
+    top: 550px;
+    left: -470px;
     box-shadow: rgb(179, 15, 194) 0px 0px 15px 2px;
     border-collapse: separate !important;
     background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);

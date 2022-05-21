@@ -1,6 +1,6 @@
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 576px) {
   .bugform-container {
-    margin-top: -500px;
+    margin-top: -450px;
     background-color: rgba(255, 255, 255, 0.389);
     border: 2px solid rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.576) 8px 5px 5px 4px;
@@ -73,13 +73,232 @@
   }
 }
 
-@media screen and (min-width: 600px) {
+@media only screen and (min-width: 576px) {
+  .bugform-container {
+    margin-top: -600px;
+    background-color: rgba(255, 255, 255, 0.389);
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.576) 8px 5px 5px 4px;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .bug-id {
+    width: 80px;
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+  }
+
+  .bug-date-container {
+    max-width: fit-content;
+    font-size: 10px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .bug-reporter-form {
+    height: 20px;
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+  }
+
+  .bug-title-form {
+    height: 40px;
+
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+  }
+
+  .bug-description-form {
+    height: 80px;
+    margin-top: -15px;
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+  }
+
+  .buginfo-submit-button {
+    width: 100%;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.687);
+    background-image: linear-gradient(
+      to right,
+      #8c26b8 0%,
+      #f700ff 51%,
+      #a112df 100%
+    );
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+  }
+
+  .bug-select-menu {
+    height: 120px;
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+  }
+
+  .bug-comments-form {
+    height: 110px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .bug-id {
+    width: 80px;
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+  }
+
+  .bug-date-container {
+    max-width: fit-content;
+    font-size: 10px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .bug-reporter-form {
+    height: 20px;
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+  }
+
+  .bug-title-form {
+    height: 40px;
+
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+  }
+
+  .bug-description-form {
+    height: 80px;
+    margin-top: -15px;
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+  }
+
+  .buginfo-submit-button {
+    width: 100%;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.687);
+    background-image: linear-gradient(
+      to right,
+      #8c26b8 0%,
+      #f700ff 51%,
+      #a112df 100%
+    );
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+  }
+
+  .bug-select-menu {
+    height: 120px;
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+  }
+
+  .bug-comments-form {
+    height: 110px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .bugform-container {
+    background-color: rgba(255, 255, 255, 0.389);
+    border: 2px solid rgb(255, 255, 255);
+    width: 950px;
+    box-shadow: rgba(0, 0, 0, 0.576) 8px 5px 5px 4px;
+    border-radius: 20px;
+    padding: 20px;
+
+    margin-top: 550px;
+    max-width: 95%;
+  }
+
+  .bug-id {
+    width: 80px;
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+  }
+
+  .bug-date-container {
+    max-width: fit-content;
+    font-size: 10px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .bug-reporter-form {
+    height: 20px;
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+  }
+
+  .bug-title-form {
+    height: 40px;
+
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+  }
+
+  .bug-description-form {
+    height: 80px;
+    margin-top: -15px;
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+  }
+
+  .buginfo-submit-button {
+    width: 100%;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.687);
+    background-image: linear-gradient(
+      to right,
+      #8c26b8 0%,
+      #f700ff 51%,
+      #a112df 100%
+    );
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+  }
+
+  .bug-select-menu {
+    height: 120px;
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+  }
+
+  .bug-comments-form {
+    height: 110px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
   .bugform-container {
     margin-top: -550px;
     background-color: rgba(255, 255, 255, 0.389);
     border: 2px solid rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.576) 8px 5px 5px 4px;
     border-radius: 20px;
+    width: 1250px;
+    margin-top: 100px;
     padding: 20px;
     max-width: 95%;
   }
@@ -148,15 +367,16 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 1400px) {
   .bugform-container {
-    margin-top: -550px;
     background-color: rgba(255, 255, 255, 0.389);
     border: 2px solid rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.576) 8px 5px 5px 4px;
     border-radius: 20px;
     padding: 20px;
     max-width: 95%;
+    position: relative;
+    margin-top: -300px;
   }
 
   .bug-id {
@@ -192,7 +412,7 @@
   .buginfo-submit-button {
     width: 100%;
     margin: auto;
-    margin-top: 15px;
+    margin-top: -120px;
     border-radius: 10px;
     font-size: 20px;
     text-align: center;
@@ -212,232 +432,27 @@
   }
 
   .bug-select-menu {
-    height: 120px;
-    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
-  }
-
-  .bug-comments-form {
-    height: 110px;
-    position: relative;
-    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .bugform-container {
-    margin-top: -550px;
-    background-color: rgba(255, 255, 255, 0.389);
-    border: 2px solid rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0.576) 8px 5px 5px 4px;
-    border-radius: 20px;
-    padding: 20px;
-    max-width: 95%;
-  }
-
-  .bug-id {
-    width: 80px;
-    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
-  }
-
-  .bug-date-container {
-    max-width: fit-content;
-    font-size: 10px;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 20px;
-  }
-
-  .bug-reporter-form {
-    height: 20px;
-    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
-  }
-
-  .bug-title-form {
     height: 40px;
-
+    width: 33.33%;
     box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
   }
 
-  .bug-description-form {
-    height: 80px;
-    margin-top: -15px;
-    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
-  }
-
-  .buginfo-submit-button {
-    width: 100%;
-    margin: auto;
-    margin-top: 15px;
-    border-radius: 10px;
-    font-size: 20px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    color: rgb(255, 255, 255);
-    border: 1px solid rgba(255, 255, 255, 0.687);
-    background-image: linear-gradient(
-      to right,
-      #8c26b8 0%,
-      #f700ff 51%,
-      #a112df 100%
-    );
-    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
-  }
-
-  .bug-select-menu {
-    height: 120px;
-    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
-  }
-
-  .bug-comments-form {
-    height: 110px;
-    position: relative;
-    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .bugform-container {
-    margin-top: -550px;
-    background-color: rgba(255, 255, 255, 0.389);
-    border: 2px solid rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0.576) 8px 5px 5px 4px;
-    border-radius: 20px;
-    padding: 20px;
-    max-width: 95%;
-  }
-
-  .bug-id {
-    width: 80px;
-    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
-  }
-
-  .bug-date-container {
-    max-width: fit-content;
-    font-size: 10px;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 20px;
-  }
-
-  .bug-reporter-form {
-    height: 20px;
-    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
-  }
-
-  .bug-title-form {
+  .bug-select-menu-priority {
     height: 40px;
-
+    width: 31.33%;
     box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
   }
 
-  .bug-description-form {
-    height: 80px;
-    margin-top: -15px;
-    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
-  }
-
-  .buginfo-submit-button {
-    width: 100%;
-    margin: auto;
-    margin-top: 15px;
-    border-radius: 10px;
-    font-size: 20px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    color: rgb(255, 255, 255);
-    border: 1px solid rgba(255, 255, 255, 0.687);
-    background-image: linear-gradient(
-      to right,
-      #8c26b8 0%,
-      #f700ff 51%,
-      #a112df 100%
-    );
-    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
-  }
-
-  .bug-select-menu {
-    height: 120px;
-    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
-  }
-
-  .bug-comments-form {
-    height: 110px;
-    position: relative;
-    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .bugform-container {
-    margin-top: -550px;
-    background-color: rgba(255, 255, 255, 0.389);
-    border: 2px solid rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0.576) 8px 5px 5px 4px;
-    border-radius: 20px;
-    padding: 20px;
-    max-width: 95%;
-  }
-
-  .bug-id {
-    width: 80px;
-    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
-  }
-
-  .bug-date-container {
-    max-width: fit-content;
-    font-size: 10px;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 20px;
-  }
-
-  .bug-reporter-form {
-    height: 20px;
-    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
-  }
-
-  .bug-title-form {
+  .bug-select-menu-severity {
     height: 40px;
-
+    width: 31.33%;
+    position: relative;
     box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
   }
 
-  .bug-description-form {
-    height: 80px;
-    margin-top: -15px;
-    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
-  }
-
-  .buginfo-submit-button {
-    width: 100%;
-    margin: auto;
-    margin-top: 15px;
-    border-radius: 10px;
-    font-size: 20px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    color: rgb(255, 255, 255);
-    border: 1px solid rgba(255, 255, 255, 0.687);
-    background-image: linear-gradient(
-      to right,
-      #8c26b8 0%,
-      #f700ff 51%,
-      #a112df 100%
-    );
-    box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
-  }
-
-  .bug-select-menu {
-    height: 120px;
+  .bug-select-menu-status {
+    height: 40px;
+    width: 31.33%;
     box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
   }
 
@@ -445,5 +460,17 @@
     height: 110px;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.274) 2px 2px 5px 2px;
+  }
+
+  .bug-status-container {
+    position: relative;
+    bottom: 120px;
+    margin-left: 33.33%;
+  }
+
+  .bug-severity-container {
+    position: relative;
+    margin-left: 66.66%;
+    bottom: 60px;
   }
 }

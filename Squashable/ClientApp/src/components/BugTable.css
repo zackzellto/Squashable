@@ -5,18 +5,18 @@
     text-align: center;
     color: white;
     position: relative;
-    font-size: 10px;
-    top: 700px;
-    right: 20px;
-    padding: 20px;
-    width: max-content;
+    font-size: 11px;
+    top: 760px;
+    margin: auto;
+    margin-bottom: 30px;
+    width: fit-content;
     box-shadow: rgb(179, 15, 194) 0px 0px 15px 2px;
     background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
     background-size: 300% 300%;
   }
 
   .bug-table-container {
-    width: auto;
+    width: fit-content;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -66,10 +66,21 @@
     border-radius: 20px;
     text-align: center;
     color: white;
-
+    position: relative;
+    font-size: 18px;
+    top: 950px;
+    right: 20px;
+    padding: 20px;
+    width: 525px;
     box-shadow: rgb(179, 15, 194) 0px 0px 15px 2px;
     background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
     background-size: 300% 300%;
+  }
+
+  .bug-table-container {
+    width: auto;
+    flex-direction: row;
+    margin-bottom: 100px;
   }
 
   .scrollit {
@@ -81,6 +92,7 @@
   .delete-bg {
     background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
     border-color: rgba(141, 84, 147, 0.579);
+
     box-shadow: rgb(247, 5, 5) 0px 0px 5px 1px;
   }
 
@@ -91,24 +103,22 @@
     cursor: pointer;
   }
 
-  /* .bug-search-bar {
-  height: 30px;
-  padding: 5px;
-  color: white;
-  width: 100px;
-  max-width: 100%;
-  margin-left: 500px;
+  .bug-search-bar {
+    height: 30px;
+    padding: 5px;
+    color: white;
+    width: 200px;
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: rgb(255, 255, 255) 0px 0px 5px 1px;
+  }
 
-  margin-bottom: 20px;
-  margin-top: 20px;
-  border-radius: 10px;
-  background: white;
-  box-shadow: rgb(255, 255, 255) 0px 0px 5px 1px;
-}
-
-.bug-search-bar::placeholder {
-  color: rgb(86, 74, 74);
-} */
+  .bug-search-bar::placeholder {
+    color: rgb(86, 74, 74);
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -117,10 +127,22 @@
     border-radius: 20px;
     text-align: center;
     color: white;
-
+    position: relative;
+    font-size: 17px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 525px;
+    left: 5px;
+    margin-top: -150px;
     box-shadow: rgb(179, 15, 194) 0px 0px 15px 2px;
     background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
     background-size: 300% 300%;
+  }
+
+  .bug-table-container {
+    width: auto;
+    flex-direction: row;
+    margin-bottom: 100px;
   }
 
   .scrollit {
@@ -132,6 +154,7 @@
   .delete-bg {
     background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
     border-color: rgba(141, 84, 147, 0.579);
+
     box-shadow: rgb(247, 5, 5) 0px 0px 5px 1px;
   }
 
@@ -142,24 +165,22 @@
     cursor: pointer;
   }
 
-  /* .bug-search-bar {
-  height: 30px;
-  padding: 5px;
-  color: white;
-  width: 100px;
-  max-width: 100%;
-  margin-left: 500px;
+  .bug-search-bar {
+    height: 30px;
+    padding: 5px;
+    color: white;
+    width: 200px;
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: rgb(255, 255, 255) 0px 0px 5px 1px;
+  }
 
-  margin-bottom: 20px;
-  margin-top: 20px;
-  border-radius: 10px;
-  background: white;
-  box-shadow: rgb(255, 255, 255) 0px 0px 5px 1px;
-}
-
-.bug-search-bar::placeholder {
-  color: rgb(86, 74, 74);
-} */
+  .bug-search-bar::placeholder {
+    color: rgb(86, 74, 74);
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -168,10 +189,22 @@
     border-radius: 20px;
     text-align: center;
     color: white;
-
+    font-size: 16px;
+    padding: 20px;
+    margin-top: -220em;
+    margin-right: 500px;
+    width: max-content;
     box-shadow: rgb(179, 15, 194) 0px 0px 15px 2px;
     background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
     background-size: 300% 300%;
+  }
+
+  .bug-table-container {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 
   .scrollit {
@@ -183,6 +216,7 @@
   .delete-bg {
     background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
     border-color: rgba(141, 84, 147, 0.579);
+
     box-shadow: rgb(247, 5, 5) 0px 0px 5px 1px;
   }
 
@@ -193,24 +227,22 @@
     cursor: pointer;
   }
 
-  /* .bug-search-bar {
-  height: 30px;
-  padding: 5px;
-  color: white;
-  width: 100px;
-  max-width: 100%;
-  margin-left: 500px;
+  .bug-search-bar {
+    height: 30px;
+    padding: 5px;
+    color: white;
+    width: 200px;
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: rgb(255, 255, 255) 0px 0px 5px 1px;
+  }
 
-  margin-bottom: 20px;
-  margin-top: 20px;
-  border-radius: 10px;
-  background: white;
-  box-shadow: rgb(255, 255, 255) 0px 0px 5px 1px;
-}
-
-.bug-search-bar::placeholder {
-  color: rgb(86, 74, 74);
-} */
+  .bug-search-bar::placeholder {
+    color: rgb(86, 74, 74);
+  }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
@@ -219,10 +251,27 @@
     border-radius: 20px;
     text-align: center;
     color: white;
-
+    position: relative;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    top: 935px;
+    right: 20px;
+    padding: 20px;
+    margin-left: 510px;
+    width: 550px;
     box-shadow: rgb(179, 15, 194) 0px 0px 15px 2px;
     background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
     background-size: 300% 300%;
+  }
+
+  .bug-table-container {
+    width: max-content;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 
   .scrollit {
@@ -234,6 +283,7 @@
   .delete-bg {
     background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
     border-color: rgba(141, 84, 147, 0.579);
+
     box-shadow: rgb(247, 5, 5) 0px 0px 5px 1px;
   }
 
@@ -244,24 +294,22 @@
     cursor: pointer;
   }
 
-  /* .bug-search-bar {
-  height: 30px;
-  padding: 5px;
-  color: white;
-  width: 100px;
-  max-width: 100%;
-  margin-left: 500px;
+  .bug-search-bar {
+    height: 30px;
+    padding: 5px;
+    color: white;
+    width: 200px;
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: rgb(255, 255, 255) 0px 0px 5px 1px;
+  }
 
-  margin-bottom: 20px;
-  margin-top: 20px;
-  border-radius: 10px;
-  background: white;
-  box-shadow: rgb(255, 255, 255) 0px 0px 5px 1px;
-}
-
-.bug-search-bar::placeholder {
-  color: rgb(86, 74, 74);
-} */
+  .bug-search-bar::placeholder {
+    color: rgb(86, 74, 74);
+  }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
@@ -270,10 +318,22 @@
     border-radius: 20px;
     text-align: center;
     color: white;
-
+    position: relative;
+    font-size: 14px;
+    padding: 20px;
+    width: 400px;
+    height: 300px;
+    margin-bottom: -1570px;
     box-shadow: rgb(179, 15, 194) 0px 0px 15px 2px;
     background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
     background-size: 300% 300%;
+  }
+
+  .bug-table-container {
+    width: min-content;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 
   .scrollit {
@@ -285,6 +345,7 @@
   .delete-bg {
     background: linear-gradient(-80deg, #2220205c, #645d9c, #110b39);
     border-color: rgba(141, 84, 147, 0.579);
+
     box-shadow: rgb(247, 5, 5) 0px 0px 5px 1px;
   }
 
@@ -295,22 +356,20 @@
     cursor: pointer;
   }
 
-  /* .bug-search-bar {
-  height: 30px;
-  padding: 5px;
-  color: white;
-  width: 100px;
-  max-width: 100%;
-  margin-left: 500px;
+  .bug-search-bar {
+    height: 30px;
+    padding: 5px;
+    color: white;
+    width: 200px;
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: rgb(255, 255, 255) 0px 0px 5px 1px;
+  }
 
-  margin-bottom: 20px;
-  margin-top: 20px;
-  border-radius: 10px;
-  background: white;
-  box-shadow: rgb(255, 255, 255) 0px 0px 5px 1px;
-}
-
-.bug-search-bar::placeholder {
-  color: rgb(86, 74, 74);
-} */
+  .bug-search-bar::placeholder {
+    color: rgb(86, 74, 74);
+  }
 }

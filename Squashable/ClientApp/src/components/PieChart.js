@@ -125,7 +125,7 @@ const PieChart = () => {
         className="bar-graph"
         id="myChart"
         data={data}
-        height={400}
+        height={300}
         options={options}
       />
     </div>
