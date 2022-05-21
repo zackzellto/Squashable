@@ -7,6 +7,7 @@ import Lumburgh from "../media/Testimonials/Lumburgh-modified.png";
 import Sophia from "../media/Testimonials/Sophia-Android-modified.png";
 import Alien from "../media/Testimonials/Alien-modified.png";
 import { Carousel } from "react-responsive-carousel";
+import { Link } from "react-router-dom";
 import "./Home.css";
 import "./Footer.css";
 import "./About.css";
@@ -31,6 +32,7 @@ export const Home = () => {
                   <u className="developer-word">Developers</u>.
                 </h3>
               </div>
+
               <img
                 id="device-mockups-before-auth"
                 src={DeviceMockups}
@@ -195,7 +197,12 @@ export const Home = () => {
                   built for <u className="developer-word">Developers</u>, by{" "}
                   <u className="developer-word">Developers</u>.
                 </h3>
-              </div>
+              </div>{" "}
+              <Link to="/dashboard">
+                <button className="btn btn-light" id="demo-button">
+                  Try Squashable!
+                </button>
+              </Link>
               <img
                 id="device-mockups-before-auth"
                 src={DeviceMockups}
