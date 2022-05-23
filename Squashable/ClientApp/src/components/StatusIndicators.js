@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
+import { Row } from "react-bootstrap";
 import "./StatusIndicators.css";
 
 const API_URL = "https://localhost:7091/api/BugInfo";
@@ -37,23 +38,18 @@ function StatusIndicators() {
   return (
     <div className="container">
       <div className="row bug-status-information">
-        <div className="col-md-4">
-          <div className="status-card col">
-            <div className="bug-status-title col">Bug Status Information</div>
-            <div className="newbug-value col">
-              {" "}
-              <div className="status-text">New</div> {bugData.newBugs}
-            </div>
+        <div className="status-card">
+          <div className="bug-status-title">Bug Status Information</div>
+          <Row>
+            <div className="status-text ">New</div>
+            <div className="newbug-value"> {bugData.newBugs}</div>
 
-            <div className="inprogress-value col">
-              <div className="status-text">In Progress</div>
-              {bugData.inProgressBugs}
-            </div>
-            <div className="squashed-value col">
-              <div className="status-text">Squashed</div>
-              {bugData.squashedBugs}
-            </div>
-          </div>
+            <div className="status-text">In Progress</div>
+            <div className="inprogress-value">{bugData.inProgressBugs}</div>
+
+            <div className="status-text">Squashed</div>
+            <div className="squashed-value">{bugData.squashedBugs}</div>
+          </Row>
         </div>
       </div>
     </div>

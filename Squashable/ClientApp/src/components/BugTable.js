@@ -39,58 +39,56 @@ function BugTable() {
       });
   };
   return (
-    <Container className="container bug-table-container">
-      <table className="table-striped table-hover bug-table">
-        <input
-          className="bug-search-bar"
-          type="text"
-          placeholder="Search Bug"
-          onChange={(e) => {
-            setSearchBug(e.target.value);
-          }}
-        ></input>
+    <table className="table-striped table-hover bug-table">
+      <input
+        className="bug-search-bar"
+        type="text"
+        placeholder="Search Bug"
+        onChange={(e) => {
+          setSearchBug(e.target.value);
+        }}
+      ></input>
 
-        <div className="scrollit">
-          <thead>
-            <tr>
-              <th scope="col">Bug ID</th>
-              <th scope="col">Title</th>
-              <th scope="col">Priority</th>
-              <th scope="col">Status</th>
-              <th scope="col">Delete</th>
-            </tr>
-          </thead>
-          <tbody>
-            {bugData
-              .filter((bug) => {
-                if (searchBug === "") {
-                  return bug;
-                } else if (
-                  bug.title.toLowerCase().includes(searchBug.toLowerCase())
-                ) {
-                  return bug;
-                }
-              })
-              .map((bug) => {
-                return (
-                  <tr>
-                    <td>{bug.id}</td>
-                    <td>{bug.title}</td>
-                    <td>{bug.priority}</td>
-                    <td>{bug.status}</td>
-                    <td>
-                      <Button
-                        onClick={(e) => deleteBugData(bug.id, e)}
-                        className="fa fa-trash delete-bg"
-                      ></Button>
-                    </td>
-                  </tr>
-                );
-              })}
-          </tbody>
-        </div>
-      </table>
-    </Container>
+      <div className="scrollit">
+        <thead>
+          <tr>
+            <th scope="col">Bug ID</th>
+            <th scope="col">Title</th>
+            <th scope="col">Priority</th>
+            <th scope="col">Status</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          {bugData
+            .filter((bug) => {
+              if (searchBug === "") {
+                return bug;
+              } else if (
+                bug.title.toLowerCase().includes(searchBug.toLowerCase())
+              ) {
+                return bug;
+              }
+            })
+            .map((bug) => {
+              return (
+                <tr>
+                  <td className="bug-table-id">{bug.id}</td>
+                  <td className="bug-table-title">{bug.title}</td>
+                  <td className="bug-table-priority">{bug.priority}</td>
+                  <td className="bug-table-status">{bug.status}</td>
+                  <td>
+                    <Button
+                      onClick={(e) => deleteBugData(bug.id, e)}
+                      className="fa fa-trash delete-bg"
+                    ></Button>
+                  </td>
+                </tr>
+              );
+            })}
+        </tbody>
+      </div>
+    </table>
   );
 }
 

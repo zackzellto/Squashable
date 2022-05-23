@@ -57,6 +57,26 @@
     <None Remove="Swashbuckle.AspNetCore" />
     <None Remove="Microsoft.AspNetCore.SpaServices" />
     <None Remove="Microsoft.AspNetCore.SpaServices.Extensions" />
+    <None Remove="ClientApp\build\index.html" />
+    <None Remove="ClientApp\build\service-worker.js.map" />
+    <None Remove="ClientApp\build\service-worker.js" />
+    <None Remove="ClientApp\build\static\css\main.c5fd6a90.chunk.css" />
+    <None Remove="ClientApp\build\static\css\2.699ad2ae.chunk.css" />
+    <None Remove="ClientApp\build\static\css\2.699ad2ae.chunk.css.map" />
+    <None Remove="ClientApp\build\static\css\main.c5fd6a90.chunk.css.map" />
+    <None Remove="ClientApp\build\static\js\2.2bd7f5f9.chunk.js.LICENSE.txt" />
+    <None Remove="ClientApp\build\static\js\2.2bd7f5f9.chunk.js.map" />
+    <None Remove="ClientApp\build\static\js\main.048338c6.chunk.js.map" />
+    <None Remove="ClientApp\build\static\js\2.2bd7f5f9.chunk.js" />
+    <None Remove="ClientApp\build\static\js\main.048338c6.chunk.js" />
+    <None Remove="ClientApp\build\static\js\runtime-main.0fb4436a.js" />
+    <None Remove="ClientApp\build\static\js\3.4e6b874d.chunk.js.map" />
+    <None Remove="ClientApp\build\static\js\3.4e6b874d.chunk.js" />
+    <None Remove="ClientApp\build\static\js\runtime-main.0fb4436a.js.map" />
+    <None Remove="ClientApp\build\static\media\Lumburgh-modified.39d1906a.png" />
+    <None Remove="ClientApp\build\static\media\device-mockups.35d9efd2.png" />
+    <None Remove="ClientApp\build\static\media\Sophia-Android-modified.5de12eb3.png" />
+    <None Remove="ClientApp\build\static\media\Alien-modified.ea9d977c.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />

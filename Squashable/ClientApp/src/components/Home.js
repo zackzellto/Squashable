@@ -40,7 +40,7 @@ export const Home = () => {
                 alt="device-mockups"
               ></img>
             </div>
-            <Container id="#about" className="about-container">
+            <Container id="about" className="about-container">
               <div className="about-title">About Squashable</div>
               <hr />
               <div className="mission-statement shadow-lg p-3 mb-5 rounded">
@@ -118,7 +118,7 @@ export const Home = () => {
                 </div>
               </Carousel>
             </Container>
-            <Container id="#contact" className="contact-container">
+            <Container id="contact" className="contact-container">
               <div className="contact-title">Contact</div>
               <hr />
               <div className="contact-form-background">

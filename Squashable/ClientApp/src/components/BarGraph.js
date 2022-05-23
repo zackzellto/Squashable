@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
 import {
   Chart as ChartJS,
-  ArcElement,
+  BarElement,
   CategoryScale,
   LinearScale,
   Title,
 } from "chart.js";
 import { Container } from "react-bootstrap";
-import { Pie } from "react-chartjs-2";
-import "./PieChart.css";
+import { Bar } from "react-chartjs-2";
+import "./BarGraph.css";
 
-ChartJS.register(ArcElement, CategoryScale, LinearScale, Title);
+ChartJS.register(BarElement, CategoryScale, LinearScale, Title);
 
 let options = {
   plugins: {
@@ -27,10 +27,10 @@ let options = {
     },
     title: {
       display: true,
-      text: "Priority of Bugs",
-      fontSize: 16,
-      scaleFontColor: "#ffffff",
-      position: "bottom",
+      text: "Severity of Bugs",
+      fontSize: 14,
+      fontColor: "#fff",
+      position: "top",
     },
   },
   maintainAspectRatio: true,
@@ -40,14 +40,14 @@ let options = {
 
 const API_URL = "https://localhost:7091/api/BugInfo";
 
-const PieChart = () => {
+const BarGraph = () => {
   const [data, setData] = useState({
-    type: "pie",
+    type: "bar",
     labels: ["Low", "Medium", "High"],
 
     datasets: [
       {
-        label: "Priority of Bugs",
+        label: "Severity of Bugs",
         data: [],
         backgroundColor: [
           "rgba(255, 99, 132, 0.2)",
@@ -73,7 +73,7 @@ const PieChart = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const priorityDataset = [];
+      const severityDataset = [];
 
       await fetch(API_URL)
         .then((data) => {
@@ -84,18 +84,18 @@ const PieChart = () => {
         .then((response) => {
           console.log("RESPONSE:", response);
           for (const value of response) {
-            priorityDataset.push(value.severity);
+            severityDataset.push(value.severity);
           }
           setData({
-            type: "pie",
+            type: "bar",
             labels: ["Low", "Medium", "High"],
             datasets: [
               {
-                label: "Priority of Bugs",
+                label: "Severity of Bugs",
                 data: [
-                  priorityDataset.filter((item) => item === "Low").length,
-                  priorityDataset.filter((item) => item === "Medium").length,
-                  priorityDataset.filter((item) => item === "High").length,
+                  severityDataset.filter((item) => item === "Low").length,
+                  severityDataset.filter((item) => item === "Medium").length,
+                  severityDataset.filter((item) => item === "High").length,
                 ],
                 backgroundColor: [
                   "rgba(17, 216, 10, 0.2)",
@@ -111,7 +111,7 @@ const PieChart = () => {
               },
             ],
           });
-          console.log("PRIORITY DATASET:", priorityDataset);
+          console.log("SEVERITY DATASET:", severityDataset);
         })
         .catch((err) => {
           console.log("Error:", err);
@@ -122,8 +122,8 @@ const PieChart = () => {
 
   return (
     <Container>
-      <Pie
-        className="pie-chart"
+      <Bar
+        className="bar-graph"
         id="myChart"
         height={200}
         data={data}
@@ -133,4 +133,4 @@ const PieChart = () => {
   );
 };
 
-export default PieChart;
+export default BarGraph;

@@ -58,7 +58,7 @@ export function BugForm() {
             <Col hidden>
               <Form.Control
                 type="text"
-                style={{ height: "30px" }}
+                style={{ height: "50px" }}
                 className="bug-id"
                 placeholder="Bug ID"
                 aria-label="Bud ID Tracker"
@@ -72,12 +72,10 @@ export function BugForm() {
               <Form.Control
                 className="bug-date-form"
                 type="text"
-                style={{ height: "30px" }}
+                style={{ height: "50px", width: "50%" }}
                 value={date}
                 aria-label="Bug Date"
                 size="sm"
-                disabled
-                readOnly
               ></Form.Control>
             </Col>
           </Row>
@@ -91,7 +89,7 @@ export function BugForm() {
                 >
                   <Form.Control
                     value={title}
-                    style={{ height: "30px" }}
+                    style={{ height: "50px" }}
                     onChange={(e) => setTitle(e.target.value)}
                     className="bug-title-form"
                     type="textarea"
@@ -109,7 +107,7 @@ export function BugForm() {
                 >
                   <Form.Control
                     value={createdBy}
-                    style={{ height: "30px" }}
+                    style={{ height: "50px" }}
                     onChange={(e) => setCreatedBy(e.target.value)}
                     className="bug-reporter-form"
                     type="textarea"
@@ -141,7 +139,7 @@ export function BugForm() {
             >
               <Form.Control
                 value={comments}
-                style={{ height: "30px" }}
+                style={{ height: "50px" }}
                 onChange={(e) => setComments(e.target.value)}
                 className="bug-comments-form"
                 type="textarea"
@@ -154,17 +152,15 @@ export function BugForm() {
               <FloatingLabel
                 controlId="floatingSelectGrid"
                 label="Bug Priority"
-                className="mb-3 floating-label-priority"
+                className="mb-3 floating-label"
               >
                 <Form.Select
                   value={priority}
-                  style={{ height: "30px" }}
+                  style={{ height: "50px" }}
                   className="bug-select-menu-priority col"
                   onChange={(e) => setPriority(e.target.value)}
                 >
-                  <option className="dropdown-hide-me" value="">
-                    Select Priority
-                  </option>
+                  <option className="dropdown-hide-me" value=""></option>
                   <option value="High">High</option>
                   <option value="Medium">Medium</option>
                   <option value="Low">Low</option>
@@ -176,18 +172,16 @@ export function BugForm() {
               <FloatingLabel
                 controlId="floatingSelectGrid"
                 label="Bug Severity"
-                className="mb-3 floating-label-severity"
+                className="mb-3 floating-label"
               >
                 <Form.Select
                   value={severity}
-                  style={{ height: "30px" }}
+                  style={{ height: "50px" }}
                   className="bug-select-menu-severity col"
                   onChange={(e) => setSeverity(e.target.value)}
                   aria-label="Bug Severity select menu"
                 >
-                  <option className="dropdown-hide-me" value="">
-                    Select Severity
-                  </option>
+                  <option className="dropdown-hide-me" value=""></option>
                   <option value="High">High</option>
                   <option value="Medium">Medium</option>
                   <option value="Low">Low</option>
@@ -198,18 +192,16 @@ export function BugForm() {
               <FloatingLabel
                 controlId="floatingSelectGrid"
                 label="Bug Status"
-                className="mb-3  floating-label-status"
+                className="mb-3  floating-label"
               >
                 <Form.Select
                   value={status}
-                  style={{ height: "30px" }}
+                  style={{ height: "50px" }}
                   className="bug-select-menu-status col"
                   onChange={(e) => setStatus(e.target.value)}
                   aria-label="Bug Status select menu"
                 >
-                  <option className="dropdown-hide-me" value="">
-                    Select Status
-                  </option>
+                  <option className="dropdown-hide-me" value=""></option>
                   <option>New Bug</option>
                   <option>In Progress</option>
                   <option>Squashed!</option>

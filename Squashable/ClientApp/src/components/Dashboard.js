@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Dashboard.css";
-import "./BugForm.css";
 import { BugForm } from "./BugForm";
 import BugTable from "./BugTable";
+import BarGraph from "./BarGraph";
 import PieChart from "./PieChart";
 import StatusIndicators from "./StatusIndicators";
 
@@ -13,21 +13,27 @@ export function Dashboard() {
       <div className="dashboard-background"></div>
       <div className="dashboard-content-background">
         <div className="dashboard-content">
+          {" "}
           <Row>
-            <div className="dashboard-card">
-              <PieChart />
+            <div className="dashboard-card dashboard-card-bug-form shadow">
+              <BugForm />
             </div>
 
-            <StatusIndicators />
+            <div className="dashboard-card dashboard-card-bug-table shadow">
+              <BugTable />
+            </div>
           </Row>
           <Row>
-            <Col s={12} md={12}>
-              <BugForm />
-            </Col>
-
-            <Col>
-              <BugTable />
-            </Col>
+            <div className="container"></div>
+            <div className="dashboard-card dashboard-card-bar-graph shadow">
+              <BarGraph />
+            </div>{" "}
+            <div className="dashboard-card dashboard-card-pie-chart shadow">
+              <PieChart />
+            </div>
+            <div className="dashboard-card dashboard-card-status shadow">
+              <StatusIndicators />
+            </div>
           </Row>
         </div>
       </div>

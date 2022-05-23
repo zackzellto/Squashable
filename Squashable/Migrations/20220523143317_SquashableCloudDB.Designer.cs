@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Squashable;
@@ -11,9 +12,10 @@ using Squashable;
 namespace Squashable.Migrations
 {
     [DbContext(typeof(BugDataContext))]
-    partial class BugDataContextModelSnapshot : ModelSnapshot
+    [Migration("20220523143317_SquashableCloudDB")]
+    partial class SquashableCloudDB
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
