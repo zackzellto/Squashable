@@ -156,23 +156,38 @@ export const Home = () => {
             <Container className="footer-container">
               <div id="social-platforms">
                 <div>Visit us on our socials.</div>
-                <a class="btn btn-icon btn-facebook" href="#">
+                <a
+                  class="btn btn-icon btn-facebook"
+                  href="https://www.facebook.com"
+                >
                   <i class="fa fa-facebook"></i>
                   <span>Facebook</span>
                 </a>
-                <a class="btn btn-icon btn-twitter" href="#">
+                <a
+                  class="btn btn-icon btn-twitter"
+                  href="https://www.twitter.com"
+                >
                   <i class="fa fa-twitter"></i>
                   <span>Twitter</span>
                 </a>
-                <a class="btn btn-icon btn-github" href="#">
+                <a
+                  class="btn btn-icon btn-github"
+                  href="https://www.github.com"
+                >
                   <i class="fa fa-github"></i>
                   <span>GitHub</span>
                 </a>
-                <a class="btn btn-icon btn-codepen" href="#">
+                <a
+                  class="btn btn-icon btn-codepen"
+                  href="https://www.codepen.io"
+                >
                   <i class="fa fa-codepen"></i>
                   <span>Codepen</span>
                 </a>
-                <a class="btn btn-icon btn-linkedin" href="#">
+                <a
+                  class="btn btn-icon btn-linkedin"
+                  href="https://www.linkedin.com"
+                >
                   <i class="fa fa-linkedin"></i>
                   <span>LinkedIn</span>
                 </a>
@@ -328,23 +343,38 @@ export const Home = () => {
             <Container className="footer-container">
               <div id="social-platforms">
                 <div>Visit us on our socials.</div>
-                <a class="btn btn-icon btn-facebook" href="#">
+                <a
+                  class="btn btn-icon btn-facebook"
+                  href="https://www.facebook.com"
+                >
                   <i class="fa fa-facebook"></i>
                   <span>Facebook</span>
                 </a>
-                <a class="btn btn-icon btn-twitter" href="#">
+                <a
+                  class="btn btn-icon btn-twitter"
+                  href="https://www.twitter.com"
+                >
                   <i class="fa fa-twitter"></i>
                   <span>Twitter</span>
                 </a>
-                <a class="btn btn-icon btn-github" href="#">
+                <a
+                  class="btn btn-icon btn-github"
+                  href="https://www.github.com"
+                >
                   <i class="fa fa-github"></i>
                   <span>GitHub</span>
                 </a>
-                <a class="btn btn-icon btn-codepen" href="#">
+                <a
+                  class="btn btn-icon btn-codepen"
+                  href="https://www.codepen.io"
+                >
                   <i class="fa fa-codepen"></i>
                   <span>Codepen</span>
                 </a>
-                <a class="btn btn-icon btn-linkedin" href="#">
+                <a
+                  class="btn btn-icon btn-linkedin"
+                  href="https://www.linkedin.com"
+                >
                   <i class="fa fa-linkedin"></i>
                   <span>LinkedIn</span>
                 </a>

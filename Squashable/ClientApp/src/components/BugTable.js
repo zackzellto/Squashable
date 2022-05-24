@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./BugTable.css";
-import { Button, Container } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import axios from "axios";
 
 const API_URL = "https://localhost:7091/api/BugInfo";
@@ -23,10 +23,10 @@ function BugTable() {
     getBugData();
   }, []);
 
-  const deleteBugData = (id, e) => {
+  const deleteBugData = async (id, e) => {
     window && window.confirm("Are you sure you want to delete this bug?");
     window.location.reload();
-    axios
+    await axios
       .delete(`${API_URL}/${id}`)
       .then((res) => {
         const del = bugData.filter((bug) => id !== bug.id);

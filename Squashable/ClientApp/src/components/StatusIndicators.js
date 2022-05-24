@@ -9,30 +9,33 @@ function StatusIndicators() {
   const [bugData, setBugData] = useState({});
 
   useEffect(() => {
-    axios
-      .get(API_URL)
-      .then((res) => {
-        const newStatus = "New Bug";
-        const inProgressStatus = "In Progress";
-        const squashedStatus = "Squashed!";
+    async function fetchData() {
+      await axios
+        .get(API_URL)
+        .then((res) => {
+          const newStatus = "New Bug";
+          const inProgressStatus = "In Progress";
+          const squashedStatus = "Squashed!";
 
-        const data = res.data;
-        const newBugs = data.filter((bug) => bug.status === newStatus);
-        const inProgressBugs = data.filter(
-          (bug) => bug.status === inProgressStatus
-        );
-        const squashedBugs = data.filter(
-          (bug) => bug.status === squashedStatus
-        );
-        setBugData({
-          newBugs: newBugs.length,
-          inProgressBugs: inProgressBugs.length,
-          squashedBugs: squashedBugs.length,
+          const data = res.data;
+          const newBugs = data.filter((bug) => bug.status === newStatus);
+          const inProgressBugs = data.filter(
+            (bug) => bug.status === inProgressStatus
+          );
+          const squashedBugs = data.filter(
+            (bug) => bug.status === squashedStatus
+          );
+          setBugData({
+            newBugs: newBugs.length,
+            inProgressBugs: inProgressBugs.length,
+            squashedBugs: squashedBugs.length,
+          });
+        })
+        .catch((err) => {
+          console.log("Error:", err);
         });
-      })
-      .catch((err) => {
-        console.log("Error:", err);
-      });
+    }
+    fetchData();
   }, []);
 
   return (

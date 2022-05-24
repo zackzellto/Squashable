@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React from "react";
+import { Container, Row } from "react-bootstrap";
 import "./Dashboard.css";
 import { BugForm } from "./BugForm";
 import BugTable from "./BugTable";
