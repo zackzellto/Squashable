@@ -105,7 +105,7 @@
   text-align: center;
 }
 
-@media (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .carousel-root {
     outline: 0;
     width: 93% !important;
@@ -136,7 +136,7 @@
   }
 }
 
-@media (min-width: 576px) {
+@media only screen and (min-width: 576px) {
   .carousel-root {
     outline: 0;
     width: 63% !important;
@@ -167,7 +167,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .carousel-root {
     outline: 0;
     width: 63% !important;
@@ -198,7 +198,7 @@
   }
 }
 
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
   .carousel-root {
     outline: 0;
     width: 93% !important;
@@ -229,7 +229,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .carousel-root {
     outline: 0;
     position: relative;
@@ -262,10 +262,10 @@
   }
 }
 
-@media (min-width: 1400px) {
+@media only screen and (min-width: 1400px) {
   .carousel-root {
     outline: 0;
-    right: 355px;
+    right: 350px;
     position: relative;
     width: 95% !important;
   }
@@ -294,10 +294,10 @@
   }
 }
 
-@media (min-width: 1600px) {
+@media only screen and (min-width: 1600px) {
   .carousel-root {
     outline: 0;
-    right: 425px;
+    right: 500px;
     position: relative;
     width: 95% !important;
   }
