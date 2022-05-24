@@ -57,7 +57,7 @@ const NavMenu = () => {
               <Nav.Link className="nav-about-btn" variant="light" href="#about">
                 About
               </Nav.Link>
-              <Nav.Link className="nav-contact-btn" href="/contact">
+              <Nav.Link className="nav-contact-btn" href="#contact">
                 Contact
               </Nav.Link>
             </Nav>

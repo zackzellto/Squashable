@@ -1155,9 +1155,9 @@
     width: 2000px;
     margin: auto;
     max-width: 100%;
-    margin-top: -84px;
+    margin-top: -200px;
     height: fit-content;
-    min-height: 100vh;
+    min-height: 90vh;
   }
 
   .developer-word {

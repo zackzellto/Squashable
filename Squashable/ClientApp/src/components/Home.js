@@ -187,7 +187,7 @@ export const Home = () => {
     } else {
       return (
         <>
-          <div id="#home" fluid className="home-container">
+          <div id="home" fluid className="home-container">
             <div className="home-section">
               <div className="landing-page-heading-before-auth">
                 <h2>Welcome to</h2>
@@ -210,7 +210,7 @@ export const Home = () => {
                 alt="device-mockups"
               ></img>
             </div>
-            <Container id="#about" className="about-container">
+            <Container id="about" className="about-container">
               <div className="about-section">
                 <p className="about-title">About Squashable.</p>
                 <hr />
@@ -243,7 +243,7 @@ export const Home = () => {
               </div>
             </Container>
 
-            <Container id="#testimonials" className="testimonials-container">
+            <Container id="testimonials" className="testimonials-container">
               <Carousel
                 showArrows={true}
                 infiniteLoop={true}
@@ -291,7 +291,7 @@ export const Home = () => {
                 </div>
               </Carousel>
             </Container>
-            <Container id="#contact" className="contact-container">
+            <Container id="contact" className="contact-container">
               <div className="contact-title">Contact</div>
               <div className="contact-form-background">
                 <div class="mb-4">
