@@ -541,6 +541,7 @@
   .navbar-container {
     z-index: 1000;
     width: 100%;
+    margin-top: 20px;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -724,6 +725,7 @@
     align-items: center;
     display: flex;
     margin: auto;
+    margin-bottom: 30px;
     max-width: 100%;
   }
 

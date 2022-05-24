@@ -55,6 +55,7 @@ function BugTable() {
             <th scope="col">Bug ID</th>
             <th scope="col">Title</th>
             <th scope="col">Priority</th>
+            <th scope="col">Severity</th>
             <th scope="col">Status</th>
             <th scope="col">Delete</th>
           </tr>
@@ -76,6 +77,7 @@ function BugTable() {
                   <td className="bug-table-id">{bug.id}</td>
                   <td className="bug-table-title">{bug.title}</td>
                   <td className="bug-table-priority">{bug.priority}</td>
+                  <td className="bug-table-severity">{bug.severity}</td>
                   <td className="bug-table-status">{bug.status}</td>
                   <td>
                     <Button

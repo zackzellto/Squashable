@@ -1,1 +1,27 @@
+.dashboard-card-bar-graph {
+  width: 350px;
+  margin: auto;
+  margin-bottom: 20px;
+}
 
+@media only screen and (min-width: 992px) {
+  .dashboard-card-bar-graph {
+    position: relative;
+    margin: auto;
+    bottom: 55px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .dashboard-card-bar-graph {
+    position: relative;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .dashboard-card-bar-graph {
+    position: relative;
+    margin: auto;
+  }
+}

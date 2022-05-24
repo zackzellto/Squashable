@@ -26,3 +26,102 @@
   color: #ff1307;
   font-size: 26px;
 }
+
+@media only screen and (min-width: 992px) {
+  .dashboard-card-status {
+    width: 200px;
+    height: 240px;
+    position: relative;
+    bottom: 50px;
+  }
+  .bug-status-information {
+    text-align: center;
+  }
+
+  .bug-status-title {
+    color: white;
+    font-size: 16px;
+  }
+
+  .status-text {
+    color: white;
+    font-size: 14px;
+  }
+
+  .newbug-value {
+    color: green;
+    font-size: 24px;
+  }
+
+  .inprogress-value {
+    color: #ffc107;
+    font-size: 24px;
+  }
+
+  .squashed-value {
+    color: #ff1307;
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .bug-status-information {
+    text-align: center;
+  }
+
+  .bug-status-title {
+    color: white;
+    font-size: 22px;
+  }
+
+  .status-text {
+    color: white;
+    font-size: 18px;
+  }
+
+  .newbug-value {
+    color: green;
+    font-size: 26px;
+  }
+
+  .inprogress-value {
+    color: #ffc107;
+    font-size: 26px;
+  }
+
+  .squashed-value {
+    color: #ff1307;
+    font-size: 26px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .bug-status-information {
+    text-align: center;
+  }
+
+  .bug-status-title {
+    color: white;
+    font-size: 22px;
+  }
+
+  .status-text {
+    color: white;
+    font-size: 18px;
+  }
+
+  .newbug-value {
+    color: green;
+    font-size: 26px;
+  }
+
+  .inprogress-value {
+    color: #ffc107;
+    font-size: 26px;
+  }
+
+  .squashed-value {
+    color: #ff1307;
+    font-size: 26px;
+  }
+}

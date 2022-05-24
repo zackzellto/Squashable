@@ -53,6 +53,7 @@
 @media only screen and (min-width: 1200px) {
   .dashboard-card-bug-form {
     width: 700px;
+    margin: auto;
   }
 
   .floating-label {

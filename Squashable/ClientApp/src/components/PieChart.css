@@ -1,0 +1,27 @@
+.dashboard-card-pie-chart {
+  width: 350px;
+}
+
+@media only screen and (min-width: 992px) {
+  .dashboard-card-pie-chart {
+    width: 300px;
+    height: 250px;
+    margin-top: 5px;
+    position: relative;
+    margin-right: 10px;
+    bottom: 40px;
+    left: 5px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .dashboard-card-pie-chart {
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .dashboard-card-pie-chart {
+    width: 400px;
+  }
+}

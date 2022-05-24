@@ -23,15 +23,15 @@ export function Dashboard() {
               <BugTable />
             </div>
           </Row>
-          <Row>
+          <Row className="card-row">
             <div className="container"></div>
-            <div className="dashboard-card dashboard-card-bar-graph shadow">
+            <div className="dashboard-card col dashboard-card-bar-graph shadow">
               <BarGraph />
             </div>{" "}
-            <div className="dashboard-card dashboard-card-pie-chart shadow">
+            <div className="dashboard-card col dashboard-card-pie-chart shadow">
               <PieChart />
             </div>
-            <div className="dashboard-card dashboard-card-status shadow">
+            <div className="dashboard-card col dashboard-card-status shadow">
               <StatusIndicators />
             </div>
           </Row>

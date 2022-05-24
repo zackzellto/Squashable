@@ -32,7 +32,7 @@
   h1 {
     margin-bottom: -20px;
     font-size: 55px !important;
-    color: rgb(179, 15, 194);
+    color: blueviolet;
     text-shadow: 0 1px 2px rgb(255, 255, 255), 0 1px 2px;
     margin-top: 15px;
   }
@@ -201,7 +201,7 @@
   h1 {
     margin-bottom: -20px;
     font-size: 55px !important;
-    color: rgb(179, 15, 194);
+    color: blueviolet;
     text-shadow: 0 1px 2px rgb(255, 255, 255), 0 1px 2px;
     margin-top: 15px;
   }
@@ -370,7 +370,7 @@
   h1 {
     margin-bottom: -20px;
     font-size: 55px !important;
-    color: rgb(179, 15, 194);
+    color: blueviolet;
     text-shadow: 0 1px 2px rgb(255, 255, 255), 0 1px 2px;
     margin-top: 15px;
   }
@@ -540,7 +540,7 @@
   h1 {
     margin-bottom: -20px;
     font-size: 55px !important;
-    color: rgb(179, 15, 194);
+    color: blueviolet;
     text-shadow: 0 1px 2px rgb(255, 255, 255), 0 1px 2px;
     margin-top: 15px;
   }
@@ -722,8 +722,8 @@
 
   h1 {
     font-size: 90px !important;
-    color: rgb(179, 15, 194);
-    text-shadow: 0 1px 5px rgb(255, 255, 255), 0 1px 5px;
+    color: blueviolet;
+    text-shadow: 0 1px 5px rgb(0, 0, 0), 0 1px 5px;
   }
 
   h2 {
@@ -746,7 +746,7 @@
   }
 
   .developer-word {
-    color: rgb(179, 15, 194);
+    color: blueviolet;
   }
 
   #device-mockups-before-auth {
@@ -889,8 +889,8 @@
 
   h1 {
     font-size: 90px !important;
-    color: rgb(179, 15, 194);
-    text-shadow: 0 1px 5px rgb(255, 255, 255), 0 1px 5px;
+    color: blueviolet;
+    text-shadow: 0 1px 15px rgb(0, 0, 0), 0 1px 15px;
   }
 
   h2 {
@@ -913,7 +913,7 @@
   }
 
   .developer-word {
-    color: rgb(179, 15, 194);
+    color: blueviolet;
   }
 
   #device-mockups-before-auth {

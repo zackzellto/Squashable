@@ -16,6 +16,7 @@
 
 .bug-table {
   color: white;
+  table-layout: fixed;
   font-size: 11px;
   border-radius: 10px;
   border-color: rgb(255, 255, 255);
@@ -28,6 +29,7 @@
 th,
 td {
   padding: 5px;
+  word-break: break-all;
   border: 1px solid rgb(255, 255, 255);
 }
 
@@ -36,11 +38,26 @@ td {
   border: 1px solid white;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 992px) {
+  .bug-table {
+    color: white;
+    font-size: 12px;
+    border-radius: 10px;
+    border-color: rgb(255, 255, 255);
+  }
+
+  .dashboard-card-bug-table {
+    width: 555px;
+    margin: auto;
+    position: relative;
+    margin-top: 1px;
+    margin-left: 5px;
+  }
+
   .bug-search-bar {
     width: 40%;
     margin-bottom: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     font: 10px;
   }
 
@@ -53,25 +70,14 @@ td {
     height: 250px;
   }
 
-  .bug-table {
-    border-collapse: collapse;
-    width: 100%;
-    color: white;
-    font-size: 12px;
-    border-radius: 10px;
-    border-color: rgb(255, 255, 255);
-  }
-
   .bug-table-container {
     border-color: rgb(255, 255, 255);
   }
 
   th,
-  td,
-  tbody {
-    width: fit-content;
+  td {
     padding: 5px;
-    text-align: center;
+    word-break: break-all;
     border: 1px solid rgb(255, 255, 255);
   }
 
@@ -79,12 +85,100 @@ td {
     background-color: rgb(226, 43, 43);
     border: 1px solid white;
   }
+}
+
+@media only screen and (min-width: 1200px) {
+  .bug-table {
+    color: white;
+    font-size: 12px;
+    border-radius: 10px;
+    border-color: rgb(255, 255, 255);
+  }
 
   .dashboard-card-bug-table {
-    width: fit-content;
-    height: fit-content;
-    color: white;
-    font-size: 17px;
+    width: 555px;
+    margin: auto;
+    position: relative;
+    margin-top: 20px;
+  }
+
+  .bug-search-bar {
+    width: 40%;
+    margin-bottom: 20px;
     border-radius: 10px;
+    font: 10px;
+  }
+
+  .bug-search-bar::placeholder {
+    font-size: 12px;
+  }
+
+  .scrollit {
+    overflow-y: scroll;
+    height: 250px;
+  }
+
+  .bug-table-container {
+    border-color: rgb(255, 255, 255);
+  }
+
+  th,
+  td {
+    padding: 5px;
+    word-break: break-all;
+    border: 1px solid rgb(255, 255, 255);
+  }
+
+  .delete-bg {
+    background-color: rgb(226, 43, 43);
+    border: 1px solid white;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .bug-table {
+    color: white;
+    font-size: 12px;
+    border-radius: 10px;
+    border-color: rgb(255, 255, 255);
+  }
+
+  .dashboard-card-bug-table {
+    width: 555px;
+    margin: auto;
+    position: relative;
+    bottom: 70px;
+  }
+
+  .bug-search-bar {
+    width: 40%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font: 10px;
+  }
+
+  .bug-search-bar::placeholder {
+    font-size: 12px;
+  }
+
+  .scrollit {
+    overflow-y: scroll;
+    height: 250px;
+  }
+
+  .bug-table-container {
+    border-color: rgb(255, 255, 255);
+  }
+
+  th,
+  td {
+    padding: 5px;
+    word-break: break-all;
+    border: 1px solid rgb(255, 255, 255);
+  }
+
+  .delete-bg {
+    background-color: rgb(226, 43, 43);
+    border: 1px solid white;
   }
 }
