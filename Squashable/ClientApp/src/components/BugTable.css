@@ -99,7 +99,8 @@ td {
     width: 555px;
     margin: auto;
     position: relative;
-    margin-top: 20px;
+    top: 425px;
+    right: 477px;
   }
 
   .bug-search-bar {
@@ -138,16 +139,17 @@ td {
 @media only screen and (min-width: 1400px) {
   .bug-table {
     color: white;
-    font-size: 12px;
+    font-size: 16px;
     border-radius: 10px;
     border-color: rgb(255, 255, 255);
   }
 
   .dashboard-card-bug-table {
-    width: 555px;
+    width: 700px;
     margin: auto;
     position: relative;
     bottom: 70px;
+    margin-left: -210px;
   }
 
   .bug-search-bar {

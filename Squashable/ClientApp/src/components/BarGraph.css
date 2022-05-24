@@ -16,6 +16,8 @@
   .dashboard-card-bar-graph {
     position: relative;
     margin: auto;
+    left: 660px;
+    top: 33px;
   }
 }
 
@@ -23,5 +25,7 @@
   .dashboard-card-bar-graph {
     position: relative;
     margin: auto;
+    top: -170px;
+    left: 780px;
   }
 }

@@ -121,3 +121,149 @@
     border: 1px solid rgb(255, 255, 255);
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  .dashboard-card-bug-form {
+    width: 550px;
+    margin: auto;
+    position: relative;
+    left: 90px;
+  }
+
+  .floating-label {
+    font-size: 14px;
+  }
+
+  .bug-date-form {
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    text-align: center;
+    font-size: 11px;
+    border: none;
+  }
+
+  .bug-title-container {
+    margin-top: 20px;
+    margin-bottom: -20px;
+  }
+
+  .bug-reporter-form {
+    margin-top: 20px;
+  }
+
+  .bugform-date-form {
+    margin-bottom: 20px;
+  }
+
+  .bug-description-container {
+    margin-top: -20px;
+  }
+
+  .bug-select-menu-status {
+    font: 14px;
+    width: 31.33%;
+  }
+
+  .bug-select-menu-priority {
+    font: 14px;
+    width: 31.33%;
+  }
+
+  .bug-select-menu-severity {
+    font: 14px;
+    width: 31.33%;
+  }
+
+  .bug-severity-container {
+    margin-left: 33.33%;
+    margin-top: -69px;
+  }
+
+  .bug-status-container {
+    margin-left: 65.66%;
+    margin-top: -69px;
+  }
+
+  .dropdown-hide-me {
+    display: none;
+  }
+
+  .buginfo-submit-button {
+    width: 100%;
+    background-color: blueviolet;
+    border: 1px solid rgb(255, 255, 255);
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .dashboard-card-bug-form {
+    width: 700px;
+    margin-left: -20px;
+  }
+
+  .floating-label {
+    font-size: 14px;
+  }
+
+  .bug-date-form {
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    text-align: center;
+    font-size: 11px;
+    border: none;
+  }
+
+  .bug-title-container {
+    margin-top: 20px;
+    margin-bottom: -20px;
+  }
+
+  .bug-reporter-form {
+    margin-top: 20px;
+  }
+
+  .bugform-date-form {
+    margin-bottom: 20px;
+  }
+
+  .bug-description-container {
+    margin-top: -20px;
+  }
+
+  .bug-select-menu-status {
+    font: 14px;
+    width: 31.33%;
+  }
+
+  .bug-select-menu-priority {
+    font: 14px;
+    width: 31.33%;
+  }
+
+  .bug-select-menu-severity {
+    font: 14px;
+    width: 31.33%;
+  }
+
+  .bug-severity-container {
+    margin-left: 33.33%;
+    margin-top: -69px;
+  }
+
+  .bug-status-container {
+    margin-left: 65.66%;
+    margin-top: -69px;
+  }
+
+  .dropdown-hide-me {
+    display: none;
+  }
+
+  .buginfo-submit-button {
+    width: 100%;
+    background-color: blueviolet;
+    border: 1px solid rgb(255, 255, 255);
+  }
+}

@@ -65,37 +65,55 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  .dashboard-card-status {
+    width: 200px;
+    height: 235px;
+    position: relative;
+    bottom: 600px;
+    right: 110px;
+  }
+
   .bug-status-information {
     text-align: center;
   }
 
   .bug-status-title {
     color: white;
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .status-text {
     color: white;
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .newbug-value {
     color: green;
-    font-size: 26px;
+    font-size: 20px;
   }
 
   .inprogress-value {
     color: #ffc107;
-    font-size: 26px;
+    font-size: 20px;
   }
 
   .squashed-value {
     color: #ff1307;
-    font-size: 26px;
+    font-size: 20px;
   }
 }
 
 @media only screen and (min-width: 1400px) {
+  .dashboard-card-status {
+    height: 150px;
+    position: relative;
+    bottom: 50px;
+    align-items: center;
+    justify-content: center;
+    right: 110px;
+    text-align: center;
+  }
+
   .bug-status-information {
     text-align: center;
   }
@@ -103,6 +121,24 @@
   .bug-status-title {
     color: white;
     font-size: 22px;
+    position: relative;
+  }
+
+  .status-new {
+    position: relative;
+    right: 120px;
+    top: 16px;
+  }
+
+  .status-inprogress {
+    position: relative;
+    bottom: 50px;
+  }
+
+  .status-squashed {
+    position: relative;
+    left: 120px;
+    bottom: 115px;
   }
 
   .status-text {
@@ -112,16 +148,26 @@
 
   .newbug-value {
     color: green;
+    position: relative;
+    right: 120px;
+    top: 15px;
     font-size: 26px;
   }
 
   .inprogress-value {
     color: #ffc107;
     font-size: 26px;
+    position: relative;
+    bottom: 50px;
+    font-size: 26px;
   }
 
   .squashed-value {
     color: #ff1307;
+    font-size: 26px;
+    position: relative;
+    left: 120px;
+    bottom: 115px;
     font-size: 26px;
   }
 }

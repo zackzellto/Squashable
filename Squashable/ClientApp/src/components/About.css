@@ -104,6 +104,7 @@
 
   .mission-statement {
     background-color: rgba(249, 248, 248, 0.808);
+    border-radius: 15px;
   }
 
   p {
@@ -126,6 +127,8 @@
   }
 
   .mission-statement {
+    margin: auto;
+    position: relative;
     padding: 20px;
     border-radius: 20px;
     background-color: rgba(249, 248, 248, 0.808);

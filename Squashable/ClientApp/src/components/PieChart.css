@@ -16,12 +16,23 @@
 
 @media only screen and (min-width: 1200px) {
   .dashboard-card-pie-chart {
-    width: 400px;
+    width: 200px;
+    height: 330px;
+    margin-top: 5px;
+    position: relative;
+    margin-right: 10px;
+    margin-left: 20px;
+    bottom: 260px;
+    left: 270px;
   }
 }
 
 @media only screen and (min-width: 1400px) {
   .dashboard-card-pie-chart {
-    width: 400px;
+    width: 200px;
+    height: 380px;
+    position: relative;
+    bottom: 505px;
+    left: 330px;
   }
 }

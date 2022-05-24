@@ -41,13 +41,13 @@ function StatusIndicators() {
         <div className="status-card">
           <div className="bug-status-title">Bug Status Information</div>
           <Row>
-            <div className="status-text ">New</div>
+            <div className="status-text status-new ">New</div>
             <div className="newbug-value"> {bugData.newBugs}</div>
 
-            <div className="status-text">In Progress</div>
+            <div className="status-text status-inprogress">In Progress</div>
             <div className="inprogress-value">{bugData.inProgressBugs}</div>
 
-            <div className="status-text">Squashed</div>
+            <div className="status-text status-squashed">Squashed</div>
             <div className="squashed-value">{bugData.squashedBugs}</div>
           </Row>
         </div>

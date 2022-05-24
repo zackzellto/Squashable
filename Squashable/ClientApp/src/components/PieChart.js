@@ -122,13 +122,7 @@ const PieChart = () => {
 
   return (
     <Container>
-      <Pie
-        className="pie-chart"
-        id="myChart"
-        height={200}
-        data={data}
-        options={options}
-      />
+      <Pie className="pie-chart" id="myChart" data={data} options={options} />
     </Container>
   );
 };
