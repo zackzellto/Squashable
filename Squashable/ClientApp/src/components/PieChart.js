@@ -18,6 +18,7 @@ let options = {
       formatter: (value, ctx) => {
         let sum = 0;
         let dataArr = ctx.chart.data.datasets[0].data;
+        // eslint-disable-next-line array-callback-return
         dataArr.map((data) => {
           sum += data;
         });
@@ -38,7 +39,7 @@ let options = {
   responsive: true,
 };
 
-const API_URL = "https://localhost:7091/api/BugInfo";
+const API_URL = "/api/BugInfo";
 
 const PieChart = () => {
   const [data, setData] = useState({

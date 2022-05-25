@@ -3,7 +3,7 @@ import "./BugTable.css";
 import { Button } from "react-bootstrap";
 import axios from "axios";
 
-const API_URL = "https://localhost:7091/api/BugInfo";
+const API_URL = "/api/BugInfo";
 
 function BugTable() {
   const [bugData, setBugData] = useState([]);

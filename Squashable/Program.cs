@@ -22,6 +22,8 @@ builder.Services.AddDbContext<BugDataContext>(options =>
 var app = builder.Build();
 
 //Enable CORS
+
+
 app.UseCors(options => options
     .AllowAnyOrigin()
     .AllowAnyMethod()

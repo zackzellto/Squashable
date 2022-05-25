@@ -77,12 +77,10 @@
     <None Remove="ClientApp\build\static\media\device-mockups.35d9efd2.png" />
     <None Remove="ClientApp\build\static\media\Sophia-Android-modified.5de12eb3.png" />
     <None Remove="ClientApp\build\static\media\Alien-modified.ea9d977c.png" />
-    <None Remove="Publish Profile\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
     <Folder Include="Data\" />
-    <Folder Include="Publish Profile\" />
   </ItemGroup>
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
     <!-- Ensure Node.js is installed -->

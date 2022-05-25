@@ -39,7 +39,7 @@ let options = {
   responsive: true,
 };
 
-const API_URL = "https://localhost:7091/api/BugInfo";
+const API_URL = "/api/BugInfo";
 
 const BarGraph = () => {
   const [data, setData] = useState({

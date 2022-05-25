@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Row } from "react-bootstrap";
 import "./StatusIndicators.css";
 
-const API_URL = "https://localhost:7091/api/BugInfo";
+const API_URL = "/api/BugInfo";
 
 function StatusIndicators() {
   const [bugData, setBugData] = useState({});

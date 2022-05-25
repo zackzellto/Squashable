@@ -23,7 +23,7 @@ export function BugForm() {
   const [status, setStatus] = useState("");
   const [severity, setSeverity] = useState("");
 
-  const apiURL = "https://localhost:7091";
+  const apiURL = "/api/BugInfo";
 
   const handleSubmit = async (e) => {
     window.location.reload();
@@ -39,7 +39,7 @@ export function BugForm() {
     };
 
     await axios //post request to api
-      .post(`${apiURL}/api/BugInfo`, bugData)
+      .post(`${apiURL}`, bugData)
       .then((res) => {
         console.log("POST RESPONSE:", res);
       })
