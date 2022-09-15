@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'Squashable'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_707B60AB533648E489F07F55D1A5775E }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CC99F144DAC74B72A28F3BFFAA96DB72 }}
           package: .
